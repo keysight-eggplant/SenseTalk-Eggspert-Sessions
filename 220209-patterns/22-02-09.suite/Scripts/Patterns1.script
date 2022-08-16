@@ -1,0 +1,15 @@
+﻿// even very simple patterns can be useful
+
+set text to "Jared: 38, Rhonda: 182, Vic: 385, Chris: 746!!"
+
+put the number of occurrences of "8" in text
+
+put the number of occurrences of <digit> in text
+
+put every occurrence of <digit> in text
+
+put text
+
+delete <punctuation> from text
+
+put text

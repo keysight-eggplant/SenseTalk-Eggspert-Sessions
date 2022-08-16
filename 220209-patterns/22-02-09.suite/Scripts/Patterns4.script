@@ -1,0 +1,26 @@
+﻿// more complex patterns
+
+// USA phone numbers: (888) 123-4567   888-123-4567   888.123.4567   123-4567
+
+set AC1 to <"(", 3 digits, ")", maybe a space>
+set AC2 to <3 digits, dash>
+set AC3 to <3 digits, ".">
+
+set areaCode to <AC1 or AC2 or AC3>
+
+set NUM to <3 digits, dash or ".", 4 digits>
+
+set PhoneNum to <10 digits or (maybe areaCode, NUM)>
+
+set phoneList to {{
+Frank  404-333-1212
+Maria  (808)677-4321
+Golda  987-4503
+Grace  454.678.0982
+}}
+
+put every occurrence of PhoneNum in PhoneList
+
+put
+put AC1
+put PhoneNum

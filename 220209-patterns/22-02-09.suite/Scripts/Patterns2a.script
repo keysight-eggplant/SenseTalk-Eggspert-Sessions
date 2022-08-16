@@ -1,0 +1,24 @@
+﻿(*
+You can use any of these operators, commands, and functions with patterns:
+
+  contains 
+  is in 
+  begins with 
+  ends with 
+  offset, range, every offset, every range 
+  replace 
+  delete 
+  split by 
+  number of occurrences of 
+  every occurrence of
+  matches
+
+*)
+
+put "93sth&4p" begins with <2 digits, "sth">
+
+put "93sth&4p" ends with <"&", digit, letter>
+
+put "Martin (Marty) Johnson" contains <"(", characters, ")">
+
+put "Always!Big&gray:wolf" split by <punctuation char>

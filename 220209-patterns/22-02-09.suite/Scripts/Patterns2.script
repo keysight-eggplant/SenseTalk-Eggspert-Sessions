@@ -1,0 +1,8 @@
+﻿// matching a pattern
+
+set identifier to "D843//16q"
+
+set identPattern to <capital letter, 3 digits, "//", 2 digits, character in "pqrs">
+
+if identifier matches identPattern then put "VALID" else put "INVALID"
+

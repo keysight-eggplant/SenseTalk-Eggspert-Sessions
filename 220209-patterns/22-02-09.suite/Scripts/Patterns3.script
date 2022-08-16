@@ -1,0 +1,19 @@
+﻿// building up a pattern
+
+// US Taxpayer Identification Number
+//    Social Security Number: 555-44-3210
+//    Employer Identification Number: 88-4829571
+
+set SSN to <3 digits, "-", 2 digits, "-", 4 digits>
+
+set EIN to <2 digits then dash then 6 or more digits>
+
+set TIN to <SSN or EIN> 
+
+repeat with each entry in ["808-43-5678", "77-435679084", "555-14-123"]
+	if entry matches TIN then
+		put entry & " is a valid TIN"
+	else
+		put entry & " is NOT valid"
+	end if
+end repeat
