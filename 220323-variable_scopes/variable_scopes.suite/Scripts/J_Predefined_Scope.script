@@ -1,0 +1,29 @@
+﻿
+setup_predefs
+
+put testPlatform
+
+put webSource
+
+processResults
+
+
+
+
+to setup_predefs
+	ask "What is your name?"
+	put it into the predefinedVariables.userName
+	
+	set the predefinedVariables.testPlatform to "Windows 10"
+	set the predefinedVariables.licenseKey to "%8-Qy97$F6!"
+	set the predefinedVariables.webSource to "http://www.google.com"
+	set the predefinedVariables.goober to "Peanut!"
+end setup_predefs
+
+
+
+to processResults
+	put "Hello " & userName
+	put "Your initial password is " & licenseKey
+	put "Have a nice " & goober
+end processResults

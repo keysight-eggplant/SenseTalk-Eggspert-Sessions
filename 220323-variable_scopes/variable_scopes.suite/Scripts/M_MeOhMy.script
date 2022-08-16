@@ -1,0 +1,34 @@
+﻿
+repeat 4 times
+	powerUp random of 12
+	
+	turnRight random(45 degrees, 90 degrees)
+	
+	powerDown 4
+	
+	turnLeft 12 degrees	
+	
+	statusReport
+end repeat
+
+to powerUp amount
+	add amount to my power
+end powerUp
+
+to powerDown amount
+	subtract amount from my power
+end powerDown
+
+to turnRight amount
+	add amount to my direction
+end turnRight
+
+to turnLeft amount
+	subtract amount from the direction of me
+end turnLeft
+
+to handle statusReport
+	put "Power is " & (if my power < 0 then "OUT!" else my power)
+	put "Heading is " & my direction
+	put "- - - - -"
+end statusReport

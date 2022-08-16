@@ -1,0 +1,26 @@
+﻿
+put pi
+
+put euroSign & five & comma & space & copyrightSign & trademarkSign
+
+put blackStar & hotSprings & umbrella & ellipsis & questionMark
+
+put umbrellaWithRaindrops repeated 3 times
+
+
+put 3.14 into pi
+
+put pi
+
+
+put circleArea(2 inches)
+
+
+to handle circleArea given diameter
+	put diameter / 2 into radius
+	return pi times radius squared
+end circleArea
+
+
+-- put the predefinedVariables .archive
+

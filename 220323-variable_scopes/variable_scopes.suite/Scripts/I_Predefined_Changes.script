@@ -1,0 +1,10 @@
+﻿
+put goober
+
+set the predefinedVariables.goober to "Peanut!"
+
+put goober
+
+delete the predefinedVariables.goober
+
+put goober

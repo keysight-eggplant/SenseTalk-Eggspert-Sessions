@@ -1,0 +1,14 @@
+﻿
+
+ask "What is your name?"
+put it into userName
+
+put generateGreeting(userName)
+
+put "Welcome to Greeting Land, " & userName
+
+
+to generateGreeting userName
+	put "Hey there" && userName into greeting
+	return greeting & "!"
+end generateGreeting

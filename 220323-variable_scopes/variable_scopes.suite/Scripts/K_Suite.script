@@ -1,0 +1,6 @@
+﻿
+put 14.95 * euroExchangeRate
+
+put siteLogin
+put siteLoginPW
+

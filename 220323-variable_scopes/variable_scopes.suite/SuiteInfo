@@ -1,0 +1,13 @@
+﻿{
+    EPVersionNumber = 2207080122;
+    Schedules =     (
+    );
+    ScriptMetaData =     {
+    };
+    SuiteEncodedTextKey = "5q]=T>VJfyR6fz)7";
+    SuiteVariables = "{\n euroExchangeRate:@\"0.9078\",\n password:@\"secret\",\n softwareVersion:@\"13.2.06\",\n supportEmail:@\"teksupport22@example.com\"\n}";
+    helpedSuitesInfo =     (
+    );
+    helperSuitesInfo =     (
+    );
+}

@@ -1,0 +1,3 @@
+﻿put 22 into value
+
+put !"the value is [[value]]"

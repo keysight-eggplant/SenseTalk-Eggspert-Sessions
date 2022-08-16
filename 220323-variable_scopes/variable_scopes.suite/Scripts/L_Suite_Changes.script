@@ -1,0 +1,11 @@
+﻿
+ask password "Enter the password:"
+put it into PW
+
+put password
+
+set the suiteVariables.password to PW
+
+put password
+
+

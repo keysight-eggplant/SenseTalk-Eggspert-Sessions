@@ -1,0 +1,15 @@
+﻿global userName
+
+ask "What is your name?"
+put it into userName
+
+put generateGreeting()
+
+put "Welcome to Global Land, " & userName
+
+
+to generateGreeting
+	global userName
+	put "Hey there" && userName into greeting
+	return greeting & "!"
+end generateGreeting
