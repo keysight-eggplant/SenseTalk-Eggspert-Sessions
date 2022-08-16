@@ -1,0 +1,24 @@
+﻿// Dates have formats
+
+put the date into myDate
+put myDate
+
+put myDate's format
+
+add 1 day to myDate
+put myDate
+
+
+// Numbers can have formats, too
+
+put 42.3 into number
+put number
+
+set number's format to "000.000"
+put number
+
+set number's format to "Words.####"
+put number
+
+multiply number by 10
+put number

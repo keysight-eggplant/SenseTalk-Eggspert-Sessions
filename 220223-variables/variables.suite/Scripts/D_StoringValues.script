@@ -1,0 +1,36 @@
+﻿// A variable can hold any type of value
+
+put magicBag
+
+put 99 into magicBag
+put magicBag
+
+set magicBag to {{
+Hofstadter's Law:
+  It always takes longer than you expect,
+  even when you take into account Hofstadter's Law.
+}}
+put magicBag
+
+put the date into magicBag
+put magicBag
+
+put random of a million into magicBag
+put magicBag
+
+put "a".."z" as list into magicBag
+put magicBag
+
+put empty into magicBag
+put magicBag
+
+put {last:"Sand", first:"George"} into magicBag
+put magicBag
+
+put [magicBag,magicBag,magicBag] into magicBag
+put magicBag
+
+set magicBag to true
+put magicBag
+
+

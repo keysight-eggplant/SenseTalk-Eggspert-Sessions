@@ -1,0 +1,16 @@
+﻿// What you see is what you have... or is it?
+
+put pi
+
+put pi * a million
+
+put the numberFormat
+set the numberFormat to "000.000000000000000"
+put pi
+
+
+put [red,green,yellow] into colors
+put colors
+
+set the listFormat to boxListFormat
+put colors

@@ -1,0 +1,7 @@
+﻿params incoming, rest...
+put incoming
+
+put rest
+put incoming is a reference
+--insert "abc" into incoming
+

@@ -1,0 +1,27 @@
+﻿// Ways to store a value into a variable
+
+put 99 into countDown
+
+set CountDown to 99
+
+set countdown to be 99
+
+SET COUNTDOWN TO BE EQUAL TO NINETY-NINE
+
+set CountDOWN equal to 90 + 9
+
+set Countdown = 9 * 11
+
+
+put zero into [x,y,z]
+put !"x = [[x]], y = [[y]], z = [[z]]"
+
+put ["Hello", 44, 9 to 5] into [x,y,z]
+put !"x = [[x]], y = [[y]], z = [[z]]"
+
+put [z,x,y] into [x,y,z]
+put !"x = [[x]], y = [[y]], z = [[z]]"
+
+put "Beautiful!" into ♥︎
+put ♥︎
+

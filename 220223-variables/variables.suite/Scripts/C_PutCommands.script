@@ -1,0 +1,24 @@
+﻿// Four different Put commands
+
+put "Howdy!"
+
+put 1,2,3
+
+put 
+
+
+put "World" into greeting
+
+put greeting
+
+
+put "Hello, " before greeting
+
+put greeting
+
+
+put "!!" after greeting
+
+put greeting
+
+

@@ -1,0 +1,18 @@
+﻿// A script with variables
+
+set openingBalance to 100
+set wins to [32,4,56,17]
+set losses to [52,21]
+
+set holdings to openingBalance
+put "Initial balance is " & holdings
+
+repeat with each winAmount of wins
+	add winAmount to holdings
+end repeat
+put "Balance after wins: " & holdings
+
+repeat with each lossAmount in losses
+	subtract lossAmount from holdings
+end repeat
+put "Final balance after losses: " & holdings

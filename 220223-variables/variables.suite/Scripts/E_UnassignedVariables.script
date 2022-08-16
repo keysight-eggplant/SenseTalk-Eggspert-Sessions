@@ -1,0 +1,23 @@
+﻿// What's in a Variable before you store anything into it?
+
+put NoValueHere
+
+put novaluehere
+
+put NOVALUEhere
+
+// some variables have predefined values
+
+put copyrightSign
+
+put Halloween
+
+put hotSprings
+
+put today, now, yesterday, tomorrow
+
+// undefined values are sometimes assumed to be 0
+
+put total
+add 3 to total
+put total

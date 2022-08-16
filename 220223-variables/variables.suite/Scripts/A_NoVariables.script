@@ -1,0 +1,11 @@
+﻿// Scripting without any Variables
+
+put "Starting with: " & 100
+
+put "Win amount: " & 125
+
+put "Holdings now: " & 100 + 125
+
+put "Loss amount: " & 82
+
+put "Holdings now: " & 100 + 125 - 82
