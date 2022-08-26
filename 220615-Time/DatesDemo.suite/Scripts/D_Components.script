@@ -1,0 +1,28 @@
+﻿// Accessing individual components of a date/time value
+
+set sampleDate to "March 16, 1927 04:15 AM"
+
+put "Year:"
+put year of sampleDate
+put the year
+
+put "Month:"
+put month(sampleDate) && monthName(sampleDate)
+put month() && the monthName
+
+put "Day:"
+put sampleDate's day
+put the day
+
+put "Hour, minute, second:"
+put the [hour, minute, second] of sampleDate
+put the hour && the minute && the second
+
+put "Day of week:"
+put dayOfWeek of sampleDate && sampleDate.weekDayName
+put the dayOfWeek && weekDayName()
+
+put "Day of year, day of common era:"
+put sampleDate.dayOfYear && dayOfCommonEra(sampleDate)
+put the dayOfYear && the dayOfCommonEra
+

@@ -1,0 +1,21 @@
+﻿
+// Chunks of Containers are Containers
+
+put "It was a dark and stormy night." into firstLine
+put firstLine
+put word 4 of firstLine
+
+put "black" into word 4 of firstLine
+put firstLine
+
+put "n utterly" after word 3 of firstLine
+put firstLine
+
+put "au" into character 2 of the last word of firstLine
+put firstLine
+
+put 1 into word 3 of firstLine
+put firstLine
+
+add a dozen to word 3 of firstLine
+put firstLine

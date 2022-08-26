@@ -1,0 +1,22 @@
+﻿
+// How long will it take?
+
+set speed to 37 mph
+
+set distance to 83 miles 440 yards
+
+put speed
+put distance
+put distance / speed
+
+
+put " - - - - -"
+
+convert speed to m/s
+convert distance to km
+
+put speed
+put distance
+put distance / speed
+
+

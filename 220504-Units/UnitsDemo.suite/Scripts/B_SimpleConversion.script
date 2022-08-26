@@ -1,0 +1,13 @@
+﻿
+put 5 hours as minutes
+
+put 3 cm as mm
+
+put 9 lb 4 oz into weight
+put weight as oz
+
+put 45 mph into speedLimit
+put speedLimit as m/s
+
+put 12 cents_1920 into breadPrice1920
+put breadPrice1920 as dollars_2020

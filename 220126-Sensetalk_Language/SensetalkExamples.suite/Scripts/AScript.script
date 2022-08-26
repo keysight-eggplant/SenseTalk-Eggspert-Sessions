@@ -1,0 +1,67 @@
+﻿(* parse the SenseTalk raw vocabulary file and make the word list for Eggplant *)
+(*
+open "~/Thoughtful/HyperSense/Documents/Vocabulary.rtf" with "TextEdit"
+*)
+
+put the folder of the folder of the folder of me into STFolder
+put STFolder & "Documents/Vocabulary.rtf" into sourceFile
+put sourceFile
+put the first 10 lines of file sourceFile
+
+put STFolder & "SenseTalkEngine/SenseTalkKeywords.txt" into destFile
+
+put STFolder & ".stVocabHistory" into historyFile
+
+open file destFile for writing -- overwrite previous version
+write "// SenseTalk keywords list generated " & the date && the time & return \
+		to file destFile
+
+put rtfToText of file sourceFile into source
+if line 3 of source begins with "current" 
+then write "// " & line 3 of source & return to file destFile
+
+put the offset of "@A" in source into wordStart
+delete the first wordStart chars of source
+
+set count to zero
+
+repeat with n=1 to the number of lines of source
+	get line n of source
+	if it does not begin with "." then next repeat -- find first of a new group
+	put false into useWords
+	put empty into wordList
+	repeat while it begins with "." -- get all sequential words in a group
+		insert chars 2 to last of it into wordList
+		add 1 to n
+		get line n of source
+	end repeat
+	// next, step through the following lines until end of this group
+	repeat while it is not empty and it does not begin with "."  \
+			and it is not all whitespace
+		if it contains "ignore in eggPlant"
+			put false into useWords
+			exit repeat -- done with the group
+		else if it does not contain "obsolete" and it does not contain "UNDOCUMENTED" and it doesn't contain "predefined variable" and the first word of it is not in ["number", "ordinal", "fraction"] then
+			put true into useWords
+			exit repeat -- done with the group
+		end if
+		add 1 to n
+		get line n of source
+	end repeat
+	
+	if useWords then
+		repeat with each item of wordList
+			write it & return to file destFile
+			add 1 to count
+		end repeat
+	end if
+end repeat
+
+close file destFile
+open destFile with TextEdit
+put file historyFile into oldCount
+put "Generated " & count & " lines (previously " & oldCount & " lines)"
+put "  That's a " & 100*(count - oldCount)/oldCount & "% increase!"
+put count into file historyFile
+
+if count > 1500 then put "ZONKERS!" else if count > 1000 then put "Wow!" else put "not that impressive"

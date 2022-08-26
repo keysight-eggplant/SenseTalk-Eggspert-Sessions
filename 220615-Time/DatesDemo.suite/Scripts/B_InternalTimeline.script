@@ -1,0 +1,21 @@
+﻿(*
+Date/time values in SenseTalk are counted on a time-line whose origin is the beginning of the millenium:
+      January 1, 2001  00:00:00 UTC
+*)
+
+put time(0) into startingTime
+convert startingTime to UTC Time
+
+put startingTime
+put the seconds of startingTime
+put
+
+add 2 days 12 minutes to startingTime
+put startingTime
+put the seconds of startingTime
+put
+
+subtract 1 week from startingTime
+put startingTime
+put the seconds of startingTime
+

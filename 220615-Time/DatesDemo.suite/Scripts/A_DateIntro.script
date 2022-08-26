@@ -1,0 +1,9 @@
+﻿
+put "March 13, 2020" into pandemicStart
+
+put today
+
+put today - pandemicStart
+
+put (today - pandemicStart) as days
+

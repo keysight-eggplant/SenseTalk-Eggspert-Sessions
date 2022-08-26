@@ -1,0 +1,11 @@
+﻿
+set trees to ["pine","elm","oak","redwood","yew","walnut"]
+
+delete item 2 of trees
+put trees
+
+delete each item of trees which is "yew"
+put trees
+
+delete each item of trees which doesn't contain "a"
+put trees

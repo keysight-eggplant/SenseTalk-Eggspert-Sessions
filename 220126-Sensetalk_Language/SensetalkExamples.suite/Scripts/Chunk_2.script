@@ -1,0 +1,12 @@
+﻿set tree to {{
+I think that I shall never see
+A poem lovely as a tree.
+}} // by Joyce Killmer
+
+put "Six" into word 1 of line 2 of tree
+put "s" after word 2 of line 2 of tree
+delete the first char of word 6 of tree
+
+put tree
+put
+put words 4 to 10 of tree

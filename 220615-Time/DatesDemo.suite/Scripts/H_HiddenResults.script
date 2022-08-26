@@ -1,0 +1,17 @@
+﻿// A date format may hide some details
+
+put "February 11" as date into event
+add 3 days to event
+put event
+
+put time of event
+add 2 hours to event
+
+put event
+put time of event
+
+put year of event
+add 1 decade to event
+
+put event
+put year of event

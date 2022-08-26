@@ -1,0 +1,21 @@
+﻿
+put now - 3 days
+
+put now - "2022-03-01" into diff
+
+put diff as days
+
+put round(diff as days)
+
+put diff rounded to the nearest day
+
+put diff / 1 day
+
+convert diff to days
+
+put diff
+
+
+set diff's units to empty
+
+put diff

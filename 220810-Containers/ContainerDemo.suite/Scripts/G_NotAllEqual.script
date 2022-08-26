@@ -1,0 +1,36 @@
+﻿// Not all Containers can contain all Values
+
+-- global properties each have specific, restricted values
+
+put the readTimeout
+add a minute to the readTimeout
+put the readTimeout
+
+put the caseSensitive
+turn the caseSensitive on
+put the caseSensitive
+put "- - -"
+
+-- text chunks are text
+
+put "I took Betty to the movies." into statement
+put statement
+
+put [George,Sue,Ira,Peggy] into word 3 of statement
+put statement
+put word 3 of statement
+put word 3 of statement is a list
+put "- - -"
+
+-- text files must contain text
+
+set listFile to "/tmp/Demos/MyContainers/aList.txt"
+
+put [red,green,orange,yellow] into file listFile
+
+put file listFile
+put file listFile is a list
+put "--"
+put value(file listFile)
+put value(file listFile) is a list
+

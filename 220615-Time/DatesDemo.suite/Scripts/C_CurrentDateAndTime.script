@@ -1,0 +1,21 @@
+﻿// Accessing the current date and/or time
+
+put the date
+put the international date
+put yesterday
+put today
+put tomorrow
+put 2 days ago
+put 3 days hence
+put
+
+put the time
+put the international time
+put now
+put 12 minutes ago
+put 7 hours hence
+put
+
+put the clockFormat & ": " & the time
+set the clockFormat to 24
+put the clockFormat & ": " & the time

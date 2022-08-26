@@ -1,0 +1,35 @@
+﻿
+put the name of each item of People.councilOfElrond into council
+put the name of each item of People.fellowshipOfTheRing into fellowship
+put the name of each item of People.BilboPartyGuests() into party
+
+put "Council of Elrond: " & council
+put
+put "Fellowship of the Ring: " & fellowship
+put
+put "Members of the fellowship who attended Bilbo's birthday party:"
+put items of fellowship that are also in party
+put the items of party shared in common with fellowship
+
+put "- - -"
+
+put "Members of the fellowship who didn't attend Bilbo's party:"
+put the items of fellowship that are not in party
+
+put "Fellowship members who weren't at the Council of Elrond:"
+put the items of fellowship excluding those in council
+put "- - -"
+
+put fellowship &&& council &&& party into everyone
+put !"Everyone including duplicates ([[number of items in everyone]] people):" 
+put everyone
+put "- - -"
+
+put the unique items of everyone into everyoneOnce
+put !"Everyone, no duplicates ([[number of items in everyoneOnce]] people):" 
+put everyoneOnce
+put "- - -"
+
+put "Fellowship members at the council who weren't at the party:"
+put each item of fellowship which is in council and which is not in party
+

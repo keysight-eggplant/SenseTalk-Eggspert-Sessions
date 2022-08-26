@@ -1,0 +1,15 @@
+﻿{
+    EPVersionNumber = 2204130522;
+    Schedules =     (
+    );
+    ScriptMetaData =     {
+    };
+    SuiteEncodedTextKey = "@aBDxbSA%R'x\"hIh";
+    helpedSuitesInfo =     (
+                {
+            filePath = "Docusaurus.suite";
+        }
+    );
+    helperSuitesInfo =     (
+    );
+}

@@ -1,0 +1,35 @@
+﻿
+set snacks to be an empty list
+put snacks
+
+insert "popcorn" into snacks
+insert "chocolate" into snacks
+put snacks
+
+insert "carrots" into snacks
+put snacks
+
+insert "peanuts" before snacks
+put snacks
+
+insert "gummies" before item 3 of snacks
+put snacks
+
+insert "chips" into item 2 of snacks
+put snacks
+put "- - -"
+
+put "apples" into snacks
+put snacks
+
+insert "almonds" into snacks
+put snacks
+
+insert ["oranges","blueberries"] after item 1 of snacks
+put snacks
+put "The listInsertionMode is: " & the listInsertionMode
+put
+
+insert ["tea","lemonade"] nested before the last item of snacks
+put snacks
+

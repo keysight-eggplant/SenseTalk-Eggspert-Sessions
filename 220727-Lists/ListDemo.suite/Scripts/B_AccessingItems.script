@@ -1,0 +1,32 @@
+﻿
+// The elements in a list are called ITEMS or LIST ITEMS
+
+set animals to [giraffe,pony,lion,mouse,elephant]
+put animals
+
+put item 1 of animals -- the first item is number 1
+
+put item 4 of animals
+
+put items 3 to 5 of animals
+
+put "lizard" into item 7 of animals
+
+put the last 4 items of animals
+
+put "Amoeba" into item -2 of animals
+put animals
+
+put "zebra" into items 2 to 4 of animals
+put animals
+put "- - -"
+
+set quantities to [12,4,7,0,18]
+put quantities
+
+add 1 to item 1 of quantities
+divide item 2 of quantities by 2
+put quantities
+
+multiply quantities by 3
+put quantities

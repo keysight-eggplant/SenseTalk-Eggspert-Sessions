@@ -1,0 +1,10 @@
+﻿// Common date/time operations: adding or subtracting durations
+
+put "April 15" + 20 days
+
+put "2020-03-14" - 2 weeks
+
+put "9 June 2022 10:20 AM" + 3 hours 15 minutes into SummerTime
+put SummerTime
+
+

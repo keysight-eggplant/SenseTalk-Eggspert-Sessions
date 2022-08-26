@@ -1,0 +1,14 @@
+﻿// Unit Formats
+
+put 4808 s
+
+put 952 g
+
+set the unitFormats.duration to "[hrs 00]:[min 00]:[sec 00]"
+set the unitFormats.weight to "[lb] @ [oz.##] @"
+
+put 4808 s
+
+put 952 g
+
+put 2394873 bytes using format "GB?|MB?|KB?|Bytes"

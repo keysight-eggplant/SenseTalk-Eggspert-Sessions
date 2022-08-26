@@ -1,0 +1,28 @@
+﻿
+// Global Properties are also Containers, within limits
+
+put the numberFormat
+put 1/3
+
+put "###" after the numberFormat
+put the numberFormat
+put 1/3
+
+put "- - -"
+
+put the listFormat
+put [A,B,C]
+
+put " ~ " into the listFormat's separator
+delete the listFormat.quotes
+put the listFormat
+put [X,Y,Z]
+
+put "- - -"
+
+put the namedColors
+put color(Silver)
+put
+set the namedColors.gold to "#FFD700"
+put the namedColors
+put color(Gold)

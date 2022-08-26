@@ -1,0 +1,26 @@
+﻿
+// Use Push and Pull to treat a list as a Queue
+
+push [a,b,c,d] into myQ
+put myQ
+
+pull myQ into next
+put next
+put myQ
+put "- - -"
+
+// Use Push and Pop to treat a list as a Stack
+
+push 1..9 onto myStack
+put myStack
+
+pop myStack into top
+put top
+put myStack
+
+pop myStack into top
+put top
+put myStack
+
+push "X" onto myStack
+put myStack
