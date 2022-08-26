@@ -1,0 +1,17 @@
+﻿(*
+Patterns can be more precise
+*)
+
+set text to {{
+GX4b and FW8a are the latest models in the Qr9Z series
+}}
+
+set model to <2 capital letters, then digit, then a lowercase letter>
+
+put every occurrence of model in text
+
+set greeting to <with case, "Hello ", ignoring case, "World!">
+
+put "Hello world!" matches greeting
+put "Hello WORLD!" matches greeting
+put "hello World!" matches greeting

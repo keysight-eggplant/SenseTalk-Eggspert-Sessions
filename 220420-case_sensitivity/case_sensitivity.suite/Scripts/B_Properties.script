@@ -1,0 +1,13 @@
+﻿(*
+Properties are case-preserving but always case-insensitive
+*)
+
+put {Name: "Angelique", Title:"Chief Architect"} into person
+
+set person.SALARY to $42000/month
+
+put person's NAME
+put person's title
+put person's Salary
+
+put person

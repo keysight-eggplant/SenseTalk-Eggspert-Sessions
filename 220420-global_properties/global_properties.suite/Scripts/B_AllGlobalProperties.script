@@ -1,0 +1,85 @@
+﻿set allGlobalProperties to {{
+the assertionBehavior
+the assertionErrorCount
+the assertionExceptionCount
+the assertionFailCount
+the assertionFailedDelegate
+the assertionPassCount
+the assertionPassedDelegate
+the assertionsEnabled
+the assertionWarningCount
+the asTextLimit
+the autoSaveDatabaseUpdates
+the backScripts
+the bitLength
+the booleanComparison
+the breakpointsEnabled
+the caseSensitive
+the centuryCutoff
+the characterFiller
+the clockFormat
+the colorFormat
+the defaultCenturyCutoff
+the defaultDataFormat
+the defaultItemDelimiter
+the defaultLineDelimiter
+the defaultListInsertionMode
+the defaultNumberFormat
+the defaultQuoteFormat
+the defaultStringEncoding
+the defaultWordDelimiter
+the defaultWordQuotes
+the directory
+the duplicatePropertyKeyMode
+the endValue
+the environment
+the evaluationContext
+the exception
+the folder
+the folderNamesEndWithSlash
+the frontScripts
+the itemDelimiter
+the lastDayOfMonthCalculation
+the lineDelimiter
+the lineFiller
+the listFormat
+the listInsertionMode
+the matchesCanOverlap
+the namedColors
+the numberFormat
+the objectContainsItemDefinition
+the patternCharacterMode
+the patternTimeout
+the predefinedVariables
+the propertyListFormat
+the readTimeout
+the resultHistory
+the resultHistoryLimit
+the shellCommand
+the standardNodeExpressions
+the strictFiles
+the strictProperties
+the strictVariables
+the target
+the textChunkIteration
+the throwExceptionResults
+the timeFormat
+the timeInputFormat
+the treeFormat
+the treeInputFormat
+the umask
+the unitFormats
+the unitsEnabled
+the URLCacheEnabled
+the URLErrorLevel
+the URLTimeout
+the watchForScriptChanges
+the wordDelimiter
+the wordFiller
+the wordQuotes
+}}
+
+put the number of lines in allGlobalProperties
+
+put each line of allGlobalProperties where the value of each is in [true,false]
+

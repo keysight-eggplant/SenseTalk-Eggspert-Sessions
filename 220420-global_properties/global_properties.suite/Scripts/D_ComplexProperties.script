@@ -1,0 +1,22 @@
+﻿(* Some Global Properties have more complex values *)
+
+put the listFormat
+
+put [a,b,c,d,e]
+
+set the listFormat's indent to "   "
+
+put [a,b,c,d,e]
+
+set the listFormat's quotes to empty
+
+put [a,b,c,d,e]
+
+put
+put the timeInputFormat
+
+put "15-Mar" is a date
+
+insert "[da]-[mon]" into the timeInputFormat
+
+put "15-Mar" is a date

@@ -1,0 +1,22 @@
+﻿(*
+For convenience, some properties have Local and Global versions
+*)
+
+put 15/64 into fraction
+
+put fraction
+
+process fraction
+
+put "The original fraction is still " & fraction
+
+
+to handle process with aNumber
+	set the defaultNumberFormat to "0.00"
+	put "Process called with " & aNumber
+	anotherProcess aNumber *100
+end process
+
+to handle anotherProcess with something
+	put "AnotherProcess got: " & something
+end anotherProcess

@@ -1,0 +1,15 @@
+﻿(*
+Global properties are global, so be careful about resetting them
+*)
+
+put the colorFormat
+
+put the color of purple
+
+put the colorFormat into originalFormat -- save previous setting
+
+set the colorFormat to "HTML" -- change the format to use locally
+
+put the color of purple
+
+put originalFormat into the colorFormat -- restore the previous setting

@@ -1,0 +1,16 @@
+﻿put the listFormat
+
+put [a,b,c,d,e]
+
+set the listFormat's prefix to "<<"
+set the listFormat's suffix to ">>"
+
+put [a,b,c,d,e]
+
+set the listFormat's indent to "   "
+
+put [a,b,c,d,e]
+
+
+set the listFormat to boxListFormat
+put [a,b,c,d,e]

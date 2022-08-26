@@ -1,0 +1,18 @@
+﻿(*
+SenseTalk is fundamentally case-insensitive
+    - the language itself is not case-sensitive
+    - comparisons are normally not case-sensitive
+    - access to properties is not case-sensitive
+*)
+
+put "Hello " into Salutation
+
+Put "World!" After SALUTATION
+
+PUT salutation
+
+put salutation begins with "h"
+
+put Salutation IS "hello WORLD!"
+
+

@@ -1,0 +1,16 @@
+﻿(*
+Making each operation case-sensitive or not individually
+*)
+
+put "Hello World!" into Salutation
+
+PUT salutation
+
+
+turn the caseSensitive On
+
+put salutation begins with "h" ignoring case
+
+turn the CaseSensitive OFF
+
+put Salutation is "hello WORLD!" case sensitive

@@ -1,0 +1,22 @@
+﻿(*
+Global Properties are settings that govern script behavior
+*)
+
+put "January 31" + 1 month
+
+put the lastDayOfMonthCalculation
+
+set the lastDayOfMonthCalculation to False
+
+put "January 31" + 1 month
+
+
+put the square root of 2
+
+put the numberFormat
+
+put "######" after the numberFormat
+
+put the numberFormat
+
+put the square root of 2

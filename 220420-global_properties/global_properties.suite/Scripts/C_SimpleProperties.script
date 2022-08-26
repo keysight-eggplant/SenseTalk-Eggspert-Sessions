@@ -1,0 +1,26 @@
+﻿(* Some Global Properties have simple values *)
+
+put the clockFormat
+
+put the time
+
+set the clockFormat to "24 hour"
+
+put the time
+
+
+put the characterFiller
+
+set line1 to "Dog"
+
+put "BowWow!" into character 30 of line1
+
+put line1
+
+set the characterFiller to "  ~ "
+
+set line2 to "Cat"
+
+put "Meow!" into character 30 of line2
+
+put line2
