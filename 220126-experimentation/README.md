@@ -1,6 +1,6 @@
 # Notes
 
-[![](https://img.shields.io/badge/YouTube-14m%2006s-FF0000?logo=youtube)](https://youtu.be/NfOK3pBuemU)
+[![](https://img.shields.io/badge/YouTube-14m%2059s-FF0000?logo=youtube)](https://youtu.be/NfOK3pBuemU)
 
 Join Eggplant Research and Developer, Doug Simons, to learn more about Eggplant's English-like language **SenseTalk** and its capabilities.
 
@@ -10,4 +10,4 @@ Join Eggplant Research and Developer, Doug Simons, to learn more about Eggplant'
 - explore chunk expressions
 
 ### Helpful Links
-- https://docs.eggplantsoftware.com/studio/stk-about-sensetalk/
+- [About SenseTalk](https://docs.eggplantsoftware.com/studio/stk-about-sensetalk/)
