@@ -1,0 +1,15 @@
+﻿
+put 4 ft into length
+
+add 2 ft to length
+put length
+
+subtract 18 inches from length
+put length
+
+add 2 yards to length
+put length
+
+put length * 24 in into area
+put area
+

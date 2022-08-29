@@ -1,0 +1,14 @@
+﻿
+set dripRate to 17 per minute
+
+put dripRate * 1 hour into hourlyDrips
+
+put hourlyDrips
+
+set dropVolume to 1/20 ml
+put (hourlyDrips * dropVolume) * 1 per hour into hourlyFlow
+put hourlyFlow
+
+put (hourlyFlow * 2 days) as cups
+
+

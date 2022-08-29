@@ -1,0 +1,7 @@
+﻿
+put "Some of the units available:"
+put the first 20 items of the unitNames
+
+put
+put "Different types of units:"
+put unitTypes(standard)

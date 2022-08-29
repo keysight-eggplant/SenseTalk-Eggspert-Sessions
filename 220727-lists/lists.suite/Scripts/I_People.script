@@ -1,0 +1,107 @@
+﻿put the fellowshipOfTheRing into fellowship
+
+put bilboPartyGuests() into party
+put the name of each item of (the first 20 items of party)
+
+put items of fellowship that are also in party
+put the items of party shared in common with fellowship
+
+put the name of each item of fellowship whose race isn't "Hobbit"
+
+to handle fellowshipOfTheRing
+	set fellowshipData to {{
+Name,Surname,Race
+Frodo,Baggins,Hobbit
+Sam,Gamgee,Hobbit
+Pippin,Took,Hobbit
+Merry,Brandybuck,Hobbit
+Aragorn,Son of Arathorn,Man
+Boromir,Son of Denethor,Man
+Legolas,Greenleaf,Elf
+Gimli,Son of Glóin,Dwarf
+Gandalf,the Grey,Wizard
+
+}}
+	put CSVValue of fellowshipData into theFellowship
+	return theFellowship
+end fellowshipOfTheRing
+
+
+to handle councilOfElrond
+	set councilData to {{
+Name,Surname,Race
+Elrond,,Elf
+Gandalf,the Grey,Wizard
+Frodo,Baggins,Hobbit
+Bilbo,Baggins,Hobbit
+Glorfindel,,Elf
+Erestor,,Elf
+Aragorn,Son of Arathorn,Man
+Glóin,,Dwarf
+Boromir,Son of Denethor,Man
+Legolas,Greenleaf,Elf
+Gimli,Son of Glóin,Dwarf
+Galdor,,Elf
+
+}}
+	put CSVValue of councilData into councilParticipants
+	return councilParticipants
+end councilOfElrond
+
+
+to handle BilboPartyGuests
+	set partyData to {{
+Name,Surname,Race
+Bilbo,Baggins,Hobbit
+Frodo,Baggins,Hobbit
+Gandalf,the Grey,Wizard
+Sam,Gamgee,Hobbit
+Ham,Gamgee,Hobbit
+Pippin,Took,Hobbit
+Merry,Brandybuck,Hobbit
+Fastolph,Bolger,Hobbit
+Ted,Sandyman,Hobbit
+Lotho,Sackville-Baggins,Hobbit
+Rudigar,Bolger,Hobbit
+Odo,Proudfoot,Hobbit
+Lobelia,Sackvill-Baggins,Hobbit
+Otho,Sackvill-Baggins,Hobbit
+Hob,Hayward,Hobbit
+Diamond,Took,Hobbit
+Dinodas,Brandybuck,Hobbit
+Wilibald,Bolger,Hobbit
+Fredegar,Bolger,Hobbit
+Tosto,Boffin,Hobbit
+Rollo,Boffin,Hobbit
+Otto,Boffin,Hobbit
+Jago,Boffin,Hobbit
+Ivy,Boffin,Hobbit
+Folco,Boffin,Hobbit
+Bosco,Boffin,Hobbit
+Merimas,Brandybuck,Hobbit
+Marmadas,Brandybuck,Hobbit
+Rose,Greenhand,Hobbit
+Holman,Greenhand,Hobbit
+Halfred,Greenhand,Hobbit
+Tolman,Cotton,Hobbit
+Rosie,Cotton,Hobbit
+Sigismond,Took,Hobbit
+Porto,Baggins,Hobbit
+Minto,Burrows,Hobbit
+Milo,Burrows,Hobbit
+Primula,Baggins,Hobbit
+Melilot,Brandybuck,Hobbit
+Esmeralda,Brandybuck,Hobbit
+Primrose,Bracegirdle,Hobbit
+Bruno,Bracegirdle,Hobbit
+Blanco,Bracegirdle,Hobbit
+Isembard,Took,Hobbit
+Hildigrim,Took,Hobbit
+Hildibrand,Took,Hobbit
+Adelard,Took,Hobbit
+Fosco,Baggins,Hobbit
+
+}}
+	put CSVValue of partyData into partyGuests
+	return partyGuests
+end BilboPartyGuests

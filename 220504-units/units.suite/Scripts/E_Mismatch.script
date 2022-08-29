@@ -1,0 +1,10 @@
+﻿
+// What happens if you combine different types of units?
+
+turn off the strictUnits
+
+put 4 inches + 17 cm
+
+put 4 inches + 9 grams
+
+put 4 inches + 5

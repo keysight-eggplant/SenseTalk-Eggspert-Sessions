@@ -1,0 +1,23 @@
+﻿
+// How to specify units: number followed by unit
+
+put 32 grams, 16 gram, 8 g
+
+// Fractions can be used
+
+put 1/2 lb, 3/4 cup, 1/100 inch
+
+// Units of the same type can be grouped
+
+put 5 lb 3 oz
+
+put 3 min 17 seconds
+
+put 4 yds 2 ft 7.5 in
+
+// Units can be applied to a plain number value
+
+put 4+3 into qty
+put qty pounds into weight
+put qty
+put weight

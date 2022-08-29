@@ -1,0 +1,11 @@
+﻿
+// Party preparations -- how much punch do you need?
+
+set punch to 3 gallons
+put "One-cup servings: " & punch / 1 cup
+
+put "60 servings, each: " & (punch / 60) as floz
+
+put "12 bottles of wine for 50 guests, each: " & (12 winebottles / 50) as floz
+
+put 1 liter / 1 shot

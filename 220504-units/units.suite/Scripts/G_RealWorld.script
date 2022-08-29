@@ -1,0 +1,20 @@
+﻿
+put lightspeed / 5 gigaHz into antennaLength
+put antennaLength as cm
+
+
+set niagaraFlow to 2.8 million cumecs
+put (niagaraFlow * 1 second) into waterPerSecond
+put waterPerSecond
+put waterPerSecond as olympicSwimmingPools
+
+
+put 1 jupiterRadius  / 1 earthRadius 
+
+
+set heightOfLadder to 8 ft
+set speedOnImpact to sqrt (2 gees * heightOfLadder)
+put speedOnImpact as mph
+
+
+put (5 volts * 200 milliamps) as watts
