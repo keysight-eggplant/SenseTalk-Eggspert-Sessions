@@ -1,0 +1,13 @@
+﻿// Common operations: adding or subtracting calendar durations
+
+put "April 15" + 3 months
+
+put "18 February 2022" - 2 months
+
+put "2020-01-31" + 1 month
+
+turn off the lastDayOfMonthCalculation
+
+put "2020-01-31" + 1 month
+
+

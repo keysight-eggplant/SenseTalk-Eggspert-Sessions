@@ -1,0 +1,15 @@
+﻿// Common operations on date/time values
+
+// Measure elapsed time
+put the time into startTime
+wait 3 seconds
+put the time - startTime
+
+// Determine the difference between 2 date/time values
+put "5:00 pm" - "14:30"
+
+put "June 12" - "April 3"
+
+put ("June 12" - "April 3") as days
+
+put ("June 12" - "March 3") rounded to the nearest day
