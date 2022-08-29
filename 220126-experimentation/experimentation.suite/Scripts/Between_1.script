@@ -1,0 +1,8 @@
+﻿// Test whether a number is in the range 1 -> 9
+
+set x to 12
+set y to 7
+
+if 1<=x<=9 then put x & " is In Range" else put x & " is NOT in Range"
+
+if 9>=y>=1 then put y & " is In Range" else put y & " is NOT in Range"
