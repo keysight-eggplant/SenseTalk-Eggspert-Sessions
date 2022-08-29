@@ -1,0 +1,26 @@
+﻿// Examining the contents of a list
+
+set trees to ["pine","elm","oak","redwood","yew","walnut"]
+
+put the number of items in trees
+put "yew" is among the items of trees
+put "oak" is in trees
+put "- - -"
+
+put trees contains "red"
+put trees contains "redwood"
+put at least one item of trees contains "red"
+put "- - -"
+
+put trees contains ["elm","oak"]
+put trees contains ["pine","oak"]
+put every item of ["pine","oak"] is in trees
+put "- - -"
+
+put trees begins with "pine"
+put trees begins with "pin"
+put trees begins with ["pine","elm","oak"]
+put trees ends with ["yew","walnut"]
+put "- - -"
+
+put each item of trees which contains "o"

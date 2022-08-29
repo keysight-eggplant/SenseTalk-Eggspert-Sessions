@@ -1,0 +1,23 @@
+﻿
+// What is a List ?
+// - an ordered sequence of values
+// - don't confuse a list with its representation
+
+put [1,2,3,4,5] into myList
+
+put myList
+
+set the listFormat to boxListFormat
+
+put myList
+
+put [dog,cat,rabbit] into animals1
+
+put [rabbit,dog,cat] into animals2
+
+put animals1
+put animals2
+
+put animals1 is equal to animals2
+
+

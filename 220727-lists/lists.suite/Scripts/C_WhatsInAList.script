@@ -1,0 +1,27 @@
+﻿
+// A list can hold any type of values
+
+put [44,18,62,3] into numberList
+
+put ["hat","egg","sew"] into wordList
+
+put [[15,7],[110,908]] into listOfLists
+
+put item 1 of listOfLists is a point
+
+put listOfLists is a rectangle
+
+
+// Not common, but possible:
+
+put [
+	"arrow",
+	98.6,
+	["a","B",77],
+	{x:42,y:78},
+	< 7 letters, "#", 3 digits >,
+	color("blue")
+] into mixedList
+
+put mixedList
+

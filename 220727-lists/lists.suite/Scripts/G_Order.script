@@ -1,0 +1,16 @@
+﻿
+// Changing the order of a list: Sort, Reverse, Shuffle
+
+set trees to ["pine","elm","oak","redwood","yew","walnut"]
+
+sort trees
+put trees
+
+sort trees in descending order by the length of each
+put trees
+
+reverse trees
+put trees
+
+shuffle trees
+put trees
