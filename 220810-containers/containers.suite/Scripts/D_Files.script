@@ -1,0 +1,11 @@
+﻿
+// A text file is a Container
+
+set myFile to "/tmp/Demos/MyContainers/containerDemo.txt"
+
+put "alabaster" & return into file myFile
+
+put "jade" & return after file myFile
+
+put "quartz" & return before file myFile
+

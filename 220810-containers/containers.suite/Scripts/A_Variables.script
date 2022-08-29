@@ -1,0 +1,15 @@
+﻿
+// Variables as Containers
+
+put 7 into myVariable
+put myVariable
+
+add 1 to myVariable
+put myVariable
+
+put "V" before myVariable
+put myVariable
+
+set global config to {width:14, height:37, color:blue}
+
+put global config

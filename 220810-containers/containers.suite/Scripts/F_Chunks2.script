@@ -1,0 +1,20 @@
+﻿
+// Chunks of Files
+
+set myFile to "/tmp/Demos/MyContainers/containerDemo.txt"
+
+put file myFile
+
+put "- - -"
+
+put "kazam!" into the last 6 chars of line 2 of file myFile
+
+put file myFile
+
+sort the characters of line 1 of file myFile descending
+
+put file myFile
+
+sort the lines of file myFile
+
+put file myFile

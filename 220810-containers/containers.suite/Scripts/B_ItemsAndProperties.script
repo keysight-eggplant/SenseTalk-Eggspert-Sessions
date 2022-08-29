@@ -1,0 +1,20 @@
+﻿
+// Items within Lists are also Containers
+
+set myList to [1,2,3,4,5]
+
+add 2000 to item 2 of myList
+multiply item 4 of myList by 11
+put myList
+put "- - -"
+
+
+// Properties of a property list are Containers
+
+set myPlist to {size:"large", qty:8, color:"red"}
+put myPlist
+
+add 1 to myPlist.qty
+put "extra " before the size of myPlist
+insert ["blue","yellow"] into myPlist's color
+put myPlist
