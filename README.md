@@ -10,3 +10,4 @@ Session Focus | Date | Host | Length
 [Using Time and Dates](/220615-dates/) | June 15, 2022 | Doug Simons | 12:32
 [Working With Lists](/220727-lists/) | July 27, 2022 | Doug Simons | 14:01
 [Understanding Containers](/220810-containers/) | August 10, 2022 | Doug Simons | N/A
+[Trees and XML](/230201-treesandxml/) | Feburary 01, 2023 | Doug Simons | N/A

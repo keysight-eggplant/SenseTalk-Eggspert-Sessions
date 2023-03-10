@@ -1,0 +1,31 @@
+﻿(* 
+Using list item expressions to access tree nodes.
+ *)
+
+set myXML to {{
+<?xml version="1.0"?>
+<order identifier ="001">
+  <customer name="Fred Frisbee"/>
+  <product code="prod345" size="6">
+    <quantity>3</quantity>
+    <amount>23.45</amount>
+  </product>
+  <product code="jumbo802" size="17">
+    <quantity>1</quantity>
+    <amount>87.65</amount>
+  </product>
+</order>
+
+}}
+put myXML as a tree into myTree
+
+put item 2 of item 2 of myTree
+put item 1 of item 2 of item 2 of myTree
+add 800 to item 1 of item 2 of item 2 of myTree
+put item 2 of myTree
+put
+
+subtract 4 from the size of item 3 of myTree
+insert "<description>extra-large widget</description>" into item 3 of myTree
+put myTree
+

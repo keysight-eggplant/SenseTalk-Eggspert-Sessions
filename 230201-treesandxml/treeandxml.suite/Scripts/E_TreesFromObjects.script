@@ -1,0 +1,36 @@
+﻿(*
+Generating trees from objects / property lists
+*)
+
+put {title:"The Secret Garden"} into title
+put title
+put title as a tree
+
+put {_tag:"author", _children:"Frances Hodgson Burnett"} into author
+put author as tree
+
+put {book: [title,author], _attributes:{id:"bk101", status:"available"}} into book1
+put book1
+put tree(book1)
+put
+
+put {_attributes:{id:"bk102"}, book:[{title:"The Little Prince"},{author:"Antoine de Saint-Exupéry"}]} into book2
+put book2 as tree
+put
+
+put {_tag:"book", _attributes:{id:"bk103"}, _children:[{title:"The Hobbit"},{author:"J.R.R. Tolkien"}]} into book3
+put book3 as tree
+put
+
+put {library:[book1, book2, book3], _attributes:{category:"Juvenile Fiction"}} into library
+put library
+put
+
+put library as tree into libraryTree
+put libraryTree
+put
+
+put libraryTree as an object
+
+
+
