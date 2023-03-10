@@ -1,0 +1,14 @@
+﻿
+// question about accessing and modifying a set of items in a list
+set myList to 1..10 as list
+
+put myList
+
+put items [3,9,2] of myList
+
+put 99 into each item of items [2,3,9] of myList
+put myList
+
+put each item of myList which is greater than 4
+
+

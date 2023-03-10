@@ -1,0 +1,32 @@
+﻿
+// joining ranges with &&&
+put 1..6 &&& 100..600 by 100
+
+// contains/is in , is within
+put 92 is in 90..100
+put 98.6 is in 90..100
+put 98.6 is within 90..100
+
+put 10 to 20 by 2 into skipper
+put skipper contains 12
+put skipper contains 13
+put [18,20] is in skipper
+
+// operations that convert a range to a list
+put skipper as a list
+put skipper
+delete item 3 of skipper
+put skipper
+
+// insert, delete, push, pop, pull
+set nextSizes to be 12m to 15m by 50cm
+put nextSizes
+pull nextSizes into thisSize
+put thisSize
+put nextSizes
+
+// altering a value in a range
+put 1..9 into foo
+put foo
+add 10 to item 3 of foo
+put foo

@@ -1,0 +1,30 @@
+﻿
+// a simple range is just a start value and end value
+
+put 100 to 200 into basicRange
+put 123.45 is within basicRange
+
+// more often, ranges are used as a sequence of values
+set values to 1..99
+put 87 is in values
+put the last 9 items of values
+
+// a range will be converted to a list if needed
+put "A" .. "G" into scale
+insert "A" after scale
+put scale
+
+// ranges can include fractions, numbers with units, characters, and date/time values
+put 14.8 to 13.2 by 0.2 as a list
+
+set the unitFormats.weight to "[lb?] @ [oz] @"
+set weightRange to 10 oz .. 2 lb 2 oz by 3 oz
+put weightRange
+repeat with weightRange
+	put it
+end repeat
+
+set schedule to "June 12" to "August 8" by weeks
+put item 4 of schedule
+
+
