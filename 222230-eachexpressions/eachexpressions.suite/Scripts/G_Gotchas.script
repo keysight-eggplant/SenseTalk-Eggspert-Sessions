@@ -1,0 +1,13 @@
+﻿
+// Because an Each expression expands to include surrounding operators, sometimes you'll need to contain it by enclosing it in parentheses
+
+put each word of "The Lord of the Rings" which contains "R"
+
+put the number of items in each word of "The Lord of the Rings" which contains "R"
+put the number of items in (each word of "The Lord of the Rings" which contains "R")
+
+
+set numList to [4, -8, 17, -5, -2, 6, 12]
+
+put the average of each item in numList which is greater than 0
+put the average of (each item in numList which is greater than 0)

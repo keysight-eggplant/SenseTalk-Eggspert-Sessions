@@ -1,0 +1,23 @@
+﻿
+// "Which" can enhance readability and feels more natural
+// It takes the place of "where each" or "each"
+
+put each item of 1..100 where each is a multiple of 17
+
+put each item of 1..100 which is a multiple of 17
+
+put each item of 1..100 which is a multiple of 17 and which is an even number
+
+
+// "Whose" is similar but includes the possessive: where each's
+
+set quote to {{
+It's not that I'm so smart, it's just that I stay with problems longer.
+ - Albert Einstein
+}}
+
+put each word of quote where each's length is more than 4
+
+put each word of quote whose length is more than 4 and which contains "s"
+
+
