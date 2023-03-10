@@ -1,0 +1,29 @@
+﻿
+// range syntax
+put 5 to 50
+put 5 .. 50
+
+put 13..19 into teens
+put teens
+put
+
+// Start and End properties
+put teens.start
+put end of teens
+
+// a range behaves like a list
+put teens as a list
+put teens -- it's still a range
+put
+
+put item 3 of teens
+put items 2 to 4 of teens
+
+put the middle item of teens
+put any item of teens
+
+// using variables or expressions to define a range
+set min to 22
+set max to 41
+set myRange to min..(max+1)
+put myRange

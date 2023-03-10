@@ -1,0 +1,33 @@
+﻿
+// reverse order
+set goingUp to 1..10
+set goingDown to 10..1
+
+put goingUp
+put goingDown
+put goingDown as a list
+
+// step by
+put 0..50 stepping by 5 into countBy5
+put item 6 of countBy5
+put countBy5
+put countBy5 as list
+
+put 30..40 step 3
+put 30..40 step 3 as a list
+put 40..30 step 3 as a list
+
+// modifying start, end, step
+put goingDown
+set goingDown's step to 3
+put goingDown
+put goingDown as a list
+
+add 6 to goingDown.start
+put goingDown
+
+// repeat with values in a range
+put !"Counting down by [[goingDown.step]]:"
+repeat with each num in goingDown
+	put num
+end repeat

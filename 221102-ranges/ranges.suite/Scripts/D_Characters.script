@@ -1,0 +1,13 @@
+﻿
+// Character ranges
+put "a".."g"
+put "a".."g" as a list
+
+put "Z".."A" as a list
+put "Z".."A" joined by empty
+
+put "A".."Z" step by 3 as a list
+
+// operations
+put ("A".."Z" &&& "a".."z" &&& "0".."9") joined by empty
+
