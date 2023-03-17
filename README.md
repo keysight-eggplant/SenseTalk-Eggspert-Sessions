@@ -11,3 +11,4 @@ Session Focus | Date | Host | Length
 [Working With Lists](/220727-lists/) | July 27, 2022 | Doug Simons | 14:01
 [Understanding Containers](/220810-containers/) | August 10, 2022 | Doug Simons | N/A
 [Expressing Ranges](/221102-ranges/) | November 2, 2022 | Doug Simons | N/A
+[Trees and XML](/230201-trees/) | Feburary 01, 2023 | Doug Simons | N/A

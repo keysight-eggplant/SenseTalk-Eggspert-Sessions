@@ -1,0 +1,48 @@
+﻿(* 
+A tree is a recursive collection of nodes.
+ *)
+
+set myXML to {{
+<?xml version="1.0"?>
+<order identifier ="001">
+  <customer name="Fred Frisbee"/>
+  <product code="prod345" size="6">
+    <quantity>3</quantity>
+    <amount>23.45</amount>
+  </product>
+  <product code="jumbo802" size="17">
+    <quantity>1</quantity>
+    <amount>87.65</amount>
+  </product>
+</order>
+
+}}
+put myXML as a tree into myTree
+put node "order" of myTree -- the Root Node
+put
+put node "order/customer" of myTree
+
+put every node "*/product" of myTree into productNodes
+put productNodes
+put each item of myTree whose _tag is "product" into productItems
+put productNodes is equal to productItems
+
+put item 1 of productNodes into p1
+put item 2 of productNodes into p2
+if p1 is a tree then put "A subnode is a tree"
+put p1.size
+put p2.size
+
+// Nodes are accessed using XPath expressions
+put every node "//quantity" of myTree
+put every node "//customer" of myTree
+
+put node "//product[2]/amount" of myTree
+
+put node "//product[2]/amount/text()" of myTree
+put reference to node "//product[2]/amount/text()" of myTree into amountText
+put amountText
+
+put "YabbaDabbaDoo!" into amountText
+put myTree
+

@@ -1,0 +1,21 @@
+﻿(* 
+Trees are used mostly for XML, but can be used in other ways.
+
+Use a tree any time you need the combined functionality of lists and property lists in a nested data structure.
+*)
+
+set menu to an empty tree
+set menu's _tag to "ApplicationMenu"
+set menu's _children to [
+	{Eggplant:[{"About Eggplant":[]}, {"Preferences...":[], _attributes:{shortcut:commandKeySymbol & ","}}]},
+	{File:[{"New Suite":[],  _attributes:{shortcut:shiftKeySymbol & commandKeySymbol & "N"}}, {"Open Suite":[]}]},
+	{Edit:[{"Undo":[]}, {"Redo":[]}]},
+	{Run:[{"Run Window":[]}]}
+] 
+put menu
+put
+
+set style of node "//Eggplant" of menu to "bold"
+insert {Cut:empty} into node "//Edit" of menu
+insert {Copy:empty} into node "//Edit" of menu
+put menu

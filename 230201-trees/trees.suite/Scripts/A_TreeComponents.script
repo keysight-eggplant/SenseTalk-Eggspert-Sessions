@@ -1,0 +1,39 @@
+﻿(* 
+Trees are most commonly used for working with XML documents.
+A tree has a combination of list and property list functionality.
+ *)
+
+set myXML to {{
+<?xml version="1.0"?>
+<order identifier ="001">
+  <customer name="Fred Frisbee"/>
+  <product code="basic345" size="6">
+    <quantity>3</quantity>
+    <amount>23.45</amount>
+  </product>
+  <product code="jumbo802" size="17">
+    <quantity>1</quantity>
+    <amount>87.65</amount>
+  </product>
+</order>
+
+}}
+put myXML as a tree into myTree
+put myTree is a tree
+put myTree
+
+put the identifier of myTree
+put myTree's _tag
+
+put item 1 of myTree
+put
+
+put item 2 of myTree into product
+put product
+put product's code
+put product.size
+put item 1 of product
+put item 2 of product
+put the text of item 2 of product
+put item 1 of item 2 of product
+

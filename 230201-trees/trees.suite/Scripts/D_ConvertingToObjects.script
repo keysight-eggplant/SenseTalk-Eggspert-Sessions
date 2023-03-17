@@ -1,0 +1,31 @@
+﻿(* 
+Trees can be converted to or from property lists (objects).
+ *)
+
+set myXML to {{
+  <product code="jumbo802" size="17">
+    <quantity>1</quantity>
+    <amount>87.65</amount>
+  </product>
+
+}}
+put myXML as a tree into myTree
+
+put item 2 of myTree into amt
+put amt
+
+put amt as a property list into amtPlist
+put amtPlist
+
+add 123 to item 1 of amtPlist.amount
+put amtPlist
+put amtPlist as tree
+put
+
+put myTree as an object into bigPlist
+put bigPlist
+put "USD" into bigPlist._attributes.currency
+insert {description:"Whizzy Wigs"} into bigPlist's product
+put bigPlist
+put
+put bigPlist as a tree
