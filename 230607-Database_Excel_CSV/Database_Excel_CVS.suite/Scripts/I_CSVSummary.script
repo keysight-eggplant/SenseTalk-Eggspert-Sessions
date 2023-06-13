@@ -1,0 +1,21 @@
+﻿// Connection info must specify Type:"CSV" and File:<filename>
+// Optionally, include Writable:Yes to make updates to the file
+// Other options: Delimiter, TrimValues, AllowEscapes, IgnoreComments
+set capitalsDB to {
+	type:"csv",
+	file:resourcePath("capitals.txt"),
+	delimiter:"#", // must be a single character
+	trimValues:Yes,
+	--writable:Yes
+}
+
+// Can bypass the use of tables and work directly with the connection
+
+// To be used as a database table, a CSV file must have column labels in the first line, to be used as property names
+put the recordInfo of capitalsDB ,,
+
+// Each record is returned as a property list
+put the first record of capitalsDB ,,
+
+// A Where clause can be used to select specific records
+put the records of capitalsDB where country contains "United" joined by return

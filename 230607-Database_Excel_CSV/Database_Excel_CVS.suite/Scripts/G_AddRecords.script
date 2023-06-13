@@ -1,0 +1,21 @@
+﻿(* Records can be added to a flat file database *)
+
+// Define the database connection information
+set capitalsDB to {
+	type:"csv",
+	file:resourcePath("capitals.txt"),
+	delimiter:"#", // must be a single character
+	trimValues:Yes,
+	writable:Yes
+}
+
+put "Number of records: " & the number of records in capitalsDB
+
+set newEntries to [
+	{country:"Rohan", capital:"Edoras"},
+	{country:"Gondor", capital:"Minas Tirith"},
+]
+
+add records newEntries to capitalsDB
+
+put "Number of records: " & the number of records in capitalsDB

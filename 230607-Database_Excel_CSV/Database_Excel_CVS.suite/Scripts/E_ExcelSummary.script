@@ -1,0 +1,20 @@
+﻿// Must specify Type:"Excel" and File:<filename>
+// The file type must be ".xls" or ".xlsx"
+set myDB to {type:"excel", file:resourcePath("TestExcelDB.xlsx")}
+
+// Optionally, include Writable:Yes to make updates to the file
+set myDBForUpdate to {type:"excel", file:resourcePath("TestExcelDB.xlsx"), writable:Yes}
+
+// Identify a worksheet as a table by name or number, or take a shortcut and bypass the table altogether for the first (or only) sheet
+put table "People" of myDB into peopleTable
+put table 2 of myDB into petsTable
+set petsTable.columnsToFetch to ["name", "owner", "species"]
+
+// To be used as a database table, a worksheet must have column labels in row 1 to be used as property names
+put the recordInfo of peopleTable ,,
+
+// Each record is returned as a property list
+put the record of peopleTable ,,
+
+// A Where clause can be used to select specific records
+put the records of petsTable where owner is "Susie" joined by return

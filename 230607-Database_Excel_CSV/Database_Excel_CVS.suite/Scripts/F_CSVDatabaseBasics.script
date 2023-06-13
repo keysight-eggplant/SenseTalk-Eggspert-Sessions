@@ -1,0 +1,22 @@
+﻿(* Working with a CSV file as a database is very similar to Excel. *)
+
+// Define the database connection information
+// Type and File are required, others are optional
+set capitalsDB to {
+	type:"csv",
+	file:resourcePath("capitals.txt"),
+	delimiter:"#", // must be a single character
+	trimValues:Yes,
+	-- allowEscapes:Yes,
+	-- ignoreComments:Yes,
+	-- writable:Yes
+}
+
+// A CSV file is always treated as a single table
+// If needed, you can access table 1
+put table 1 of capitalsDB into capitalsTable
+put the recordInfo of capitalsTable ,,
+
+// Fetch a specific record
+set US to the record of capitalsDB where country contains "United States"
+put US
