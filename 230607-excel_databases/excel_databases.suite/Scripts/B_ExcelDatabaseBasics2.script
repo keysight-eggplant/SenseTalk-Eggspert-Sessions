@@ -1,0 +1,19 @@
+﻿(*
+Working with an Excel file as a database works similarly.
+*)
+
+// Define the database as WRITABLE
+set myDB to {type:"excel", file:resourcePath("TestExcelDB.xlsx"), writable:Yes}
+
+// Access the People worksheet of the workbook as a table
+put table "People" of myDB into peopleTable
+
+// Fetch a specific record from the People table
+put the record of peopleTable where name is "Shorty" into shortyRecord
+
+put shortyRecord
+// Update Shorty's height
+put 42 into shortyRecord's height
+
+put shortyRecord
+put shortyRecord is a record

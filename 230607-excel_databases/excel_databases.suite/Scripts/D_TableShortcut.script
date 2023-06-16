@@ -1,0 +1,16 @@
+﻿(*
+Shortcut: The first (or only) worksheet within a workbook can be accessed without specifying a table at all.
+*)
+
+set myDB to {type:"excel", file:resourcePath("TestExcelDB.xlsx")}
+
+// simple way to get all records at once
+put the records of myDB
+
+(*
+A table object is needed if you want to use table properties like columnsToFetch.
+*)
+put
+put table 1 of myDB into tableOne
+set tableOne's columnsToFetch to ["name","hobby"]
+put the records of tableOne

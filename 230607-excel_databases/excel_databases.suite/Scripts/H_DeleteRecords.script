@@ -1,0 +1,24 @@
+﻿(* Records can be deleted from a flat file database *)
+
+// Define the database connection information
+set capitalsDB to {
+	type:"csv",
+	file:resourcePath("capitals.txt"),
+	delimiter:"#", // must be a single character
+	trimValues:Yes,
+	writable:Yes
+}
+
+put "Number of records: " & the number of records in capitalsDB
+
+// fetch a record and then delete it
+put record of capitalsDB where country is "Canada" into canadaRec
+
+delete record canadaRec
+
+put "Number of records: " & the number of records in capitalsDB
+
+// delete records specified by where clause
+delete records from capitalsDB where capital is "Vienna"
+
+put "Number of records: " & the number of records in capitalsDB

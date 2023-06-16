@@ -12,3 +12,4 @@ Session Focus | Date | Host | Length
 [Understanding Containers](/220810-containers/) | August 10, 2022 | Doug Simons | N/A
 [Expressing Ranges](/221102-ranges/) | November 2, 2022 | Doug Simons | N/A
 [Trees and XML](/230201-trees/) | Feburary 01, 2023 | Doug Simons | N/A
+[Database, Excel and CSV](/230607-Database_Excel_CSV/) | June 07, 2023 | Doug Simons | N/A

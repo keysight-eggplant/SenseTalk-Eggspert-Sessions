@@ -1,0 +1,14 @@
+﻿// Define the database connection information
+set myDB to {type:"excel", file:resourcePath("TestExcelDB.xlsx")}
+
+// Access the People worksheet by name
+put table "People" of myDB into peopleTable
+
+// Access the Pets worksheet by number
+put table 2 of myDB into petsTable
+put "Pet:"
+put the first record of petsTable
+
+// Access the States worksheet by name and select a specific record
+put "State:"
+put record of table "States" of myDB where state is "Colorado"
