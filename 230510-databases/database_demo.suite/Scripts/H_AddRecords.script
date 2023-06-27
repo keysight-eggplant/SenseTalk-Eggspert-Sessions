@@ -1,0 +1,11 @@
+﻿
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+put table "Rewards" of myDB into rewardsTable
+
+put "Number of records: " & the number of records in rewardsTable
+
+set newCustomer to {name:"Anabel", points:0}
+
+add record newCustomer to rewardsTable
+
+put "Number of records: " & the number of records in rewardsTable

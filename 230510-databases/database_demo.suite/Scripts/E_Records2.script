@@ -1,0 +1,16 @@
+﻿
+// Define the database connection information
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+
+// Access the Rewards table of the database
+put table "Rewards" of myDB into rewardsTable
+
+// Fetch a specific record from the Rewards table
+put the record of rewardsTable where name is "Susan" into susanRecord
+
+put susanRecord
+
+// Increase Susan's rewards points
+add 1 to the points of susanRecord
+
+put susanRecord

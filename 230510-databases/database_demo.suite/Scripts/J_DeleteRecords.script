@@ -1,0 +1,17 @@
+﻿
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+put table "Rewards" of myDB into rewardsTable
+
+put "Number of records: " & the number of records in rewardsTable
+
+// fetch a record and then delete it
+put record of rewardsTable where name is "Chris" into customerRec
+
+delete record customerRec
+
+put "Number of records: " & the number of records in rewardsTable
+
+// delete records specified by where clause
+delete records from rewardsTable where points are 0
+
+put "Number of records: " & the number of records in rewardsTable

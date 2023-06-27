@@ -1,0 +1,25 @@
+﻿
+// Define the database connection information
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+put the databaseVersion of myDB
+
+// What tables are defined in the test database?
+put each item of tableNames(myDB) which begins with "test."
+
+// Get information about the Pet table of the database
+put table "Pet" of myDB into petsTable
+
+// Ask for the number of records without fetching any records
+put "Number of pets: " & the number of records in petsTable
+put "Number of cats: " & the number of rows in petsTable where species is "cat"
+put
+
+// Get information about a table's columns
+put "First pet: " & the first record of petsTable
+put "RecordInfo: " & the recordInfo of petsTable
+put
+
+// Fetch only selected columns from a table
+set the columnsToFetch of petsTable to ["name", "owner", "species"]
+put "First pet: " & the first record of petsTable
+

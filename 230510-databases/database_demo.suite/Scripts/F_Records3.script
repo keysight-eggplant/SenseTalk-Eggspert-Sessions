@@ -1,0 +1,26 @@
+﻿
+// Define the database connection information
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+
+// Access the Rewards table of the database
+put table "Rewards" of myDB into rewardsTable
+
+// Fetch a specific record from the Rewards table
+put the record of rewardsTable where name is "Susan" into susanRecord
+put susanRecord
+
+// Fetch ALL of the records from the Rewards table
+put the records of rewardsTable into allRecords
+put allRecords
+
+// Use an Each expression to select one record
+put each item of allRecords where name of each is "Jerome" into jeromeRecord
+
+put jeromeRecord
+put jeromeRecord is a record
+
+// Fetch selected records
+put the records of rewardsTable where points are more than 5 into bestCustomers
+
+put bestCustomers
+

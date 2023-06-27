@@ -1,0 +1,19 @@
+﻿// Here are the contents of the AprilTransactions.csv file used by the CheckTransactions script
+(*
+Date,Type,Amount
+2022-04-01,deposit,400.00
+2022-04-02,withdrawal,57.25
+2022-04-04,withdrawal,6.79
+2022-04-05,withdrawal,108.00
+2022-04-08,deposit,280.25
+2022-04-11,withdrawal,387.63
+2022-04-13,withdrawal,94.08
+2022-04-15,deposit,412.00
+2022-04-21,withdrawal,34.78
+2022-04-22,deposit,375.00
+2022-04-24,withdrawal,85.33
+2022-04-25,withdrawal,64.60
+2022-04-29,deposit,440.50
+2022-04-30,withdrawal,16.55
+2022-04-30,checksum,2762.76
+*)

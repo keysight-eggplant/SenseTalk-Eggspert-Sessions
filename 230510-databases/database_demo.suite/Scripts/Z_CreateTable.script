@@ -1,0 +1,19 @@
+﻿set db to {type:"odbc", dsn:"Local8", user:"root"}
+try to executeSQL db, "drop table Rewards"
+
+set createRewardsTable to {{
+CREATE TABLE Rewards (name VARCHAR(20), points INTEGER, PRIMARY KEY(name))
+}}
+executeSQL db, createRewardsTable
+
+set populateRewards to {{
+INSERT INTO Rewards VALUES
+   ('Jerome', 10),
+	 ('Ralph', 0),
+	 ('Susan', 2),
+	 ('Ignacio', 7),
+	 ('Grace', 6),
+	 ('Hermione', 3),
+   ('Chris', 1)
+}}
+executeSQL db, populateRewards

@@ -1,0 +1,52 @@
+﻿
+set date1 to "2023-03-01"
+set date2 to "2023-03-20"
+
+put numberOfBusinessDays(date1, date2)
+put numberOfBusinessDays(date2, date1) -- try in the other order
+
+put numberOfBusinessDays("2023-04-01",date2)
+
+put numberOfBusinessDays("April 1", "April 2")
+
+
+to handle numberOfBusinessDays given firstDate, lastDate
+	// check that both parameters are valid dates
+	if firstDate is not a date or lastDate is not a date then
+		throw "Invalid Parameters", "NumberOfBusinessDays must be called with 2 dates"
+	end if
+	
+	// make sure we have the dates in the correct order
+	if date(lastDate) is earlier than date(firstDate) then
+		set [lastDate, firstDate] to [firstDate, lastDate] // swap them
+	end if
+	
+	
+	
+	// Adjust to Monday for weekend days at beginning of the range
+	if weekdayName of firstDate is ...
+		"Sunday": add 1 day to firstDate
+		"Saturday": add 2 days to firstDate
+	end if
+	
+	// Adjust to Friday for weekend days at end of the range
+	if weekdayName of lastDate is ...
+		"Saturday": subtract 1 day from lastDate
+		"Sunday": subtract 2 days from lastDate
+	end if
+	
+	set calendarDays to (lastDate - firstDate) rounded to the nearest day but never less than 0 days
+	
+	// if lastDate is earlier in the week than firstDate, subtract the weekend in between that's part of a partial week
+	if dayOfWeek(lastDate) < dayOfWeek(firstDate) then
+		subtract 2 days from calendarDays
+	end if
+	
+	// get the whole number of weeks and the additional days
+	set wholeWeeks to calendarDays div 7 -- integer division
+	set extraDays to calendarDays rem 7 -- remainder
+	
+	set workDays to wholeWeeks * 5 + extraDays
+	if workDays is a negative number then pauseScript
+	return workDays
+end numberOfBusinessDays
