@@ -1,0 +1,6 @@
+﻿
+// Define the database connection information
+set myDB to {type:"odbc", dsn:"Local8", user:"root"}
+
+// Increase Susan's rewards points
+add 1 to the points of the record of table "Rewards" of myDB where name is "Susan"

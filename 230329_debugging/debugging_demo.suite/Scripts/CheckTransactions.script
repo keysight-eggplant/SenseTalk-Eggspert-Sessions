@@ -1,0 +1,31 @@
+﻿
+set the folder to be the documents folder
+
+put CSVValue of file resourcepath("AprilTransactions.csv") into AllTransactions
+
+set TotalDeposits to zero
+set TotalWithdrawals to zero
+
+repeat with each transaction in AllTransactions
+	
+	if transaction's type is ...
+		... "Deposit" then
+			add transaction.amount to totalDeposits
+			add transaction.amount to ourCheckSum
+			
+		... "Withdrawal" then
+			add transaction.amount to totalWithdrawals
+			add transaction.amount to ourCheckSum
+			
+		... "CheckSum" then
+			put transaction.amount into fileCheckSum
+			
+		... else
+			put "UNKNOWN transaction type"
+	end if
+	
+end repeat
+
+put "Total Deposits: " & TotalDeposits
+put "Total Withdrawals: " & TotalWithdrawals
+put "Validation: " & (if ourCheckSum equals fileCheckSum then "All is Good!" else "SOMETHING is BROKEN")

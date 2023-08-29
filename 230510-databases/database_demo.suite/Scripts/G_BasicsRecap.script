@@ -1,0 +1,22 @@
+﻿
+set customerName to "Susan"
+set newRewardPoints to 3
+
+updateRewards customerName, newRewardPoints
+
+updateRewards "Jerome", -4
+
+
+
+to updateRewards given customerName, rewardPointChange
+
+	set myDB to {type:"odbc", dsn:"Local8", user:"root"} // DB info
+	put table "Rewards" of myDB into rewardsTable // connect and get table info
+	
+	// Get the customer record
+	put the record of rewardsTable where name is customerName into customer
+	
+	// Adjust customer's rewards points
+	add rewardPointChange to customer's points
+	
+end updateRewards
