@@ -1,0 +1,26 @@
+﻿(*
+An Object is an entity with Properties and Behaviors
+
+There are 2 types of entities in SenseTalk which are "objects":
+
+• Property Lists (sometimes also called Objects)
+   - a simple property list is all properties, with no behavior
+   - but behaviors can be added
+• Scripts
+   - a script is all about behaviors -- it's about doing things
+       - a script with multiple handlers defines multiple behaviors
+   - but it can have properties, too
+*)
+
+set simpleObject to {name:"Isabel", hobby:"writing"}
+
+set personA to {name:"Charles", hobby:"dancing"} helped by Person
+
+set personB to a new Person with {name:"Isabel", hobby:"writing"}
+
+
+Properties
+	identifier: "3GFZ",
+	sizes: [14,15,18,22]
+End Properties
+
