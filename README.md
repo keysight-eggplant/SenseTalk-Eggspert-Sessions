@@ -15,3 +15,4 @@ Session Focus | Date | Host | Length
 [Debugging](/230329_debugging/) | March 03, 2023 | Doug Simons | N/A
 [Database ODBC](/230510-databases/) | May 10, 2023 | Doug Simons | N/A
 [Database, Excel and CSV](/230607-excel_databases/) | June 07, 2023 | Doug Simons | N/A
+[Objects](/20230820-Objects/) | August 22, 2023 | Doug Simons | N/A
