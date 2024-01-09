@@ -1,0 +1,18 @@
+﻿(*
+Operations that modify a property list: Adding, Replacing
+*)
+
+set food to {:}
+set the type of food to "Dessert"
+put food
+
+(*
+set food.flavor to "Chocolate"
+set food's rating to 100
+*)
+add properties {flavor:"Chocolate", rating:100} to food
+put food
+
+put food adding properties {cost:"Over $10", rating:96} 
+put food replacing {cost:"Over $10", rating:96} 
+put food

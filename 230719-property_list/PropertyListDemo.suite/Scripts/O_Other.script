@@ -1,0 +1,18 @@
+﻿(* Other Property List Functions *)
+
+set patient to {name:"Barney", age:48, birth:"1975-04-17"}
+
+put the keys of patient
+put the values of patient
+
+set scores to {
+	James:35,
+	Dorothy:46,
+	Billy:81,
+	Toto:46,
+	Flora:77
+}
+
+put keyForValue(scores, 77)
+
+put allKeysForValue(scores, 46)

@@ -11,7 +11,12 @@ Session Focus | Date | Host | Length
 [Working With Lists](/220727-lists/) | July 27, 2022 | Doug Simons | 14:01
 [Understanding Containers](/220810-containers/) | August 10, 2022 | Doug Simons | N/A
 [Expressing Ranges](/221102-ranges/) | November 2, 2022 | Doug Simons | N/A
+[Each Expressions](/221130-each_expressions/) | November 30, 2022 | Doug Simons | N/A
 [Trees and XML](/230201-trees/) | Feburary 01, 2023 | Doug Simons | N/A
 [Debugging](/230329_debugging/) | March 03, 2023 | Doug Simons | N/A
 [Database ODBC](/230510-databases/) | May 10, 2023 | Doug Simons | N/A
 [Database, Excel and CSV](/230607-excel_databases/) | June 07, 2023 | Doug Simons | N/A
+[Property Lists](/230719-property_list/) | June 19, 2023 | Doug Simons | N/A
+[Objects](/230820-Objects/) | August 16, 2023 | Doug Simons | N/A
+[References](/231025-references/) | October 25, 2023 | Doug Simons | N/A
+[Merge](/231122-merge/) | November 22, 2023 | Doug Simons | N/A

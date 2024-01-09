@@ -1,0 +1,6 @@
+﻿(* ThickShape, used as a helper *)
+
+to handle volume
+	return my area * my thickness
+end volume
+

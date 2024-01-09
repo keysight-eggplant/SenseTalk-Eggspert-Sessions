@@ -1,0 +1,8 @@
+﻿(*
+An object can be helped by one or more other objects.
+*)
+
+set myCircle to {radius:3} helped by Circle
+
+put "My circle has radius " & myCircle.radius
+put "  and area " & myCircle.area

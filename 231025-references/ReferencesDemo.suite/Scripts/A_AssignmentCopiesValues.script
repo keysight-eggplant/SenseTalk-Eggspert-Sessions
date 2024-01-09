@@ -1,0 +1,11 @@
+﻿// Assigning a value to a container copies the value
+
+put 123 into VarA
+put VarA into VarB
+put VarA
+put VarB
+put -
+
+put "Hello" into VarA
+put VarA
+put VarB

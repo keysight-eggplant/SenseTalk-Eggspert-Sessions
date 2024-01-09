@@ -1,0 +1,19 @@
+﻿(*
+   Property List Syntax
+*)
+
+set myPet to {species:"cat", name:"Whiskers", color:"black and white", sex:"M", neutered:Yes}
+
+set myPet to {
+	species:"cat",
+	name:"Whiskers",
+	color:"black and white",
+	sex:"M",
+	neutered:Yes
+}
+
+set testResults to {} -- or {:}
+
+set testResults to an empty property list
+
+set testResults to empty object

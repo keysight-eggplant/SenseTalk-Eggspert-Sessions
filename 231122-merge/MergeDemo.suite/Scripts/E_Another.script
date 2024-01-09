@@ -1,0 +1,12 @@
+﻿
+set myTemplate to file resourcePath("TreeTemplate.rtf")
+
+set symbol to "*"
+set height to 5
+
+--put merge(myTemplate, "!", "!")
+put merge(myTemplate, "$", "$")
+--put merge(myTemplate, "{", "}")
+
+put my folder
+put my long name

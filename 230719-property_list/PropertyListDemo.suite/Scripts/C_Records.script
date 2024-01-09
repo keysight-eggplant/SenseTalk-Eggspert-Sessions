@@ -1,0 +1,12 @@
+﻿(*
+Sometimes a property list is used more like an object or a record, representing all of the different properties of some entity
+*)
+
+set patient to {name:"Barney", age:48, birth:"1975-04-17"}
+
+// Values can be of any type, including lists and property lists
+
+// Note: also called hash tables, associative arrays, dictionaries, objects in other languages
+
+// They are also called objects in SenseTalk, and may have behaviors as objects, discussed elsewhere
+// This session focuses on property lists as collections of properties

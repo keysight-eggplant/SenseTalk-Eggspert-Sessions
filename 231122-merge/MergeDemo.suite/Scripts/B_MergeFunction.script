@@ -1,0 +1,23 @@
+﻿(* Using ! actually calls the Merge function *)
+
+set width to 4 in
+set length to 6 in
+
+put !"A rectangle [[width]] by [[length]] has an area of [[width * length]]"
+
+put merge("A rectangle [[width]] by [[length]] has an area of [[width * length]]")
+put -
+
+// Reasons to use Merge rather than "!"
+// The ! can only be used before a string literal
+set areaTemplate to "The Area of a rectangle [[width]] by [[length]] = [[width * length]]"
+set perimeterTemplate to "The Perimeter of a rectangle [[width]] by [[length]] = [[2*(width + length)]]"
+
+set template to any item of [areaTemplate, perimeterTemplate]
+
+put merge(template)
+
+// Using Merge allows you to use alternate delimiters
+set perim to "The Perimeter of a rectangle ${width} by ${length} = ${2*(width + length)}"
+
+put merge(perim, "${", "}")

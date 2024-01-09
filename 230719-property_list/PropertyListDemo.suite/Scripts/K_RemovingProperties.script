@@ -1,0 +1,23 @@
+﻿(*
+Operations that modify a property list: Removing, Retaining
+*)
+
+set scores to {
+	James:35,
+	Dorothy:46,
+	Billy:81,
+	Frances:63,
+	Flora:77,
+	Grace:54,
+	Jonas:31
+}
+put scores
+
+delete scores.Frances
+put scores
+remove properties ["Billy","Jonas"] from scores
+put scores
+
+put scores removing "Dorothy"
+put scores retaining properties ["James","Flora"]
+put scores

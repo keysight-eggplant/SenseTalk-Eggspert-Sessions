@@ -1,0 +1,24 @@
+﻿// Passing values by reference to another handler
+
+set myAccountBalance to 50
+
+deposit 74, reference to myAccountBalance
+
+withdraw 100, container myAccountBalance
+
+put "My account balance is now: " & myAccountBalance
+
+-------------
+
+to deposit amount, balance
+	add amount to balance
+	put !"Deposited [[amount]]. New balance is [[balance]]"
+end deposit
+
+to withdraw amount, balance
+	subtract amount from balance
+	put !"Withdrew [[amount]]. New balance is [[balance]]"
+	if balance is less than 0 then
+		put ">>> Error! Balance is negative!"
+	end if
+end withdraw

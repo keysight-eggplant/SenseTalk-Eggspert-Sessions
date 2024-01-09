@@ -1,0 +1,17 @@
+﻿(*
+SenseTalk can be used as an object-oriented programming language.
+• Many people use it without ever being aware of objects, which is fine.
+• For those who are interested in using objects, this session provides an introduction to how objects work in SenseTalk.
+
+Many languages define object "classes"
+• In a class-based system, users define classes of objects and then "instantiate" objects of specific classes
+
+SenseTalk takes a "classless" approach to objects
+• SenseTalk's prototype-based system is simpler and more direct
+  - there are just objects
+  - objects can (optionally) inherit behaviors from other objects
+      - their "helpers" 
+  - each object is distinct, although many objects can be similar
+*)
+
+

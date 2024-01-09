@@ -1,0 +1,22 @@
+﻿
+// An Each expression can be used in place of a container to modify many values at once rather than returning a list
+
+set title to "The Lord of the Rings"
+put "~" before each word of title
+put title
+
+set title to "The Lord of the Rings"
+put "~" before each word of title which contains "r"
+put title
+
+set numList to 1..10
+add 1000 to each item of numList which is a multiple of 3
+put numList
+
+set text to "The ruby mountains contain many diamond mines and are covered with emerald forests."
+set bannedWords to ["ruby", "emerald", "diamond"]
+
+put "##" into each word of text which is in bannedWords
+put text
+
+

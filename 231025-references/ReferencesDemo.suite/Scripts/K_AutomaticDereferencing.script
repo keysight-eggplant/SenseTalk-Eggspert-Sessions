@@ -1,0 +1,31 @@
+﻿// 'It' and Variables used as loop indexes are dereferenced automatically
+
+put "Abracadabra" into magicWord
+put @magicWord into it
+
+put "!" after it
+put it is a reference
+put it
+put magicWord
+put -
+
+get 9*8
+put it is a reference
+put it
+put magicWord
+put -
+
+set wand to refer to magicWord
+put "Poof!" into wand
+put magicWord
+put wand
+put -
+
+repeat with each wand in ["maple", "walnut", "oak"]
+	put "Wand is " & wand
+end repeat
+put magicWord
+put wand
+put -
+
+

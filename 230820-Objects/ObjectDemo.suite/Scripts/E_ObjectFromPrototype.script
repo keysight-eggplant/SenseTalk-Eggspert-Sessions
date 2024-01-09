@@ -1,0 +1,12 @@
+﻿(*
+We can construct a "new" object from a prototype.
+*)
+
+set myCircle to a new Circle with {radius:9}
+
+put myCircle
+put "Area: " & myCircle's area
+
+set mySquare to be a new Square
+put mySquare
+put "Area: " & mySquare.area

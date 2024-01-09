@@ -1,0 +1,6 @@
+﻿
+put my folder into scriptFolder
+
+put merge(file resourcePath("ScriptListTemplate.rtf")) \
+		into file resourcePath("ScriptCatalog.rtf")
+

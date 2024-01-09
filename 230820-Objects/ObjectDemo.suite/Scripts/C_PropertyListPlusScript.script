@@ -1,0 +1,16 @@
+﻿(*
+A property list can have a "script" property to provide behaviors.
+
+This is doable, but awkward.
+*)
+
+set square to {
+	size:12 in,
+	script:{{
+to handle area
+    return my size squared
+end area
+}}
+}
+
+put !"Our square has sides of [[square.size]] and area [[square.area]]"

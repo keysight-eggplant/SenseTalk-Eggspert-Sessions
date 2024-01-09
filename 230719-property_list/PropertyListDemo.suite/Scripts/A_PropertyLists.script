@@ -1,0 +1,16 @@
+﻿(*
+Lists and Property Lists are the two primary constructs for storing multiple values in SenseTalk.
+*)
+
+// A List is a SEQUENTIAL collection of values,
+//      usually all of the same type
+
+set numbers to [43,6,19,5,18,92]
+
+// A Property List is a LABELED collection of values
+// Each value is identified not by its position but by its label or "key" - each key has an associated value
+
+set coordinates to {x:43, y:6, z:19}
+
+set person to {name:"Rosa", age:17, interest:"reading"}
+

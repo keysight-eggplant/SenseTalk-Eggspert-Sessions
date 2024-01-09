@@ -1,0 +1,14 @@
+﻿(*
+A property of an object is a container.
+*)
+
+set food to {flavor:"Chocolate", "mouth feel":"creamy", rating:100, type:"Dessert"}
+
+put " Mousse" after food.flavor
+add 6 to the rating of food
+
+put food
+
+insert [98,110,55,102] into food's rating
+
+put food

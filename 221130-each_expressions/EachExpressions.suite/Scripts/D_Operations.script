@@ -1,0 +1,23 @@
+﻿
+// Operators are applied to all of the items in the "each" list
+
+put each item of 1..10 squared
+put 100 plus each item of 1..10
+
+put "M" & each character of "aeiou"
+
+put each word of "The Lord of the Rings"
+put the length of each word of "The Lord of the Rings"
+
+
+// Using operators along with a Where clause
+
+put each item of 1..10 squared
+
+put each item of 1..10 where each is a multiple of 2
+
+put each item of 1..10 where each is a multiple of 2 squared
+
+put each item of 1..10 {where each is a multiple of 2} squared
+
+

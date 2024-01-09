@@ -1,0 +1,5 @@
+﻿set mylist to 1..10
+
+delete each item of mylist which is 7 --which is divisible by 2
+
+put mylist

@@ -1,0 +1,17 @@
+﻿(*
+Accessing property values:   .    's    of    property of
+*)
+
+set myPet to {species:"cat", name:"Whiskers", color:"black and white", sex:"M", neutered:Yes}
+
+put "Name-" && myPet.name
+
+put "Color-" && myPet's color
+
+put "Species-" && the species of myPet
+
+put "Age-" && property age of myPet
+
+
+// Don't use item
+// Don't use sequential numbers

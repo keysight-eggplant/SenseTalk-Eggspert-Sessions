@@ -1,0 +1,12 @@
+﻿
+set heading to "Rumpelstiltskin"
+
+set recipient to "Marv and the gang"
+
+set body to {{
+In order to appear superior, a miller brags to the king and people of the kingdom he lives in by claiming his daughter can spin straw into gold. The king calls for the girl, locks her up in a tower room filled with straw and a spinning wheel, and demands she spin the straw into gold by morning or he will have her killed. When she has given up all hope, a little imp-like man appears in the room and spins the straw into gold in return for her necklace of glass beads.
+}}
+
+set memoTemplate to file resourcePath("MemoTemplate.rtf")
+
+put merge(memoTemplate) into file resourcePath("NewMemo.rtf")
