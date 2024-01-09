@@ -1,0 +1,23 @@
+﻿
+// Using "for each" gives additional flexibility for generating results
+
+put each item of 1..10 {where each is a multiple of 3} squared
+
+put each squared for each item of 1..10 where each is a multiple of 3
+
+
+put the square root of each item of 1..10 rounded to 2 places
+--put round(the square root of each item of 1..10 , 2)
+put round(the square root of each , 2) for each item of 1..10
+
+
+set numbers to 10..20
+
+put each && "squared is" && each squared for each item of numbers into squareTexts
+
+put squareTexts joined by return
+
+
+set myText to "The quick brown fox jumps over the lazy dog"
+put word number of "the" within myText
+put the counter for each word of myText which is "the"

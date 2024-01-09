@@ -1,0 +1,10 @@
+﻿(* Circle Prototype Object *)
+
+to handle area
+	return (pi times my radius squared) rounded to 2 places
+end area
+
+to handle asText
+	return "Circle with radius " & my radius
+end asText
+

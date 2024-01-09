@@ -1,0 +1,18 @@
+﻿(*
+Sometimes a property list is used in a way similar to a list, with all values of the same type, such as a collection of scores.
+*)
+
+set text to {{
+Mary had a little lamb
+Its fleece was white as snow
+And everywhere that Mary went
+The lamb was sure to go
+}}
+
+repeat with each character of text
+	if it is a letter then
+		add 1 to counts.(uppercase of it)
+	end if
+end repeat
+
+put counts

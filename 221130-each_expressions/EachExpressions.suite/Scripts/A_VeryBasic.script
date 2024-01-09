@@ -1,0 +1,12 @@
+﻿
+// An "each" expression works with any chunk type and results in a list
+
+put each character of "Elephant"
+
+put each item of "red,orange,yellow"
+
+put each word of "The Lord of the Rings"
+
+put each item of [3,5,7,9]
+
+

@@ -1,0 +1,25 @@
+﻿(* Property Lists can be displayed in various ways *)
+
+set patient to {name:"Barney", age:48, birth:"1975-04-17"}
+put patient
+
+put the propertyListFormat
+set the propertyListFormat.prefix to "###" & return
+set the propertyListFormat.suffix to return & "###" & return
+set the propertyListFormat.entrySeparator to return
+set the propertyListFormat.keySeparator to " --> "
+put
+put patient
+
+put the propertyListFormat
+
+set patient.asText to "Private Patient Barney"
+put patient
+
+put patient.archive
+
+delete patient.asText
+set patient.asTextFormat to "Patient named [[my name]], born in [[monthName of my birth]]"
+put patient
+
+

@@ -1,0 +1,26 @@
+﻿
+// Each expressions add great expressiveness but no new functionality
+
+put each character of "eggplant" into eChars
+put eChars
+
+set eChars to an empty list
+repeat with each character of "eggplant"
+	insert it into eChars
+end repeat
+put eChars
+
+put "- - - -"
+
+
+put the length of each word of "The Lord of the Rings" which contains "R" into rLengths
+put rLengths
+
+set rLengths to an empty list
+repeat with each word of "The Lord of the Rings"
+	if it contains "R" then
+		insert the length of it into rLengths
+	end if
+end repeat
+put rLengths
+

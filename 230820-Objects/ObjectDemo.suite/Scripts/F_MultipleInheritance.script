@@ -1,0 +1,16 @@
+﻿(*
+An object can be helped by multiple helpers.
+*)
+
+set myShape to new Circle with {radius:6 , thickness:2 } helped by ThickShape
+
+put myShape
+put "Area: " & myShape's area
+put "Volume: " & myShape's volume
+put
+
+set otherShape to {size:20, thickness:3} helped by Square, ThickShape
+
+put otherShape
+put "Area: " & otherShape's area
+put "Volume: " & otherShape's volume

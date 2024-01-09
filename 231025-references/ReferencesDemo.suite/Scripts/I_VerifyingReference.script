@@ -1,0 +1,21 @@
+﻿// Test whether something is a reference
+
+put 123 into VarA
+put a reference to VarA into VarB
+put VarA
+put VarB
+put VarA is a reference
+put VarB is a reference
+
+put "A" into abc
+changeCharacter abc
+put abc
+changeCharacter @VarB
+put VarA
+put VarB
+
+to changeCharacter @value
+	if value is not a reference then put "Please pass a reference"
+	
+	put any character of "CHNWZ" into value
+end changeCharacter 

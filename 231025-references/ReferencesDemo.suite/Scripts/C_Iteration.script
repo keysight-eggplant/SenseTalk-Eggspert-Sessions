@@ -1,0 +1,22 @@
+﻿// Repeat ... by reference can be very useful
+
+set myList to ["cat","dogs","squirrel"]
+
+repeat with each item of myList
+	if it doesn't end with "s" then
+		put "s" after it
+	end if
+	put it
+end repeat
+
+put myList
+put -
+
+repeat with each item of myList by reference
+	if it doesn't end with "s" then
+		put "s" after it
+	end if
+	put it
+end repeat
+
+put myList

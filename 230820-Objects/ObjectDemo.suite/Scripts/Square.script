@@ -1,0 +1,13 @@
+﻿(* Square Prototype Object *)
+
+to handle area
+	return my size squared
+end area
+
+to handle asText
+	return "Square of size " & my size
+end asText
+
+properties
+	size: 2
+end properties

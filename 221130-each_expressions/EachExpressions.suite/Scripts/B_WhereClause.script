@@ -1,0 +1,10 @@
+﻿
+// A Where clause lets you select certain items
+
+put each character of "beezlebub" where each is in "aeiou"
+
+put each word of "The Lord of the Rings" where the length of each is more than 3
+
+put each item of [3,5,7,9,11] where each is a multiple of 3
+
+

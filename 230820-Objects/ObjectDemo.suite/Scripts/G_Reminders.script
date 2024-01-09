@@ -1,0 +1,16 @@
+﻿(* Prototype objects can control initial setup of an object *)
+
+put a new Reminder into defaultReminder
+
+set trashOut to new Reminder with {
+	title:"Take out the Trash",
+	time:5 minutes from now}
+
+put defaultReminder
+put trashOut
+
+wait 5 seconds
+put
+
+put defaultReminder
+put trashOut

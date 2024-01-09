@@ -1,0 +1,27 @@
+﻿
+// Use an Every expression to test whether something is true for every value in a collection 
+
+set numbers to [3,42,12,96,102]
+
+put each item of numbers is a multiple of 3 -- this doesn't quite work
+
+if every item of numbers is a multiple of 3 then put "All Triples" else put "NOT!"
+
+put every item of numbers {which is an even number} is greater than 10
+
+
+// Variations include "not every", "at least one", "none" or "not one"
+
+if not every item of numbers is an even number then put "Some are Odd"
+
+if at least one item of numbers is an even number then put "Contains an Even number"
+
+if none of the items of numbers is greater than 150 then put "Nothing over 150"
+
+
+if not one word of "The Lord of the Rings" begins with "S" then put "No S Words"
+
+if the length of at least one word of "The Lord of the Rings" > 4 then put "Long Words"
+
+
+

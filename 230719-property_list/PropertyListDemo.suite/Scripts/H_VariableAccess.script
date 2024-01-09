@@ -1,0 +1,15 @@
+﻿(*
+You can use a variable or expression to select a property
+*)
+
+set scores to {
+	James:35,
+	Dorothy:46,
+	Billy:81,
+	Frances:63,
+	Flora:77
+}
+
+repeat with each name in ["Billy","Flora","James"]
+	put name && "scored" && scores.(name)
+end repeat

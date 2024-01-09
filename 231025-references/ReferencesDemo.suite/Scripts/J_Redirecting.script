@@ -1,0 +1,21 @@
+﻿// A reference refers to a container
+
+put 123 into VarA
+set VarB to refer to VarA
+put VarA
+put VarB
+put -
+
+put "Hello" into VarB
+put VarA
+put VarB
+put -
+
+// Reassign a reference variable to refer to a different container
+set Foo to 49
+set VarB to refer to Foo
+put "-ers" after VarB
+put VarA
+put VarB
+put Foo
+

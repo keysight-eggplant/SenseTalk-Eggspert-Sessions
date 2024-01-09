@@ -1,0 +1,15 @@
+﻿(* Passing property lists as parameters - shortcut syntax *)
+
+showTheParams "Uno", "Dos", {join:Yes, email:No}
+
+showTheParams "Uno", "Dos", join:Yes, email:No
+
+set myList to ["red", "green", x:45, y:13]
+put myList
+
+to showTheParams first, second, third
+	put "1: " & first
+	put "2: " & second
+	put "3: " & third
+	put
+end showTheParams

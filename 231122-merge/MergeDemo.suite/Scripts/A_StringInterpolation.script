@@ -1,0 +1,25 @@
+﻿(* String interpolation is a convenient way to 
+generate a string containing other values.
+*)
+
+put 3 into appleCount
+put 5 into orangeCount
+
+// Without interpolation, you must use concatenation
+put "I have " & appleCount & " apples and " & orangeCount & " oranges."
+
+// With interpolation, it's shorter and more readable
+put !"I have [[appleCount]] apples and [[orangeCount]] oranges."
+
+// Interpolated strings may include any expression
+put !"Altogether, I have [[appleCount + orangeCount]] fruits."
+
+// More complex example
+put -
+set options to "-l"
+set awkwardCommand to "ls" && options && quote & the folder & quote
+set easyCommand to !{{
+ls [[options]] "[[the folder]]"
+}}
+put awkwardCommand
+put easyCommand

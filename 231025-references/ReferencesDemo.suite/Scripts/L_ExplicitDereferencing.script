@@ -1,0 +1,24 @@
+﻿// Explicitly dereference by deleting the variable
+
+put 123 into VarA
+set VarB to refer to VarA
+set VarC to refer to VarB
+put VarA
+put VarB
+put VarC
+put -
+
+put VarB is a reference
+put "Lucky Me" into VarB
+put VarA
+put VarB
+put VarC
+put -
+
+delete variable VarB // Must use "delete variable"
+put VarB is a reference
+put "Detached and Lonely" into VarB
+put VarA
+put VarB
+put VarC
+put -

@@ -1,0 +1,26 @@
+﻿// Processing a list of values
+
+set myList to 1..30 as a list
+put myList
+
+removeEvens reference to myList
+put myList
+
+removeSquares container myList
+put myList
+
+elevateFives @myList
+put myList
+-------------
+
+to removeEvens numList
+	delete each item of numList which is an even number
+end removeEvens
+
+to removeSquares numList
+	delete each item of numList where square root of each is an integer
+end removeSquares
+
+to elevateFives numList
+	add 100 to each item of numList which is a multiple of 5
+end elevateFives

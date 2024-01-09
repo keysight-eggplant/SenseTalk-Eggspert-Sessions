@@ -1,0 +1,11 @@
+﻿(*
+Operations that modify a property list: Renaming
+*)
+set myPet to {species:"cat", name:"Whiskers", color:"black and white", sex:"M", neutered:Yes}
+put myPet
+
+rename properties {species:"type", sex:"gender"} of myPet
+put myPet
+
+put myPet renaming {name:"Name", color:"COLOR"}
+put myPet

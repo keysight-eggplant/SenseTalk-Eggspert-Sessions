@@ -1,0 +1,10 @@
+﻿// special "magic" when deleting by reference
+
+set numList to 20..1 as a list
+put numList
+
+repeat with each number in numList by reference
+	if number is divisible by 3 then delete number
+end repeat
+
+put numList

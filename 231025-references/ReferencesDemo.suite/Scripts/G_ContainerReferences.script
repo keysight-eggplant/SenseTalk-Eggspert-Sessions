@@ -1,0 +1,24 @@
+﻿// A reference can be made to any container
+
+set colors to ["orange","aqua","silver"]
+
+set myColor to refer to item 2 of colors
+put myColor
+
+put "fuchsia" into myColor
+put colors
+
+-------------
+
+set favorites to {
+	colors: @colors,
+	flavors: ["Chocolate", "Raspberry"]
+}
+put favorites
+
+set favFlavs to be a reference to favorites.flavors
+insert "Mint" into favFlavs
+put favorites
+
+set myColor to "darkGreen"
+put favorites

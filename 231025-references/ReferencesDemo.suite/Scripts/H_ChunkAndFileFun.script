@@ -1,0 +1,23 @@
+﻿// More fun with references
+
+set demoFile to the temp folder & "refDemo.txt"
+
+put "ABC" into file demoFile
+put -
+put file demoFile
+put -
+
+// make a very specific reference
+set superRef to refer to character 4 of line 2 of file demoFile
+
+put "Pow!" into superRef
+put file demoFile
+put -
+
+changeCharacter @superRef
+put file demoFile
+put -
+
+to changeCharacter value
+	put any character of "CHNWZ" into value
+end changeCharacter

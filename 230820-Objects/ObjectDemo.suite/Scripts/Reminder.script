@@ -1,0 +1,13 @@
+﻿(* Reminder Prototype Object *)
+
+properties
+	title:"Don't Forget!"
+end properties
+
+to initialize
+	add properties {time:one hour hence} to me
+end initialize
+
+to handle asText
+	return my title & " - is due in " & (my time - now) with format "[hrs?] @ [mins?] @ [secs] @"
+end asText

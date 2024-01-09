@@ -1,0 +1,20 @@
+﻿(*
+Set properties using the same syntax:  .  's  of  property
+*)
+
+set food to {:}
+set the type of food to "Dessert"
+put food
+
+set food.flavor to "Chocolate"
+set food's rating to 100
+
+// properties always display in alphabetical order
+put food
+
+// use quotes around keys with special characters
+set food's "mouth feel" to "creamy"
+put food
+
+// property keys are NOT case-sensitive
+put !"My [[food.Type]] is [[food's FLAVOR]]"

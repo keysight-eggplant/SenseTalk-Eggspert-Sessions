@@ -1,0 +1,33 @@
+﻿set htmlTemplate to {{
+<html>
+<head>
+<title>[[pageTitle]]</title>
+</head>
+<body>
+<h1>[[pageTitle]]</h1>
+<hr/>
+<h3>Scripts in folder: [[scriptFolder]] as of [[the international date]]</h3>
+<hr/>
+[[repeat with each item of (the files of scriptFolder sorted)]]
+[[if it contains "template" then]]
+  <p>
+  <b>[[it]]</b>
+  <br/>&nbsp;&nbsp;Last changed: [[international date of it.modificationDate]]
+  <br/>&nbsp;&nbsp;Size: [[it.size]]
+  </p>
+[[else]]
+  <p>Skipped: [[it]]</p>
+[[end if]]
+[[end repeat]]
+</body>
+</html>
+
+}}
+set pageTitle to "Script Catalog"
+set scriptFolder to my folder
+
+set htmlFile to resourcePath("Scripts.html")
+put merge(htmlTemplate) into file htmlFile
+
+open htmlFile with "Safari"
+
