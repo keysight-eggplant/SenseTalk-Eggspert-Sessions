@@ -1,0 +1,24 @@
+﻿
+set countries to [
+	{name:"England", capital:"London", area:50_310 sq mi, population:56_536_419},
+	{name:"Germany", capital:"Berlin", area:357_600 km^2, population:84_607_016},
+	{name:"France", capital:"Paris", area:643_801 km^2, population:68_373_433},
+	{name:"Belgium", capital:"Brussels", area:11_849 mi^2, population:68_373_433},
+	{name:"Australia", capital:"Canberra", area:2_968_464 sq mi, population:27_072_900},
+	{name:"United States", capital:"Washinton, DC", area:3_796_742 sq mi, population:334_914_895},
+	{name:"India", capital:"New Delhi", area:3_287_263 sq km, population:1_428_627_663},
+	
+]
+
+repeat with each country in countries
+	if country's capital begins with "B" then
+		put "Skipping " & country.name
+		next repeat
+	end if
+	put country.[name,area,population] into [name,area,pop]
+	set populationDensity to pop / (area as hectare)
+	put !"With [[area]], [[name]]'s population density is [[populationDensity]]." & return after report
+end repeat
+put -
+
+put report

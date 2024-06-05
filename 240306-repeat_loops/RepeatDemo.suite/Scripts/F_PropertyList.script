@@ -1,0 +1,12 @@
+﻿
+set scores to {John: 22, Alicia: 17, Raymond: 38, Greta:41}
+
+repeat with each item in the keys of scores
+	put it & "'s score is " & scores.(it)
+end repeat
+
+put -
+
+repeat with each [name,score] in scores
+	put name & "'s score is " & score
+end repeat

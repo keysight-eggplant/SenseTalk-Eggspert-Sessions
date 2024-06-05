@@ -1,0 +1,28 @@
+﻿
+set dailyActivity to [
+	{name:"Emily", code:"G2-354", charge:45.82},
+	{name:"John", code:"A4-886", charge:88.63},
+	{name:"Chris", code:"B1-505", charge:102.25},
+	{name:"Sam", code:"G3-409", charge:69.94},
+	{name:"Melvin", code:"H4-722", charge:413.12},
+]
+
+showLog dailyActivity
+put =
+
+repeat with each procedure in dailyActivity by reference
+	if procedure.code begins with "G" then
+		put "Applying surcharge for " & procedure.name
+		add 10 to procedure.charge
+	end if
+end repeat
+
+put =
+showLog dailyActivity
+
+
+to showLog logList
+	repeat with each entry in logList
+		put !"[[entry.name]]: [[entry.code]]  $[[entry.charge]]"
+	end repeat
+end showLog

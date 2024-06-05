@@ -1,0 +1,14 @@
+﻿
+set count to 0
+
+repeat until count >= 10
+	add 1 to count
+	put "Count: " & count
+end repeat
+
+put -
+
+repeat while count > 0
+	put "Count: " & count
+	subtract 1 from count
+end repeat

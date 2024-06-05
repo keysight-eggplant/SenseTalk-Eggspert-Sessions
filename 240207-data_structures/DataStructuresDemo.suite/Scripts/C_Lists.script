@@ -1,0 +1,13 @@
+﻿(*
+The values in a list are often all of the same type, but can be anything.
+*)
+set list to ["swan","robin","crow","duck"]
+put item 3 of list
+
+// a list always has an order; inserting pushes items down
+insert "magpie" after item 1 of list
+put item 3 of list // access to items is always by position
+put list
+
+sort list in alphabetical order
+put list

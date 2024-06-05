@@ -1,0 +1,18 @@
+﻿(* When working with "object-type" property lists, it is very common to store many of these objects in a list. Records fetched from a database are one example of this. *)
+
+set students to [
+	{name:"Emily", age:12, awards:["math","music","poetry"]},
+	{name:"John", age:14, awards:["chess","swimming"]},
+	{name:"Chris", age:13, awards:["drawing","archery","math"]},
+	{name:"Sam", age:13, awards:["music","swimming"]},
+]
+put each item of students where the awards of each contains "math"
+
+put the name of each item of students
+sort students by the name of each
+put the name of each item of students
+
+(* It is also very common to have lists of lists, such as when working with a list of [x,y] coordinates. *)
+set locations to [[15,88], [42,13], [103,17], [64,46]]
+put item 2 of locations
+put item 1 of item 3 of locations

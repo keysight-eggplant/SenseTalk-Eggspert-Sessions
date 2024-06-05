@@ -1,0 +1,15 @@
+﻿
+set text to {{
+Adam & Eve were the first ones 
+to ignore the Apple terms and conditions.
+}}
+
+repeat with each line of text
+	put !"Line [[the counter]]: [[it]]"
+end repeat
+
+put -
+
+repeat with each word theWord of text
+	put theWord
+end repeat

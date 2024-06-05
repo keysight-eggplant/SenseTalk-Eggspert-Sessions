@@ -1,0 +1,10 @@
+﻿set student to {name:"Emily", age:12, awards:["math","music","poetry"]}
+
+put "<table>" return into output
+
+repeat with each [key,value] in student
+	put !"<tr><td>[[key]]</td><td>[[value]]</td></tr>" return after output
+end repeat
+put "</table>" return after output
+
+put output
