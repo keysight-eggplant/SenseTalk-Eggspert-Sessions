@@ -1,0 +1,32 @@
+﻿
+// Numbers can be expressed in various ways
+
+put 16.75 // decimal
+
+put 16 3/4 // mixed fraction
+
+put 1.675e1 // scientific notation
+
+put sixteen and three quarters // English words
+
+put 0x10 // hexadecimal
+
+put 0o20 // octal
+
+put 0b10000 // binary
+
+put -
+
+put 10000000 // confusing, error-prone
+
+put ten million // readable!
+
+put 10_000_000 // also readable
+
+put -
+
+put 3/4 sq yd // fraction with units
+
+put 5 lbs 12 oz // chained units (in same unit family)
+
+put 2 hours 37 minutes and 16 seconds

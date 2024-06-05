@@ -1,0 +1,18 @@
+﻿
+// SenseTalk allows 6 common boolean terms
+put true
+put false
+
+put yes
+put no
+
+put on
+put off
+
+set decided to "YES"
+
+if decided then put "Congratulations on your decision!"
+
+set decided to empty // empty can also be a boolean
+
+if not decided then put "Undecided now."

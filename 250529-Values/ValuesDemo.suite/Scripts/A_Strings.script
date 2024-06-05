@@ -1,0 +1,36 @@
+﻿
+// Literal text strings
+
+put "This is a normal quoted string."
+put -
+
+put @"This is\ta string\nwith escape codes."
+put -
+
+put !"This is[[tab]]a string[[return]]with interpolation."
+put -
+
+put !@"This is[[tab]]a string\nwith interpolation AND escapes."
+put -
+
+put <<Using double "angle brackets" lets you
+include quotes and returns directly.>>
+put -
+
+put {{
+The double "curly braces" are preferred.
+
+These work especially well for larger blocks of text.
+
+❤ All types of strings allow ☞ Unicode characters.
+Molly greeted the young boy. "안녕하세요" she said.
+}}
+put -
+
+put “Use "fancy" quotes to include quotes.”
+put "Or use “fancy” quotes inside regular quotes."
+put -
+
+put «You may also use "guillemet" quotes
+in place of double angle brackets.»
+put -

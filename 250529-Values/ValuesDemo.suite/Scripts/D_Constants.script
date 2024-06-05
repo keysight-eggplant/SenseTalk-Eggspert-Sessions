@@ -1,0 +1,12 @@
+﻿
+// There are 5 true constants in SenseTalk:
+
+put "[" & true & "]"
+
+put "[" & false & "]"
+
+put "[" & empty & "]"
+
+put "[" & return & "]"
+
+put "[" & end & "]"

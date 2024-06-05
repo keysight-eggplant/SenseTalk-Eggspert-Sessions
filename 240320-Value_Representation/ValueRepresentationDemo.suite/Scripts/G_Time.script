@@ -1,0 +1,11 @@
+﻿
+set myTime to time("10:00 am") with format "[hour24] o'clock and all is well!"
+
+put myTime
+add 3 hours to myTime
+put myTime
+add 1 minute to myTime
+put myTime
+put time(myTime)
+
+put myTime.archive

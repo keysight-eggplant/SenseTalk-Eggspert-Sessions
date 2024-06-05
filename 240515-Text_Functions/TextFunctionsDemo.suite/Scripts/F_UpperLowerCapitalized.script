@@ -1,0 +1,9 @@
+﻿
+set text to "Jack be nimble, Jack be quick!"
+
+put uppercase(text)
+
+put lowercase of text
+
+put text.capitalized
+

@@ -1,0 +1,18 @@
+﻿
+set list to ["apple","banana","cherry"]
+put list
+
+set nonList to <<["apple","banana","cherry"]>>
+put nonList
+put -
+
+set the listFormat to boxListFormat
+
+put list
+put nonList
+put -
+
+set the listFormat to standardListFormat
+
+put list
+put nonList

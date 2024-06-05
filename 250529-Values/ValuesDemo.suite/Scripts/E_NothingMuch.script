@@ -1,0 +1,29 @@
+﻿
+// Various ways to express nothing
+
+put "[" & empty & "]"
+
+put empty is ""
+
+put -
+
+put "[" & missing value & "]"
+
+put "[" & null & "]"
+
+put "[" & nil & "]"
+
+put -
+
+put "[" & empty & "]"
+put "[" & nullChar & "]"
+
+put nullChar is empty
+
+put "Empty length: " & length(empty)
+put "Empty unicode value: " & charToNum(empty)
+put "NullChar length: " & length(nullChar)
+put "NullChar unicode value: " & charToNum(nullChar)
+
+
+

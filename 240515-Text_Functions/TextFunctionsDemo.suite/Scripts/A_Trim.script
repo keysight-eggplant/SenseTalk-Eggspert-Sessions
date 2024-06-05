@@ -1,0 +1,14 @@
+﻿
+set source to {{
+Wilmot, Jack , Corgi
+Sprice, Anita, Basset hound
+Juniper, William, Great dane
+}}
+
+repeat with each line of source
+	put trim of each item of it into dog
+	insert dog nested into dogList
+end repeat
+
+put archive of dogList
+

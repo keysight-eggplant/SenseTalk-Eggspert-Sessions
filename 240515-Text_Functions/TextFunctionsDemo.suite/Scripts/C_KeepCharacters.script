@@ -1,0 +1,10 @@
+﻿
+set text to "  Mary, Mary, quite contrary!    "
+
+put "Text:     " & tab & "#" & text & "#"
+
+put "many:     " & tab & "#" & keepCharacters(text,"many") & "#"
+
+put "Many:     " & tab & "#" & keepCharacters(text,"Many") & "#"
+
+put "TrimAll:  " & tab & "#" & trimAll(text,"Many") & "#"

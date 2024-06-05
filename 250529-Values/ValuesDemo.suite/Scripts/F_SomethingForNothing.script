@@ -1,0 +1,30 @@
+﻿
+// Undefined variables act like "unquoted strings"
+
+put grape
+
+put Cherry
+
+put HELLO
+
+put GRAPE
+
+put -
+
+// Except some variables have predefined values
+
+put pi
+
+put copyrightSign
+
+put recyclingSymbol
+
+put heavyBlackHeart
+
+// And a few have dynamic values
+
+put now // also 'time'
+
+put yesterday // also 'date', 'today', 'tomorrow'
+
+

@@ -1,0 +1,15 @@
+﻿
+set text to "Jack be nimble, Jack be quick!"
+
+put text
+
+put -
+put reverse of text
+
+put -
+put shuffle of text
+
+put -
+put text sorted as characters
+put text sorted as words
+put text sorted as words by the second character of each

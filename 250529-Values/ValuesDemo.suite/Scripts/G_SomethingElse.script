@@ -1,0 +1,20 @@
+﻿
+// binary data
+
+put <486f7764 7921>
+
+// patterns
+
+put <1 to 3 digits, "@", 2 to 4 alphanumerics>
+
+// dates and times
+
+put date of "Mar 5, 2012"
+
+put time("13:12")
+
+// colors
+
+put color("blue")
+
+put [15,88,104] as a color

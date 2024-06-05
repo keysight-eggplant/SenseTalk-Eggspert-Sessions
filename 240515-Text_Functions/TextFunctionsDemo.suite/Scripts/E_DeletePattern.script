@@ -1,0 +1,14 @@
+﻿
+set text to "  Mary, Mary, quite contrary!    "
+
+put "Text:     " & tab & "#" & text & "#"
+
+set trimChars to " ,!"
+delete <character in trimChars> from text
+put "Text:     " & tab & "#" & text & "#"
+
+put ~
+set text to "  Mary, Mary, quite contrary!    "
+delete <punctuation or space> from text
+put "Text:     " & tab & "#" & text & "#"
+

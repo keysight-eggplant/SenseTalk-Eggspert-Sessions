@@ -1,0 +1,16 @@
+﻿
+set num1 to one third
+put num1
+
+set num2 to one tenth
+put num2
+
+put the numberFormat
+put -
+set the numberFormat to "0.#################"
+put the numberFormat
+
+put num1
+put num2
+put archive of num1
+put archive of num2

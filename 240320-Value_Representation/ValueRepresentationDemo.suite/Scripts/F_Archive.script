@@ -1,0 +1,15 @@
+﻿
+set students to [
+	{name:"Emily", age:12, awards:["math","music","poetry"]},
+	{name:"John", age:14, awards:["chess","swimming"]},
+	{name:"Chris", age:13, awards:["drawing","archery","math"]},
+	{name:"Sam", age:13 1/3, awards:["music","swimming"]},
+]
+put archive of students into file "/tmp/demo/students.txt"
+
+put unarchive of file "/tmp/demo/students.txt" into restoredStudents
+
+put restoredStudents is equal to students
+
+put each item of students whose awards contains "math"
+put each item of restoredStudents whose awards contains "math"

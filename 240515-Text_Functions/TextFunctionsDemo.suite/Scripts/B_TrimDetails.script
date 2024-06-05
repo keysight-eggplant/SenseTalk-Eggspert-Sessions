@@ -1,0 +1,15 @@
+﻿
+set text to "  Mary, Mary, quite contrary!    "
+put "Text:     " & tab & "#" & text & "#"
+put "Trim:     " & tab & "#" & trim(text) & "#"
+put "TrimStart:" & tab & "#" & trimStart(text) & "#"
+put "TrimEnd:  " & tab & "#" & trimEnd(text) & "#"
+put "TrimAll:  " & tab & "#" & trimAll(text) & "#"
+
+put -
+set trimChars to " ,!"
+put "Text:     " & tab & "#" & text & "#"
+put "Trim:     " & tab & "#" & trim(text,trimChars) & "#"
+put "TrimStart:" & tab & "#" & trimStart(text,trimChars) & "#"
+put "TrimEnd:  " & tab & "#" & trimEnd(text,trimChars) & "#"
+put "TrimAll:  " & tab & "#" & trimAll(text,trimChars) & "#"

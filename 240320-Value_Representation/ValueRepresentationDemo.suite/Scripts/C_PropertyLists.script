@@ -1,0 +1,14 @@
+﻿
+set person to {first:"Alex", last:"Andrews", age:47}
+
+put person
+
+put the propertyListFormat
+put -
+
+set the propertyListFormat's keySeparator to " --> "
+set the propertyListFormat's entrySeparator to return
+
+put person
+put -
+put the propertyListFormat

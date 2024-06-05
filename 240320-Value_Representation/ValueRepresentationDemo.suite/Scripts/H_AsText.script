@@ -1,0 +1,21 @@
+﻿
+put the files in "/tmp/demo" into demoFiles
+
+put demoFiles
+put -
+
+put item 1 of demoFiles into firstFile
+put firstFile
+put the long name of firstFile
+put the size of firstFile
+put -
+
+put archive(firstFile)
+put -
+
+put the propertyListFormat
+set the propertyListFormat.asTextEnabled to false
+put -
+put firstFile
+
+

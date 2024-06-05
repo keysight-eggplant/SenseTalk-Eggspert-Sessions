@@ -1,0 +1,18 @@
+﻿// popping any item out of a list
+set myList to 1..10 as a list
+
+put myList
+
+pop any item in myList into foo
+put foo
+put myList
+
+// resetting the random seed value
+set x to the seconds // "random" seed
+--set x to 737483082 // fixed seed, repeatable
+put x
+reset random x
+
+repeat 10
+	put random(100)
+end repeat

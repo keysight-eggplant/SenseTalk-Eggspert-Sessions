@@ -1,0 +1,13 @@
+﻿
+set text to "  Mary, Mary, quite contrary!    "
+
+put "Text:     " & tab & "#" & text & "#"
+
+delete " " from text
+put "Text:     " & tab & "#" & text & "#"
+
+delete "," from text
+put "Text:     " & tab & "#" & text & "#"
+
+delete "!" from text
+put "Text:     " & tab & "#" & text & "#"

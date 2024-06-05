@@ -1,0 +1,9 @@
+﻿
+put 12 of Mary
+
+put "Joe" repeated 6 times
+
+put "Joy" repeated 9 times as a list
+
+put "TheEnd" repeated to a length of 20
+
