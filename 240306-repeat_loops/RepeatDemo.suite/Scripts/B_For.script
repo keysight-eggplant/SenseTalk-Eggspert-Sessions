@@ -1,0 +1,13 @@
+﻿
+put "Counting to ten:"
+
+repeat for num = 1 to 10
+	put "Count: " & num
+end repeat
+
+put ,"And back again:"
+
+repeat with num = 10 down to 1 by 3
+	put "Count: " & num
+end repeat
+

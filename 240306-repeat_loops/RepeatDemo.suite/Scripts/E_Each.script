@@ -1,0 +1,24 @@
+﻿
+set pets to ["Murphy", "Rose", "Bolivia"]
+
+repeat with each item of pets
+	put it & " is my pet"
+end repeat
+
+put -
+
+repeat with each name in pets
+	put name & " is my pet"
+end repeat
+
+put -
+
+repeat with name in pets
+	put name
+end repeat
+
+put -
+
+repeat with pets
+	put it
+end repeat

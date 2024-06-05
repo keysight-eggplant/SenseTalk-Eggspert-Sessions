@@ -1,0 +1,16 @@
+﻿(* Some notes on the syntax of lists and property lists *)
+
+set aList to [] -- or: set aList to an empty list
+set numbers to [1,3,5,7,9]
+
+set pList to {:} -- or: set pList to an empty property list
+set scores to {Alice:8, Ben:13, Clara:7, Dave:4}
+
+display Hello
+display [green, red]
+
+
+to display p1, p2
+	put "P1: " & p1
+	put "P2: " & p2
+end display

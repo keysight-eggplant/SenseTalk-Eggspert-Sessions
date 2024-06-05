@@ -20,3 +20,5 @@ Session Focus | Date | Host | Length
 [Objects](/230820-Objects/) | August 16, 2023 | Doug Simons | N/A
 [References](/231025-references/) | October 25, 2023 | Doug Simons | N/A
 [Merge](/231122-merge/) | November 22, 2023 | Doug Simons | N/A
+[Data Structures and Lists](/240207-data_structures/) | February 07, 2024 | Doug Simons | 16:38
+[Repeat Loops](/240306-repeat_loops/) | March 06, 2024 | Doug Simons | 12:50

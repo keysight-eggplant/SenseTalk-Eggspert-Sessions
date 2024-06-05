@@ -1,0 +1,18 @@
+﻿
+repeat for 3 seconds
+	add 1 to count
+end repeat
+put count
+
+repeat until "8:55 AM"
+	add 1 to count
+end repeat
+put count
+
+set count to 997
+repeat at least once until count >= 1000
+	put "Doing important work that must be done at least once"
+	add 1 to count
+end repeat
+put count
+

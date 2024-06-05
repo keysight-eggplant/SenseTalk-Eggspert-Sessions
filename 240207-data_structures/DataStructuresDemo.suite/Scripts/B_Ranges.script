@@ -1,0 +1,22 @@
+﻿(* A range has a Start and End value, and optionally a Step *)
+
+set range to 5..7
+
+put range.start
+put the end of range
+
+add 2 to range.end // start, end, and step values can be changed
+put range
+
+put 6.5 is within range
+put 6.5 is in range
+put range as a list
+
+set range's step to 0.5
+put 6.5 is in range
+put range as a list
+put range
+
+delete item 4 of range
+put range
+

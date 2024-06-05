@@ -1,0 +1,17 @@
+﻿(* SenseTalk allows a property list to be given WITHOUT being in curly braces { } when it is at the END of the parameters passed to a command or function, or at the END of a list. 
+The effect is that it looks like a hybrid structure, and is very convenient for passing options as named parameters.
+*)
+
+display Apple,Banana,nibbled:Yes
+
+put display(cat, dog, width:45, height:30) into nothing
+
+display x:12, y:17
+
+put ["white","brown",blend:Heavy]
+
+to display p1, p2, p3
+	put "P1: " & p1
+	put "P2: " & p2
+	put "P3: " & p3
+end display

@@ -1,0 +1,22 @@
+﻿(*
+Property Lists (also known as Objects) can also hold any type of value. 
+A property list does not have an order, but is a collection of key/value pairs, where each value is identified by its name or "key".
+*)
+
+(* There are 2 fundamental styles of property lists. One example is a data record representing one entity (or "object") with all of its properties.
+When used in this way, each property will have its own type of value.
+*)
+set student to {name:"Emily", age:12, awards:["math","music","poetry"]}
+put the age of student
+put student // SenseTalk displays properties in alphabetical order
+
+(* The other common style is a collection of related values for different "things". Here, all of the values are usually of the same type, but corresponding to different entities. *)
+set countryCapitals to {
+	"Germany": "Berlin",
+	"Canada": "Ottawa",
+	"France": "Paris",
+}
+put countryCapitals.France // access the associated value
+
+set countryCapitals.England to "London"
+put countryCapitals

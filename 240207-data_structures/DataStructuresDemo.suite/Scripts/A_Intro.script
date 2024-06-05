@@ -1,0 +1,13 @@
+﻿(*
+We will look at 3 different data structures (or collections):
+ - Ranges
+ - Lists
+ - Property Lists
+*)
+
+set myRange to 5..9
+
+set myList to [2,3,5,8,13]
+
+set myObject to {size: 9, color: red, price: $7}
+

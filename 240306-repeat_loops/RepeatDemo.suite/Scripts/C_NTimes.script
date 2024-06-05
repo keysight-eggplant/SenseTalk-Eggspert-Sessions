@@ -1,0 +1,5 @@
+﻿
+repeat 10 times
+	add 1 to count
+	put "Counting: " & count
+end repeat
