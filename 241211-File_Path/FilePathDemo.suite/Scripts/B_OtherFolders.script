@@ -1,0 +1,22 @@
+﻿
+put specialFolderPath("Home")
+put specialFolderPath("applications")
+
+put the home folder
+
+put the documents folder
+
+put the desktop folder
+
+put the temporary folder
+
+put -
+put the folderNamesEndWithSlash
+
+set demoFolderName to "demo"
+put the desktop folder
+put the desktop folder & demoFolderName
+
+turn off the folderNamesEndWithSlash
+put the desktop folder
+put the desktop folder & demoFolderName

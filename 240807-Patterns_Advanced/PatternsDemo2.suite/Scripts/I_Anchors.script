@@ -1,0 +1,20 @@
+﻿// Anchors specify a place
+
+set phrase to "golly again miss molly, gee whiz"
+
+set pat to <"G", max letters>
+put every instance of pat in phrase
+
+// Anchor to the beginning of a word
+set pat to <"G" at the start of a word, max letters>
+set pat to <word starting with "G", max letters>
+put every instance of pat in phrase
+
+// Match entire words
+set pat to <beginning of word, chars, end of word>
+put every instance of pat in phrase
+
+// Anchor to beginning or end of word, line, or entire text
+set pat to <"G" at the start of text, max letters>
+put every instance of pat in phrase
+

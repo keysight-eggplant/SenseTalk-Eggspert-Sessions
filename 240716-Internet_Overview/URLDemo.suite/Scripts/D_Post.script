@@ -1,0 +1,3 @@
+﻿
+post queryData to url "http://someservice.net" with headers {"Content-Type": "text/xml"}
+

@@ -1,0 +1,12 @@
+﻿// Patterns are case-insensitive by default
+
+put <chars in "ABCDEF"> matches "DEAD"
+put <chars in "ABCDEF"> matches "dead"
+
+// you can force case sensitivity in various ways
+put <case-sensitive: chars in "ABCDEF"> does NOT match "dead"
+put <with case, chars in "ABCDEF"> does NOT match "dead"
+
+set the caseSensitive to True
+put <chars in "ABCDEF"> does NOT match "dead"
+

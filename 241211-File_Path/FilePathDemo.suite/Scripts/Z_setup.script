@@ -1,0 +1,9 @@
+﻿put {{
+You have brains in your head. You have feet in your shoes. 
+You can steer yourself any direction you choose. 
+
+You're on your own. And you know what you know.
+And YOU are the one who'll decide where to go...
+}} into file (the desktop folder & "demo/wisdom.text")
+
+put "not the droids you're looking for" into file (the desktop folder & "demo/myFile.txt")

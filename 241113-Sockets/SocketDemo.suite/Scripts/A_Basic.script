@@ -1,0 +1,23 @@
+﻿(* A Socket is a low-level, two-way communication channel to another process or server. *)
+
+// A socket identifier must include the host and port to connect to
+
+set echoServer to "tcpbin.com:4242" // a socket identifier
+
+// Establish the socket connection to the server
+open socket echoServer
+
+// Send a text message through the socket
+write "Hello, World!" to socket echoServer
+write return to socket echoServer
+
+// Read the text that is returned by the server
+read from socket echoServer until return
+
+put "Received: " & it
+
+put the openSockets
+
+close socket echoServer
+
+put the openSockets

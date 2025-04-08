@@ -1,0 +1,32 @@
+﻿// Quantifiers - how many of an element is allowed?
+
+// singular and plural forms are different
+put <character> matches "J"
+put <character> does NOT match "GHIJ"
+put <characters> matches "GHIJ"
+
+// a specific number
+put <3 digits> matches "529"
+put <5 capital letters> matches "IVORY"
+
+// zero or one
+put <"•", maybe a digit, "•"> matches "••"
+put <"•", maybe a digit, "•"> matches "•5•"
+put <"•", maybe a digit, "•"> does NOT match "•99•"
+
+// zero or more
+put <"•", zero or more characters, "•"> matches "••"
+put <"•", maybe some letters, "•"> matches "•Timbuktu•"
+put -
+
+// one or more
+put <some digits> matches "842"
+put <one or more letters> matches "Az"
+
+// any quantity above a minimum
+put <7 or more lowercase letters> matches "abracadabra"
+put <at least 3 characters from "ABCD"> matches "DAD"
+
+// minimum and maximum number
+put <"•", 2 to 5 digits, "•"> matches "•1989•"
+

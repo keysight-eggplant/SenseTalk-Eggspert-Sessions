@@ -1,0 +1,19 @@
+﻿// The NumberFormat can also display words
+set the listFormat to {prefix:"[ ", suffix:" ]", separator:" , "}
+
+set numbers to [0, -12, 98.6, 123.4567, 1/3]
+set the numberFormat to "WORDS"
+put the numberFormat
+put numbers
+put -
+
+set the numberFormat to "Words.00"
+put the numberFormat
+put numbers
+put -
+
+set the numberFormat to "words.0###"
+put the numberFormat
+put numbers
+put -
+

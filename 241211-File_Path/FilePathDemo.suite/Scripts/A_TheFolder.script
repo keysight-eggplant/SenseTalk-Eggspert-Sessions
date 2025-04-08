@@ -1,0 +1,11 @@
+﻿set the directory to "demo"
+
+put file "myFile.txt" into contents
+put contents
+
+put file "myFile.txt" exists
+
+put the long name of file "myFile.txt"
+
+put the folder
+

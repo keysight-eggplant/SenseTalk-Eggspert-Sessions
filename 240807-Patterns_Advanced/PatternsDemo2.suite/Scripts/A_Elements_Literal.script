@@ -1,0 +1,18 @@
+﻿// What are the Elements that make up a Pattern?
+
+// constant strings
+set myPattern to <"Alpha" then 2 then "C">
+put myPattern matches "Alpha2C"
+
+// variables
+set searchTerm to "bugle"
+set myPattern to <"@" then searchTerm then "@">
+
+put myPattern matches "@bugle@"
+
+// expressions (in parentheses)
+set myPattern to <"#" , (searchTerm reversed), then "#">
+
+put myPattern matches "#elgub#"
+
+

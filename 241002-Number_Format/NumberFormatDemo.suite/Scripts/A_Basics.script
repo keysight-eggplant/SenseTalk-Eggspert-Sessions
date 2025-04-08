@@ -1,0 +1,24 @@
+﻿// The NumberFormat controls how numbers are displayed
+set the listFormat to {prefix:"[ ", suffix:" ]", separator:" , "}
+
+set numbers to [0, -12, 98.6, 123.4567, 1/3]
+put the numberFormat
+put numbers
+put -
+
+set the numberFormat to "0.00"
+put the numberFormat
+put numbers
+put -
+
+set the numberFormat to "00000"
+put the numberFormat
+put numbers
+put -
+
+set the numberFormat to "####.000######"
+put the numberFormat
+put numbers
+put -
+
+

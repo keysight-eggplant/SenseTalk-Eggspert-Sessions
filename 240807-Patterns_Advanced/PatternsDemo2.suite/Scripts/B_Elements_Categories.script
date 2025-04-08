@@ -1,0 +1,33 @@
+﻿// Elements can be categories of characters
+
+// any characters
+put <characters> matches "G#72.8 $x•¢∞§"
+put <chars> does NOT match ""
+
+// any alphabetic letters
+put <letters> matches "Piérre"
+put <letters> does NOT match "#4&-<,>"
+
+// any lowercase letters
+put <lowercase letters> matches "abçdé"
+put <lowercase letters> does NOT match "GHI#"
+
+// any digits
+put <digits> matches "40982"
+put <digits> does NOT match "Xyz$"
+
+// any letters or digits
+put <lettersOrDigits> matches "34CD"
+put <alphanumerics> does NOT match "#?. ;/"
+
+// any whitespace characters
+put <whitespace characters> matches "  " tab return
+put <whitespace characters> does NOT match "$38xyZ"
+
+// any punctuation characters
+put <punctuation characters> matches "#?.;/!"
+put <punctuation characters> does NOT match "Abc 87"
+
+// use "non" or "non-" to get the opposite of a category
+put <nondigits> matches "Abe $.<x>?"
+put <non-letters> matches "453.8 $.<>?"

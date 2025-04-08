@@ -22,3 +22,9 @@ Session Focus | Date | Host | Length
 [Merge](/231122-merge/) | November 22, 2023 | Doug Simons | N/A
 [Data Structures and Lists](/240207-data_structures/) | February 07, 2024 | Doug Simons | 16:38
 [Repeat Loops](/240306-repeat_loops/) | March 06, 2024 | Doug Simons | 12:50
+[Sensetalk Poetry](/240626-Sensetalk_Poetry/) | June 26, 2024 | Doug Simons | 07:49
+[Internet Overview](/240716-Internet_Overview/)| July 16, 2024 | Doug Simons | 07:18
+[Patterns Advanced](/240807-Patterns_Advanced/)| August 08, 2024 | Doug Simons | 16:50
+[Number Format](/241002-Number_Format/)| October 02, 2024 | Doug Simons | 09:38
+[Sockets](/241113-Sockets/)| November 13, 2024 | Doug Simons | 08:35
+[Files and Folders](/241211-File_Path/)| November 13, 2024 | Doug Simons | 12:31

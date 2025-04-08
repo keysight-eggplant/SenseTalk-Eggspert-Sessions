@@ -1,0 +1,13 @@
+﻿{
+    EPVersionNumber = 202406250149;
+    Schedules =     (
+    );
+    ScriptMetaData =     {
+    };
+    SuiteEncodedTextKey = ",ByX*6B)!dZj`Z5J";
+    SuiteVariables = "{\n listTest:@\"(     1,     2,     3 )\"\n}";
+    helpedSuitesInfo =     (
+    );
+    helperSuitesInfo =     (
+    );
+}

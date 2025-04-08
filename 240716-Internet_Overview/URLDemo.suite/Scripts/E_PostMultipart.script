@@ -1,0 +1,10 @@
+﻿
+
+post multipart {filename:"/tmp/xyz", body:file "/tmp/xyz" as data} to URL serverURL
+
+post multipartMIME({filename:"/tmp/xyz", body:file "/tmp/xyz" as data}) to URL serverURL
+
+
+put "Hello World!" into file "/tmp/xyz"
+
+put multipartMIME of {filename:"/tmp/xyz", body:file "/tmp/xyz" as data}

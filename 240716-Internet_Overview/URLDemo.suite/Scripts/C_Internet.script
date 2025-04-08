@@ -1,0 +1,8 @@
+﻿
+// An HTTP GET can be done with a simple URL expression
+
+put URL "http://www.google.com" into googlePage
+
+put every occurrence of <"<a", chars, "/a>"> in googlePage joined by return
+
+

@@ -1,0 +1,10 @@
+﻿// Preceeded and Followed specify a location, without being included as part of the pattern match
+
+set source to "Zoomie(smart), Rabbit(funny), Xylix(weird)!!"
+
+set parenPat to <"(", characters, ")">
+put every instance of parenPat in source
+
+put -
+set contentPat to <characters preceded by "(", followed by ")">
+put every instance of contentPat in source

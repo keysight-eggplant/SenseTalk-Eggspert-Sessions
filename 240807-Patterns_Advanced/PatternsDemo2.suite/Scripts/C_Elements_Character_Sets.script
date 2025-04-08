@@ -1,0 +1,23 @@
+﻿// One other element type -- characters from a set
+
+// any character from a set
+put <chars in "0123456789._"> matches "98.6"
+
+// the set can come from a variable or expression
+put "ABC$*" into myCharSet
+put <chars in myCharSet> matches "$B**C"
+
+// the character set can be specified as a range
+put <characters in "A"to"G"> matches "DFFABEG"
+
+// variables can be used to specify a character range
+set startChar to "P"
+set endChar to "T"
+put <characters in startChar..endChar> into myPattern
+put myPattern matches "PSSTQ"
+
+// a set can also come from any list of characters
+put <chars in ("0".."9" &&& "A".."F")> matches "9FF7B"
+
+// you can also specify characters that are NOT in a set
+put <chars not in "ABCDEFGH-1234"> matches "Junior Tux $57.89"
