@@ -1,0 +1,6 @@
+﻿// Patterns can have alternative values using "OR"
+
+set myPattern to <"[", 2 letters or 3 digits, "]">
+
+put myPattern matches "[Ab]"
+put myPattern matches "[945]"

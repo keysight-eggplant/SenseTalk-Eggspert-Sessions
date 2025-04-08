@@ -1,0 +1,37 @@
+﻿
+set vnc to "localhost:5900"
+
+open socket vnc
+
+// begin VNC handshake protocol
+read from socket vnc until return 
+put it
+
+write "RFB 003.008" & return to socket vnc
+
+read 1 uint1 from socket vnc into count
+put item 1 of count into securityCount
+put "Count:" & securityCount
+
+if securityCount is zero then // connection failed
+	read 1 uint4 from socket vnc into count
+	put item 1 of count into charCount
+	put charCount
+	if charCount > 0 then // read and display error message
+		read charCount chars from socket vnc
+		put it
+	end if
+	
+else // negotiate the security type
+	read securityCount uint1 from socket vnc into securityTypes
+	put securityTypes
+	
+	write 99 as uint1 to socket vnc
+	read 1 uint1 from socket vnc into reply
+	put reply
+	
+	// continue the conversation...
+	
+end if
+
+close socket vnc

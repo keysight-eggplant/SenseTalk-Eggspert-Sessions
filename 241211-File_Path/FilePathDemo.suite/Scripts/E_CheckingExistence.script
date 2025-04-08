@@ -1,0 +1,14 @@
+﻿set pathToWisdom to "/Users/doug/Desktop/demo/wisdom.text"
+set parentFolder to pathToWisdom's folder
+
+put there is a file pathToWisdom
+put folder parentFolder exists
+
+put there is a folder pathToWisdom
+put file parentFolder exists
+
+put -
+
+put parentFolder is a file
+put pathToWisdom is a folder
+put pathToWisdom is a file

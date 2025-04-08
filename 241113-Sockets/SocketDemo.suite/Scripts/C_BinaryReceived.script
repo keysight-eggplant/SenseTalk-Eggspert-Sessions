@@ -1,0 +1,21 @@
+﻿
+// Incoming socket data may also be interpreted as binary data or text
+
+set echoServer to "tcpbin.com:4242" // a socket identifier
+open socket echoServer
+
+// any type of data can be sent over a socket connection
+set message to "Eggplant" & return
+
+write message to socket echoServer
+
+read 3 8-bit integers from socket echoServer
+
+put "Received: " & it
+put numToChar of each item of it
+
+read a line from socket echoServer into restOfLine
+put restOfLine
+
+
+close socket echoServer

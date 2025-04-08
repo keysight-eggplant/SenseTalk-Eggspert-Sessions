@@ -1,0 +1,8 @@
+﻿
+// Accessing a URL is as simple as accessing a file
+
+put file "/Users/doug/demo/internet/myFile.txt"
+
+put url "file://localhost/Users/doug/demo/internet/myFile.txt"
+
+

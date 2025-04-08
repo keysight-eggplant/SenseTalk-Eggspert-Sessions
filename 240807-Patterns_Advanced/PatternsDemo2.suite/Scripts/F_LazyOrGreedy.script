@@ -1,0 +1,22 @@
+﻿// Patterns can match lazily or greedily
+
+set source to "Zoomie(smart), Rabbit(funny), Xylix(weird)!!"
+
+// Patterns normally evaluate 'lazily'
+set parenPat to <"(", characters, ")">
+put the first occurrence of parenPat in source
+
+// There are several ways to specify 'greedy' evaluation
+set greedyPat to <"(", max characters, ")">
+put the first occurrence of greedyPat in source
+
+set greedyPat2 to <"(", characters greedily, ")">
+put the first occurrence of greedyPat2 in source
+
+// Even though a pattern is lazy, it will match more if needed
+set parenPat to <"(", characters, ")">
+put the first occurrence of parenPat in source
+
+set newPat to <parenPat then "!!">
+put the first occurrence of newPat in source
+

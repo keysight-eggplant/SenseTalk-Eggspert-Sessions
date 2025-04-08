@@ -1,0 +1,8 @@
+﻿
+// The MakeURL function can be used to construct a URL, including query information contained in a property list
+
+put makeURL of {path:"abc/def", scheme:"http", query:{name:"doug", password:"abcdef"}} into myURL
+
+put myURL
+
+put extractURL of myURL

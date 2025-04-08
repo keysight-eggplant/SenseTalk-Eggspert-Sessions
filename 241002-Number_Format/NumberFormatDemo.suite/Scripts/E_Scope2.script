@@ -1,0 +1,20 @@
+﻿// the defaultNumberFormat is a Global property
+
+put calculateDiscount of 343
+put "format: " & the numberFormat
+
+set the defaultNumberFormat to "0.0"
+
+put calculateDiscount(49)
+put "format: " & the numberFormat
+
+set the numberFormat to "0.000"
+
+put calculateDiscount(49)
+put "format: " & the numberFormat
+
+to calculateDiscount of amount
+	set discount to amount * 12%
+	put "Calculated Discount is: " & discount
+	return discount
+end calculateDiscount

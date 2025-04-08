@@ -1,0 +1,19 @@
+﻿// a variable can have its own format
+
+set myNum to 23.48
+put myNum
+
+set myNum to 23.48 using format "000.000"
+put myNum
+
+add 66 to myNum
+put myNum
+
+set myNum to -13
+put myNum
+
+set myNum's format to "Words"
+put myNum
+
+multiply myNum by 13
+put myNum

@@ -1,0 +1,13 @@
+﻿// the numberFormat is a Local property
+
+put calculateDiscount of 343
+
+set the numberFormat to "0.0"
+
+put calculateDiscount(49)
+
+to calculateDiscount of amount
+	set discount to amount * 12%
+	put "Calculated Discount is: " & discount
+	return discount
+end calculateDiscount

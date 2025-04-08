@@ -1,0 +1,36 @@
+﻿set pathToWisdom to "/Users/doug/Desktop/demo/wisdom.text"
+put pathToWisdom
+put -
+put pathList(pathToWisdom) into componentList
+put componentList
+
+delete item 4 of componentList
+put componentList
+put "ruin.txt" into the last item of componentList
+put componentList
+
+put filePath(componentList)
+put -
+
+insert "Desktop" after item 3 of componentList
+set the last item of componentList to "wisdom.text"
+put componentList
+put -
+put file componentList
+put -
+
+put pathToWisdom
+put the windowsFilePath of pathToWisdom
+put the resolvedFilePath of pathToWisdom
+put -
+
+set relativePath to "yellow/brick"
+put the filePath of relativePath
+put the resolvedFilePath of relativePath
+put -
+
+set confusedFilePath to "~\Desktop\ggg/../demo//wisdom.text"
+put confusedFilePath
+put the filePath of confusedFilePath
+put the resolvedFilePath of "~/Desktop/ggg/../demo//wisdom.text"
+

@@ -1,0 +1,15 @@
+﻿
+// SenseTalk also supports sending and receiving HTTP messages
+
+set googleSocket to "www.google.com:80"
+
+open socket googleSocket
+
+write {request:"/"} as http to socket googleSocket
+write return to socket googleSocket
+
+read an http message from socket googleSocket
+
+put it.archive
+
+close socket googleSocket

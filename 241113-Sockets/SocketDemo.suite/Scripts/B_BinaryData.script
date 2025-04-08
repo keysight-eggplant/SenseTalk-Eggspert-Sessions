@@ -1,0 +1,17 @@
+﻿
+// Binary data, as well as text, can be sent over a socket connection
+
+set echoServer to "tcpbin.com:4242"
+open socket echoServer
+
+set list to [83,101,99,114,101,116,32,77,101,115,115,97,103,101,33,10]
+
+write list as 8-bit integers to socket echoServer
+
+put "Sent:          " & list
+
+read from socket echoServer until the end into receivedMessage
+
+put "Received:  " & receivedMessage
+
+close socket echoServer

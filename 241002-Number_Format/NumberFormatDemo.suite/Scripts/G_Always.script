@@ -1,0 +1,11 @@
+﻿// The NumberFormat property formats every number when it is converted to text
+
+set codePrefix to "A"
+set codeNum to 92
+
+set code to codePrefix & codeNum & "X"
+put code
+
+set the numberFormat to "0.00"
+set code to codePrefix & codeNum & "X"
+put code

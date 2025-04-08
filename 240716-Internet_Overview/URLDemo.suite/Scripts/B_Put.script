@@ -1,0 +1,6 @@
+﻿
+// Put something into a URL expression to perform a PUT
+
+put url "file://localhost/Users/doug/demo/internet/myFile.txt"
+
+put "Wowzer" into URL "file://localhost/Users/doug/demo/internet/NewFile.txt"

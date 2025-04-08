@@ -1,0 +1,17 @@
+﻿
+set pathToWisdom to "/Users/doug/Desktop/demo/wisdom.text"
+
+put the folder of pathToWisdom
+put the folder of the folder of pathToWisdom
+
+put the lastPathComponent of pathToWisdom
+
+put the fileExtension of pathToWisdom
+
+put -
+
+put the long name of file pathToWisdom
+
+put the name of file pathToWisdom
+
+put the short name of file pathToWisdom

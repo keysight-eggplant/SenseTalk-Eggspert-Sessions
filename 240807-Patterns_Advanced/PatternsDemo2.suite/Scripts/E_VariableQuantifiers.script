@@ -1,0 +1,17 @@
+﻿// Variables can be used to specify quantities
+
+// set an exact count
+set myCount to 5
+put <exactly myCount "@"> matches "@@@@@"
+
+// set a minimum
+set minimum to 4
+put <at least minimum chars of "bread"> matches "dabba"
+
+// set a range of quantities
+set min to 3
+set max to 6
+put <min to max letters> matches "sam"
+put <min to max letters> matches "Alazam"
+
+
