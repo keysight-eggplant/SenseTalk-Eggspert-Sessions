@@ -1,0 +1,16 @@
+﻿(* 
+Zip will make a compressed archive of a file or folder
+*)
+set the folder to the desktop folder & "demo"
+
+
+Zip File "Logs/crashreport.txt" as "Report.zip"
+
+Zip Folder "Pictures" with {password:"alakazam"}
+
+(* 
+Unzip File will unpack a zipped archive
+*)
+
+Unzip File "Pictures.zip" into "Unzipped Pictures" --with {password:"alakazam"}
+

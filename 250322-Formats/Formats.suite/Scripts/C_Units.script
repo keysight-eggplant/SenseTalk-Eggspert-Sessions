@@ -1,0 +1,28 @@
+﻿
+// Unit formats work with all types of units
+set weight to 33 oz
+put weight
+
+set weight's format to "oz"
+put weight
+
+set weight's format to "lb"
+put weight
+
+// Using [token]s you can divide a value up into its sub-units
+set weight's format to "[lb] [oz]"
+put weight
+
+set weight's format to "[lb] lb [oz] oz"
+put weight
+
+set weight's format to "[lb] pounds, [oz] ounces"
+put weight
+
+put weight using format "[kg] kilograms, [g] grams"
+
+put 1000 meters with format "[miles] miles, [yards] yards, [feet] feet"
+
+put 38 months using format "[calendaryears] years, [month] months"
+
+put 123456789 bytes using format "[mb] MB, [kb] KB, and [byte] bytes"

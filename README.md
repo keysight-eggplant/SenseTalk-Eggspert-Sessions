@@ -24,7 +24,12 @@ Session Focus | Date | Host | Length
 [Repeat Loops](/240306-repeat_loops/) | March 06, 2024 | Doug Simons | 12:50
 [Sensetalk Poetry](/240626-Sensetalk_Poetry/) | June 26, 2024 | Doug Simons | 07:49
 [Internet Overview](/240716-Internet_Overview/)| July 16, 2024 | Doug Simons | 07:18
-[Patterns Advanced](/240807-Patterns_Advanced/)| August 08, 2024 | Doug Simons | 16:50
+[Pattern Advanced](/240807-Patterns_Advanced/)| August 08, 2024 | Doug Simons | 16:50
 [Number Format](/241002-Number_Format/)| October 02, 2024 | Doug Simons | 09:38
 [Sockets](/241113-Sockets/)| November 13, 2024 | Doug Simons | 08:35
-[Files and Folders](/241211-File_Path/)| November 13, 2024 | Doug Simons | 12:31
+[Files and Folders](/241211-File_Path/)| December 11, 2024 | Doug Simons | 12:31
+[File Description](/250111-File_Descriptions/)| January 08, 2025 | Doug Simons | 09:16
+[File Commands](/250122-File_Commands/)| January 22, 2025 | Doug Simons | 11:20
+[Pattern Eggspert](/250305-Patterns_Eggspert/)| March 05, 2025 | Doug Simons | TBU
+[Sensetalk Formats]()| March 19, 2025 | Doug Simons | TBU
+[Pattern Replace](/250402-Pattern_Replace/)| April 052, 2025 | Doug Simons | TBU

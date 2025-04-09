@@ -1,0 +1,23 @@
+﻿
+set text to {{
+Today's price updates:
+10 oz. can of tuna $5.08
+12 eggs for $2.98, 18 for $4.25
+5 lb potatoes $3, 100 lbs $53.47
+}}
+
+set oldprice to <"$", lots of digits then preferably ("." , digits greedily)>
+set price to <{dollarSign: "$"}, {number: lots of digits then preferably ("." , digits greedily)}>
+
+put every occurrence of price in text
+put -
+
+put every match of price in text
+put -
+
+put the first match of price in text into firstMatch
+put firstMatch
+put characters firstMatch.dollarSign_range of text
+put characters firstMatch.number_range of text
+put characters firstMatch.text_range of text
+

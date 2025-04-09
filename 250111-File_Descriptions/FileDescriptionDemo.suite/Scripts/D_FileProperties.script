@@ -1,0 +1,26 @@
+﻿// in addition to a fileDescription object, you can access properties of a file
+
+set the folder to the desktop folder & "demo"
+
+put the size of file "wisdom.text"
+
+put the short name of file "wisdom.text"
+
+put the owner name of file "wisdom.text"
+
+put the creation date of file "wisdom.text"
+
+// file properties can also be accessed through a fileDescription object
+put -
+set wiseFile to the fileDescription of "wisdom.text"
+
+put the modificationDate of wiseFile
+
+put the groupName of wiseFile
+
+// some file properties can also be changed
+put the permissions of file "wisdom.text"
+
+set the permissions of file "wisdom.text" to "rw-rw----"
+
+put the permissions of file "wisdom.text"

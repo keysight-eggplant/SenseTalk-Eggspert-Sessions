@@ -1,0 +1,32 @@
+﻿
+// Unit formats also include some advanced options
+set elapsed to 1234.56 seconds
+put elapsed
+put elapsed as hours
+put elapsed as minutes
+put elapsed with format "[hrs]:[mins]:[secs]"
+
+put elapsed format "[hr] hours, [min] minutes, [sec] seconds"
+put elapsed format "[hr] hours, [min] minutes, [sec.] seconds"
+put elapsed format "[hr] hours, [min.] minutes, [sec.] seconds"
+
+set elapsed.format to "[hr?] hours, [min?] minutes, [sec?.] seconds"
+put elapsed
+
+set elapsed.format to "[hr?] hours, [min?] minutes, [sec? 0.0] seconds"
+put elapsed
+add 41 minutes to elapsed
+put elapsed
+
+set elapsed.format to "[hr?] @, [min?] @, [sec? 0.0] @"
+put elapsed
+set elapsed.format to "[hours?] @, [minutes?] @, [seconds? 0.0] @"
+put elapsed
+set elapsed.format to "[hours?] @, [minutes?] @, [seconds? Words.0] @"
+put elapsed
+set elapsed.format to "[Hours? Words] @, [Minutes? Words] @, [seconds? Words.0] @"
+put elapsed
+subtract 91.8 seconds from elapsed
+put elapsed
+subtract 5 seconds from elapsed
+put elapsed

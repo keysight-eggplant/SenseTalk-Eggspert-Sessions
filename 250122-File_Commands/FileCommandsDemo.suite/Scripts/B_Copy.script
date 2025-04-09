@@ -1,0 +1,13 @@
+﻿(* 
+Copy File command makes a copy of a file
+*)
+set the folder to the desktop folder & "demo"
+
+
+Copy File "wisdom.text" into "NewFolder"
+
+// the Destination is relative to the Source Folder
+Copy File "NewFolder2/something.txt" to "somethingAgain.txt"
+
+// Copy Folder will copy a folder and all of its contents
+Copy Folder "Pictures" into folder "NewFolder"

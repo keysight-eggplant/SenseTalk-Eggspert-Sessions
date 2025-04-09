@@ -1,0 +1,17 @@
+﻿(*
+Set the throwExceptionResults global property to false to prevent these commands from throwing exceptions and to allow the error to become available through the result() function.
+*)
+set the folder to the desktop folder & "demo"
+
+turn off the throwExceptionResults
+
+copy file "wisdom.text" as "myFile.txt"
+put the result into copyFileResult
+
+if copyFileResult is empty then
+	put "File was successfully copied"
+else
+	put "FAILED: " & copyFileResult.archive
+end if
+
+turn on the throwExceptionResults

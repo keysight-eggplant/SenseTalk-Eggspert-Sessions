@@ -1,0 +1,18 @@
+﻿
+set myText to "Abc 123"
+
+set pattern1 to <some characters>
+put pattern1 matches myText
+
+set pattern2 to <exactly 7 characters>
+put pattern2 matches myText
+
+set pattern3 to <3 or more characters>
+put pattern3 matches myText
+
+set pattern4 to <5 to 12 characters>
+put pattern4 matches myText
+
+set pattern5 to <maybe a digit, one or more letters, maybe a space, 2 to 3 digits>
+put pattern5 matches myText
+
