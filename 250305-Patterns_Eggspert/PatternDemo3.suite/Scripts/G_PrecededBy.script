@@ -1,0 +1,11 @@
+﻿
+set text to {{
+Today's price updates:
+10 oz. can of tuna $5.08
+12 eggs for $2.98, 18 for $4.25
+5 lb potatoes $3, 100 lbs $53.47
+}}
+
+set number to <preceded by "$", lots of digits then preferably ("." , digits greedily)>
+
+put every occurrence of number in text

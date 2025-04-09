@@ -1,0 +1,27 @@
+﻿// set the working folder
+set the folder to the desktop folder & "demo"
+
+// get a list of all files within the current folder (the default if no folder is given)
+put the files
+
+// get a list of all folders within the current folder
+put the folders
+
+// get a list of all files AND folders within the current folder
+put the filesAndFolders
+
+// get a list of all files within a specific folder
+put the files in "Pictures"
+
+// you can filter the list with an each expression
+put each item of the filesAndFolders which ends with ".txt"
+
+put -
+
+repeat with each item of the filesAndFolders
+	if it is a file then put "FILE: " & it
+	if it is a folder then
+		put "FOLDER: " & it
+		put "   ---> " & the filesAndFolders in it
+	end if
+end repeat

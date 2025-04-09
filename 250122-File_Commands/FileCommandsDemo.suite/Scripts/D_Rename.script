@@ -1,0 +1,9 @@
+﻿(* 
+Rename File or Folder can be used to change the name of a file or folder
+*)
+set the folder to the desktop folder & "demo"
+
+
+Rename File "NewFolder/Pictures/Cat.jpg" to "Feline.jpg"
+
+Rename Folder "NewFolder2" as "Newer Folder"

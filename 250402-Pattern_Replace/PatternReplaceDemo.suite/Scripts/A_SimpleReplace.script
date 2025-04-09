@@ -1,0 +1,19 @@
+﻿
+set text to {{
+Today's price updates:
+10 oz. can of tuna $5.08
+12 eggs for $2.98, 18 for $4.25
+5 lb potatoes $3, 100 lbs $53.47
+}}
+
+set price to <"$", lots of digits then preferably ("." , digits greedily)>
+
+put the first occurrence of price in text
+put the first 3 occurrences of price in text
+put every occurrence of price in text
+
+put -
+replace the first occurrence of price in text with "$price"
+replace the last 2 occurrences of price in text with "$$"
+replace every occurrence of price in text with "$x.xx"
+put text

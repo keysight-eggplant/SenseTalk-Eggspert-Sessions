@@ -1,0 +1,23 @@
+﻿(*
+SenseTalk includes a number of commands to operate on files in the local file system:
+
+Create File, Create Folder
+Copy File, Copy Folder
+Move File, Move Folder
+Rename File, Rename Folder
+Delete File, Delete Folder
+Zip File, Zip Folder
+Unzip File
+*)
+set the folder to the desktop folder & "demo"
+
+Create File "emptyFile.txt"
+
+Create Folder "NewFolder"
+
+// Put something into a non-existent file to get similar results
+Put "Some actual contents" into file "NewFolder2/something.txt"
+
+// Create File does allow you to set some initial properties
+Create File "NewFolder/accessible.txt" with {permissions:"rw-rw-rw-"}
+Create File "NewFolder/readOnly.txt" with {permissions:"r--r--r--"}

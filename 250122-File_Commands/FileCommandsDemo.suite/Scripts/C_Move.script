@@ -1,0 +1,10 @@
+﻿(* 
+Move File can be used to move a file to a different folder
+*)
+set the folder to the desktop folder & "demo"
+
+
+Move File "emptyFile.txt" into folder "NewFolder"
+
+Move File "NewFolder/wisdom.text" to "../NewFolder2/brains.txt"
+

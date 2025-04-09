@@ -1,0 +1,35 @@
+﻿
+// Numbers can be formatted in a variety of ways
+put 0.3456 into myNum
+put myNum
+
+// the numberFormat is a global property affecting all numbers generally
+set the numberFormat to "0.00" 
+put myNum
+
+// a variable may have its own format, which takes precedence
+set myNum's format to "0.00000"
+put myNum
+
+// a variable's format is unchanged by some operations
+add 2.6004 to myNum
+put myNum
+
+// but resetting a variable's value with put or set will also reset its format
+put 3 into myNum
+put myNum
+
+// the format can be supplied along with a value when setting a variable
+set myNum to 42 with format "Hex"
+put myNum
+
+add 2 to myNum
+put myNum
+multiply myNum by 3
+put myNum
+subtract 0x1A from myNum
+put myNum
+
+put 0xDF into myNum
+put myNum
+

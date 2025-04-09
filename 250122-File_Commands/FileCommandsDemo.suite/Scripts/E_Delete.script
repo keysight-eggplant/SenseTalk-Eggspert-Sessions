@@ -1,0 +1,10 @@
+﻿(* 
+The Delete command can be used to delete a file or an entire folder
+*)
+set the folder to the desktop folder & "demo"
+
+
+Delete File "NewFolder/emptyFile.txt"
+
+Delete Folder "Newer Folder"
+

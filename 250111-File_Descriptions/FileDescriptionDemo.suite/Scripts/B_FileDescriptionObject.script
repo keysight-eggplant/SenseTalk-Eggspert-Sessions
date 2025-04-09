@@ -1,0 +1,23 @@
+﻿// the Files, Folders, and FilesAndFolders functions actually return fileDescription objects
+
+set the folder to the desktop folder & "demo"
+
+put each item of the files which doesn't begin with "." into demoFiles // eliminate hidden files
+put demoFiles
+
+put the first item of demoFiles into myFile
+
+put "My file is: " & myFile
+put myFile is a fileDescription -- test whether we have a fileDescription object
+
+put -
+put archive of myFile
+put -
+
+// because it's a fileDescription object, it carries extra information, and SenseTalk treats it specially
+put the size of myFile
+
+set the folder to the documents folder
+put myFile
+put myFile's folder
+put "wisdom.text" 's folder

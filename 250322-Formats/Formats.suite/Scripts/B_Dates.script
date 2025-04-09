@@ -1,0 +1,22 @@
+﻿
+// Date and Time values have their own formats
+put today into myDate
+put myDate
+
+// a variable's format can be set to a date/time format
+set format of myDate to "American [month]/[day]/[year] or European [day]/[month]/[year]"
+put myDate
+
+add 15 days to myDate
+put myDate
+
+// date/time formats support 3 different format types, but the [token] formats are recommended
+put now with format "%y %Y"
+put now with format "yy yyyy"
+put now with format "[yr] [year]"
+
+put now with format "%m %M"
+
+put now with format "%A %B"
+
+put now format "[weekdayName] [month name]"

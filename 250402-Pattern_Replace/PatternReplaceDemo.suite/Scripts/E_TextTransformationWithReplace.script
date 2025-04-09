@@ -1,0 +1,22 @@
+﻿
+set text to {{
+first: Harry, last: Potter, house: Gryffindor
+first: Draco, last: Malfoy, house: Slytherin
+first: Ron, last: Weasley, house: Gryffindor
+first: Luna, last: Lovegood, house: Ravenclaw
+}}
+
+set pattern to <{name: "first: ", {firstName: max letters}, ", last: ",  {lastName: lots of letters}}, ",">
+
+put every occurrence of pattern in text
+put -
+
+put every match of pattern in text
+put -
+
+put the first match of pattern in text into firstMatch
+put firstMatch
+put -
+
+replace pattern in text with "{:lastName}, {:firstName} -->"
+put text

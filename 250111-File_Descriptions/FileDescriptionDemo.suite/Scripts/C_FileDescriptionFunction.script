@@ -1,0 +1,17 @@
+﻿// the fileDescription function gets a fileDescription object for a given file or path
+
+set the folder to the desktop folder & "demo"
+
+put fileDescription("wisdom.text") into wisdom
+put wisdom
+put -
+put wisdom's archive
+put -
+
+// you can also get a fileDescription for a non-existent file
+put fileDescription("foolish.text") into foolishness
+put foolishness
+put =
+put foolishness.archive
+put -
+
