@@ -1,0 +1,18 @@
+﻿(* There are 3 object types that you use to interact with values in an Excel workbook. *)
+
+// Workbook object
+put ResourcePath("SampleWorkbook.xlsx") into workbookPath
+
+set myWorkbook to workbook(workbookPath)
+
+put the worksheetNames of myWorkbook
+
+// Worksheet object
+put worksheet("People") of myWorkbook into People
+
+// Cell object
+put cell("B2") of People into myCell
+
+put "Cell B2 is: " & myCell
+
+

@@ -1,0 +1,23 @@
+﻿
+(* A Worksheet object gives access to various properties of the worksheet *)
+
+set sheet4 to worksheet(4) of ResourcePath("SampleWorkbook.xlsx")
+
+put "Name: " & the name of sheet4
+put "Sequence: " & the sequenceNumber of sheet4
+put "Hidden: " & the hidden of sheet4
+
+put -
+put "Number of Columns: " & the columnCount of sheet4
+put "Number of Rows: " & the rowCount of sheet4
+
+put -
+set sheet4's tabColor to blue
+put "Tab Color: " & the tabColor of sheet4
+
+set sheet4.name to "Club Members"
+put "Name: " & the name of sheet4
+
+// You can also insert or delete rows or columns within a worksheet
+
+insertRows sheet4, 3 -- insert a new row 3

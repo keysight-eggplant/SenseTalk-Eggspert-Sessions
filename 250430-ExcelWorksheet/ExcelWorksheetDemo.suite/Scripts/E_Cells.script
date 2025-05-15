@@ -1,0 +1,15 @@
+﻿
+(* There are 2 ways to refer to an individual cell in a worksheet *)
+
+set wbPath to ResourcePath("SampleWorkbook.xlsx")
+set sheet2 to worksheet(wbPath, 2)
+
+put cell("C2") of sheet2
+
+put cell(2,3) of sheet2
+
+put -
+set col to 1
+repeat with row = 2 to 5
+	put cell(row,col) of sheet2
+end repeat
