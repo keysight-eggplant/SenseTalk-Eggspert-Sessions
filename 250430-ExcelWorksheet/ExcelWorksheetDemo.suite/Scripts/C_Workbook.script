@@ -1,0 +1,22 @@
+﻿
+(* A Workbook object gives access to its worksheets *)
+put ResourcePath("SampleWorkbook.xlsx") into workbookPath
+
+// However, a shortcut lets you skip the Workbook object
+put the name of worksheet(1) of workbook(workbookPath)
+put the name of worksheet(2) of workbookPath
+
+put 66 into cell("A3") of worksheet("People") of workbookPath
+
+// Using the Workbook object you can get the count or list of worksheets
+set myBook to workbook(workbookPath)
+
+put "Number of worksheets: " & the worksheetCount of myBook
+put "Worksheet names: " & the worksheetNames in myBook
+
+
+// The NewWorksheet function creates a new worksheet within a Workbook, and returns the Worksheet object
+
+put newWorksheet(myBook, name:"Friends", copyFrom: worksheet(1) of myBook) into newSheet
+
+put newSheet

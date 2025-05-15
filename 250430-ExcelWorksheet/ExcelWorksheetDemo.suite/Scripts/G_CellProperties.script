@@ -1,0 +1,34 @@
+﻿
+(* Cells have many properties that can be accessed and changed *)
+
+set book to workbook of ResourcePath("SampleWorkbook.xlsx")
+
+set states to book's worksheet("States")
+
+// The best way to make changes is to use a reference to the cell
+set coloradoArea to be a reference to states.cell("D3")
+
+put "Area of Colorado: " & coloradoArea
+
+// Cell properties include: borderColor, borderStyle, cellType, columnHidden, rowHidden, columnWidth, rowHeight, fillPattern, patternForegroundColor, patternBackgroundColor, fontName, fontColor, fontSize, formula, horizontalAlignment, verticalAlignment, hyperlink, mergeRange, worksheet
+put "Cell type: " & coloradoArea's cellType
+put "Column width: " & coloradoArea's columnWidth
+put "Row height: " & coloradoArea's rowHeight
+put "Row hidden? " & coloradoArea's rowHidden
+put "Font name: " & coloradoArea's fontName
+put "Font size: " & coloradoArea's fontSize
+
+put -
+set coloradoArea's rowHeight to 60
+add 10 to coloradoArea's fontSize
+put "Row height: " & coloradoArea's rowHeight
+put "Font size: " & coloradoArea's fontSize
+put -
+
+set coloradoArea's borderStyle to "double"
+set coloradoArea's borderColor to "purple"
+set coloradoArea's fontColor to "darkRed"
+set coloradoArea's verticalAlignment to "center"
+
+
+

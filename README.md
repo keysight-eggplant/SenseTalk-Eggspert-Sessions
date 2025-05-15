@@ -30,6 +30,7 @@ Session Focus | Date | Host | Length
 [Files and Folders](/241211-File_Path/)| December 11, 2024 | Doug Simons | 12:31
 [File Description](/250111-File_Descriptions/)| January 08, 2025 | Doug Simons | 09:16
 [File Commands](/250122-File_Commands/)| January 22, 2025 | Doug Simons | 11:20
-[Pattern Eggspert](/250305-Patterns_Eggspert/)| March 05, 2025 | Doug Simons | TBU
-[Sensetalk Formats]()| March 19, 2025 | Doug Simons | TBU
-[Pattern Replace](/250402-Pattern_Replace/)| April 052, 2025 | Doug Simons | TBU
+[Pattern Eggspert](/250305-Patterns_Eggspert/)| March 05, 2025 | Doug Simons | 13:05
+[Sensetalk Formats](/250322-Formats/)| March 22, 2025 | Doug Simons | 11:20
+[Pattern Replace](/250402-Pattern_Replace/)| April 05, 2025 | Doug Simons | 9:58
+[Excel Worksheet](/250430-ExcelWorksheet/)| April 30, 2025 | Doug Simons | TBU

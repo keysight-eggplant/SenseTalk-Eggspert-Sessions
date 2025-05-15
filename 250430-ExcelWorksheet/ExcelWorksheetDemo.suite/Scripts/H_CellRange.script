@@ -1,0 +1,14 @@
+﻿
+(* The CellRange function returns a rectangular selection of cells, as a list of lists. *)
+
+set People to worksheet("People") of ResourcePath("SampleWorkbook.xlsx")
+
+put cellRange("B2") of People
+put cellRange("B2:C4") of People
+put cellRange("B") of People
+put cellRange(2) of People
+put -
+put cellRange(rows:[2,5,4]) of People
+put -
+put cellRange(columns:["F","B","E"]) of People
+

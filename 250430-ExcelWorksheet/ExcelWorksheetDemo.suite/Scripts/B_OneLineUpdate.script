@@ -1,0 +1,6 @@
+﻿(* Using these objects, it is possible to change the value of a cell with a single command. *)
+
+add 1 to cell("A2") of worksheet("People") of workbook(ResourcePath("SampleWorkbook.xlsx"))
+
+put "X" into cell("A3") of worksheet("People") of workbook(ResourcePath("SampleWorkbook.xlsx"))
+

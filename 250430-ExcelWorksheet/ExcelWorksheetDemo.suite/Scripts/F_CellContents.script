@@ -1,0 +1,18 @@
+﻿
+(* The Cell() function returns a Cell object. Fundamentally, this gives access to the cell's contents. *)
+
+set sheet2 to worksheet(2) of ResourcePath("SampleWorkbook.xlsx")
+
+set theCell to cell("C2") of sheet2
+
+put "Cell C2's value is: " & theCell 
+
+// You can also change a cell's value, either directly...
+set cell("C2") of sheet2 to "mouse"
+put "Now cell C2's value is: " & cell("C2") of sheet2 
+
+// ... or if you set a variable to be a reference
+set theCell to refer to cell("C2") of sheet2
+put "elephant" into theCell
+
+put "Now cell C2's value is: " & cell("C2") of sheet2 
