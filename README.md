@@ -4,7 +4,7 @@ Short, focused [SenseTalk](https://en.wikipedia.org/wiki/SenseTalk) video sessio
 
 > All sessions are hosted by **Doug Simons** — founder and main maintainer of [SenseTalk](https://en.wikipedia.org/wiki/SenseTalk), and Eggplant Research and Developer at Keysight.
 
-## <img src="https://forums.eggplantsoftware.com/favicon.ico" width="20"/> About Eggplant Functional
+## <img src="Images/eggplant-favicon.png" width="20"/> About Eggplant Functional
 
 [Eggplant Functional](https://www.keysight.com/us/en/products/design-engineering-software/software-quality-engineering/automation-intelligence-eggplant-test.html) is Keysight's image-based test automation tool. Unlike traditional automation frameworks that rely on object IDs or DOM access, Eggplant interacts with any application — on any platform or device — exactly as a real user would: by looking at the screen.
 
@@ -22,7 +22,7 @@ The sessions in this repo explore SenseTalk as a language — all scripts run st
 | | Resource | Description |
 |---|---|---|
 | 📺 | [Full YouTube Playlist](https://www.youtube.com/playlist?list=PL_XmBTGQNIPvsO5rgFgOhADrgbzC2NmrK) | All Eggspert Sessions in one playlist — open any `.suite` folder in **Eggplant Studio** to follow along |
-| <img src="https://forums.eggplantsoftware.com/favicon.ico" width="20"/> | [Eggplant Functional](https://www.keysight.com/us/en/products/design-engineering-software/software-quality-engineering/automation-intelligence-eggplant-test.html) | Keysight's image-based test automation tool — the product that runs SenseTalk scripts |
+| <img src="Images/eggplant-favicon.png" width="20"/> | [Eggplant Functional](https://www.keysight.com/us/en/products/design-engineering-software/software-quality-engineering/automation-intelligence-eggplant-test.html) | Keysight's image-based test automation tool — the product that runs SenseTalk scripts |
 | 📖 | [Eggplant Documentation Hub](https://docs.eggplantsoftware.com/) | Central home for all Eggplant product docs — Functional, DAI, Studio, SenseTalk and more |
 | 🗺️ | [SenseTalk Travel Guide](https://docs.eggplantsoftware.com/studio/stk-sensetalk-travel-guide/) | Orientation guide for experienced coders coming to SenseTalk from other languages |
 | 📚 | [SenseTalk Dictionary](https://docs.eggplantsoftware.com/studio/dict_SenseTalk_Dictionary/) | Comprehensive A–Z reference of every word and symbol in the SenseTalk language |
@@ -32,8 +32,8 @@ The sessions in this repo explore SenseTalk as a language — all scripts run st
 
 ---
 
-# | Session Focus | Date | Video | Length
--- | ---- | ---- | ---- | ----
+No. | Session Focus | Date | Video | Length
+--- | ---- | ---- | ---- | ----
 1 | [Experimenting with the SenseTalk Language](/220126-experimentation/) | January 26, 2022 | [▶ Watch](https://youtu.be/NfOK3pBuemU) | 14:59
 2 | [Using Patterns](/220209-patterns/) | February 9, 2022 | [▶ Watch](https://youtu.be/Z4M_PLL346Q) | 12:15
 3 | [Using Variable Containers](/220223-variables/) | February 23, 2022 | [▶ Watch](https://youtu.be/UslcfV95y9w) | 10:42
