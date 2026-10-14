@@ -1,0 +1,22 @@
+﻿(* Assertions are used to validate that a condition is true. They are frequently used in testing, and to verify that parameters passed to a handler are valid.
+*)
+
+// the "assert" syntax can be as simple as providing a boolean expression
+assert 3 + 4 > 5
+
+assert that "007" is equal to 7.00
+
+// you can optionally provide a message
+assert 2 is between 1 and 11, "mandatory range check"
+
+// usually, of course, you'll be asserting something involving variables
+set quotation to "No one has ever become poor by giving — Anne Frank."
+
+assert quotation contains "giving"
+
+// when an assertion fails, an exception is thrown, unless other behavior requested
+set otherWord to "grooving"
+assert quotation contains otherWord (*with warning*)
+
+put "Script Complete"
+

@@ -10,3 +10,8 @@
 **.vamignore
 .run/
 **/.vam/
+
+## AI/MCP config files
+.mcp.json
+claude.md
+.claude

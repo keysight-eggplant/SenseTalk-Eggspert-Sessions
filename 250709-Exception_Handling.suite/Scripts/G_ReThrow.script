@@ -1,0 +1,21 @@
+﻿// Sometimes it may be useful to catch an exception, examine it, maybe change it, and then throw it again
+
+try myFileOperations
+if the exception isn't empty then
+	put "Got an exception: " & the exception's name
+	put "    Reason: " & the exception's reason
+end if
+
+
+to handle myFileOperations
+
+	try
+		delete file "placeToStoreNewResults"
+	catch anException
+		if anException's name is "STFileSystemException" then
+			set anException.name to "MyFileOperationError"
+			throw anException
+		end if
+	end try
+	
+end myFileOperations

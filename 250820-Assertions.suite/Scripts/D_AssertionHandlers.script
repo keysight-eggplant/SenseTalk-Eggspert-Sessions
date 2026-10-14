@@ -1,0 +1,69 @@
+﻿--set the assertionPassedDelegate to me
+--set the assertionFailedDelegate to me
+--set the assertionBehavior to "pause"
+--set global language to "Spanish"
+
+SetMonthRange "May", "July"
+
+put "The month range is from " & global beginningMonth & " to " & global endingMonth
+
+put "Script Complete"
+put -
+put "AssertionPassCount: " & the assertionPassCount
+put "AssertionFailCount: " & the assertionFailCount
+put "AssertionExceptionCount: " & the assertionExceptionCount
+put "AssertionErrorCount: " & the assertionErrorCount
+put "AssertionWarningCount: " & the assertionWarningCount
+put -
+------------
+
+to setMonthRange firstMonth, secondMonth
+	// before setting months, make sure the names are valid
+	assert firstMonth is in validMonthNames(), "only valid month names can be used"
+	assert secondMonth is in validMonthNames(), "only valid month names can be used"
+	
+	set global beginningMonth to firstMonth
+	set global endingMonth to secondMonth
+	
+end setMonthRange
+
+to handle validMonthNames
+	log "Retrieving validMonthNames"
+	if global language is "Spanish" then
+		return ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
+			"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+	else
+		return ["January", "February", "March", "April", "May", "June", "July",
+			"August", "September", "October", "November", "December"]
+	end if
+end validMonthNames
+
+------------
+
+(* ---- Assertion Delegate Handlers ---- *)
+
+to handle assertionPassed theAssertion
+	// implement the default AssertionPassed behavior:
+	logSuccess "Assertion Succeeded: " & theAssertion
+end assertionPassed
+
+to handle assertionFailed theAssertion, theBehavior
+	// implement the default AssertionFailed behavior:
+	if theBehavior is ...
+		... "Exception":
+			add 1 to the assertionExceptionCount
+			throw "Assertion Failed", theAssertion
+		... "Error":
+			add 1 to the assertionErrorCount
+			logError theAssertion
+		... "Warning":
+			add 1 to the assertionWarningCount
+			logWarning theAssertion
+		... "Pause":
+			add 1 to the assertionWarningCount
+			logWarning theAssertion
+			pauseScript
+	end if
+	// set a limit to how many failures we will tolerate
+	if the assertionFailCount is more than 5 then exit all
+end assertionFailed

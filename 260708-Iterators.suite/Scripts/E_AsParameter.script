@@ -1,0 +1,28 @@
+﻿
+// Passing an iterator as a parameter to other handlers
+set list to [10,20,30,40,50,60,70]
+
+put "First value: " & list.nextValue
+put "Second value: " & list.nextValue
+put "Third value: " & list.nextValue
+
+ProcessA list
+
+put "Next value: " & list.nextValue
+
+ProcessA @list
+
+put "Another value: " & list.nextValue
+put -
+
+to handle processA anIterator
+	put
+	put -
+	put "ProcessA:" && anIterator
+	put anIterator's nextValue
+	put anIterator's nextValue
+	put -
+	put
+end processA
+
+

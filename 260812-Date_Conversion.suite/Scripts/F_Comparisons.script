@@ -1,0 +1,30 @@
+﻿
+put "August 12" is a date // checks whether the string can be recognized as a valid date
+put -
+
+put "May 5" comes before "August 12"
+
+put "May 5" comes before "August 12" as date
+
+put date("May 5") comes before "August 12" as date
+put -
+
+put "May 5" into someDate
+
+add 3 days to someDate
+put someDate
+put someDate comes before "August 12" as date
+put -
+
+// example of unnecessary use of specific format
+if the international time < international time("2030-12-31T23:59:59Z") then
+	put "It's not too late!"
+end if
+
+// equivalent:
+if the time < time("2030-12-31T23:59:59Z") then
+	put "It's still not too late!"
+end if
+
+put -
+

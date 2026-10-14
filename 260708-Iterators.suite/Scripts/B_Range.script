@@ -1,0 +1,22 @@
+﻿
+// Treating a Range as an Iterator
+
+set gen to 3..99 step by 3
+
+put gen.nextValue
+put gen.nextValue
+put gen.nextValue
+put gen.nextValue
+
+// access CurrentIndex or modify it to change the position in the list or range
+put -
+put "Index: " & gen.currentIndex
+add 5 to gen.currentIndex
+put "New Index: " & gen.currentIndex
+put gen.currentValue
+put -
+
+put gen.nextValue
+put gen.nextValue
+put gen.nextValue
+put gen.nextValue

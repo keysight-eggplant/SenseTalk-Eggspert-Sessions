@@ -1,0 +1,22 @@
+﻿(* The formattedTime function can be used for custom formatting *)
+
+put formattedTime("[day] quiet days into the month of [month name]")
+
+put formattedTime("[day] quiet days into the month of [month name]", 9 days hence)
+put -
+
+put formattedTime("Day [day] of [month name]", "1776-07-04") into once
+put once
+put once's format
+put once's year // no information is lost, even if it isn't shown
+
+put "Day 16 of August" is a date --> False
+put -
+
+put once + 2 months into sometimeLater
+put sometimeLater
+put sometimeLater.format
+
+put "2026-01-05" as date with format "[monthName] [d] in [year]" into newDate
+put newDate
+

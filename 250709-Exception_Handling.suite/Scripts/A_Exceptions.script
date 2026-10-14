@@ -1,0 +1,24 @@
+﻿// generate data
+set importantData to !{{
+
+Today is [[today]] and the time is [[time]].
+
+
+}}
+if today's date is "July 8" then
+	put whiteHeartSuit && "Happy Birthday, Elizabeth! " & whiteHeartSuit after importantData
+else
+	put "Please proceed with daily activities." after importantData
+end if
+
+// record data in working file
+set dataFilePath to the temporary folder & "/snowrainsun.txt"
+delete file dataFilePath
+
+put importantData & return into file dataFilePath
+put "Data recorded"
+put -
+put "The important information is:"
+put -
+put file dataFilePath
+

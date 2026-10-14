@@ -1,0 +1,15 @@
+﻿(* You can control how failed assertions behave through the AssertionBehavior global property.
+  Exception - throw an exception
+  Error - log an error
+  Warning - log a warning
+  Pause - script will pause
+*)
+
+put "Default assertion behavior: " & the assertionBehavior
+set the assertionBehavior to "Warning"
+put "New behavior: " & the assertionBehavior
+
+set myValue to 2
+assert that myValue is greater than 7
+
+put "Script Complete"

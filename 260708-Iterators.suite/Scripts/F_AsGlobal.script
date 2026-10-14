@@ -1,0 +1,30 @@
+﻿
+// Using an iterator as a global value shared with other handlers
+global list
+set list to [10,20,30,40,50,60,70]
+
+put "First value: " & list.nextValue
+put "Second value: " & list.nextValue
+put "Third value: " & list.nextValue
+
+ProcessB
+
+put "Next value: " & list.nextValue
+
+ProcessB
+
+put "Another value: " & list.nextValue
+put -
+
+to handle processB
+	global list
+	put
+	put -
+	put "ProcessB:" && list
+	put list's nextValue
+	put list's nextValue
+	put -
+	put
+end processB
+
+

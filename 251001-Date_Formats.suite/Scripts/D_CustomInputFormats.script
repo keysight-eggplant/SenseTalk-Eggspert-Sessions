@@ -1,0 +1,17 @@
+﻿(* You can add more formats to the timeInputFormat *)
+
+put "Day 3 in the merry month of April, 2025" is a date --> False
+
+insert "Day [day] in the merry month of [monthName], [year]" into the timeInputFormat
+
+put "Day 3 in the merry month of April, 2025" is a date --> True
+
+put "Day 3 in the merry month of April, 2025" as a date into specialDay
+put specialDay
+put specialDay.format
+
+add 40 days to specialDay
+put specialDay
+
+put -
+put the timeInputFormat joined by return

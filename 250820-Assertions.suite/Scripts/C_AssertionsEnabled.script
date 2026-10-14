@@ -1,0 +1,33 @@
+﻿(* Assertions are enabled by default. Disabling them causes all "assert" commands to be ignored entirely (not even evaluated).
+ *)
+--set the assertionsEnabled to false
+put "Assertions enabled: " & the assertionsEnabled
+
+SetMonthRange "May", "July"
+
+put "The month range is from " & global beginningMonth & " to " & global endingMonth
+
+put "Script Complete"
+------------
+
+to setMonthRange firstMonth, secondMonth
+	// before setting months, make sure the names are valid
+	assert firstMonth is in validMonthNames(), "only valid month names can be used"
+	assert secondMonth is in validMonthNames(), "only valid month names can be used"
+	
+	set global beginningMonth to firstMonth
+	set global endingMonth to secondMonth
+	
+end setMonthRange
+
+to handle validMonthNames
+	log "Retrieving validMonthNames"
+	if global language is "Spanish" then
+		return ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
+			"Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" ]
+	else
+		return ["January", "February", "March", "April", "May", "June", "July",
+			"August", "September", "October", "November", "December"]
+	end if
+end validMonthNames
+

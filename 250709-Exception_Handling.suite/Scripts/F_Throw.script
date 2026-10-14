@@ -1,0 +1,22 @@
+﻿// You can also throw your own exceptions if something goes wrong in your script
+
+try
+	fribble 4
+	fribble 5
+	fribble 6
+catch except
+	put "Caught exception: " & except.name
+	put "The reason is: " & except.reason
+end try
+
+put "Total amound fribbled: " & global fribbleTotal
+
+to fribble amount
+	set validAmounts to [2,4,7,12,14,22]
+	if amount isn't in validAmounts then
+		throw "Improper fribbling", !"[[amount]] is not a valid fribble amount"
+	end if
+	
+	put "Fribbling " & amount
+	add amount to global fribbleTotal
+end fribble

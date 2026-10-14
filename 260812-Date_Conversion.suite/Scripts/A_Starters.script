@@ -1,0 +1,34 @@
+﻿(* In a global world, we need to share date and time information clearly
+
+SenseTalk has a number of features that let you control how date/time information is displayed, and how it is interpreted.
+*)
+
+put the time
+set the clockFormat to 24
+put the time
+put -
+
+put the date // by default, the date shows in an ambiguous format 
+put the year of "08/11/26"
+put -
+
+put the centuryCutoff // controls how 2-digit years are interpreted
+put the year of "8/11/36"
+put the year of "8/11/37"
+
+set the centuryCutoff to 46
+put the year of "8/11/37"
+put -
+
+put the basic date
+put the long common date
+put -
+
+set the dateLocale to "es_ES" // show month and weekday names in Spanish
+put the basic date
+put the long common date
+put -
+
+put the international date
+put the international time
+put -

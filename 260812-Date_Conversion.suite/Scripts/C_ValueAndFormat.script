@@ -1,0 +1,27 @@
+﻿(* All SenseTalk date/time values fundamentally represent a point on the time line.
+
+A date/time value also has a format, which controls how it is displayed. Changing the format doesn't change its value on the time line.
+*)
+
+put the time into myTime
+put myTime
+put myTime's format
+put -
+
+convert myTime to short date and long time
+put myTime
+put myTime's format
+put -
+
+set myTime's format to "[hr24] o'clock on day [day] of [monthName]"
+put myTime
+put -
+
+convert myTime to abbr international time
+put myTime
+put myTime's format
+put =
+
+put myTime * 1 // a little hack to see the internal timeline value
+put =
+

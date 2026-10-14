@@ -1,0 +1,9 @@
+﻿
+// It's also possible to combine two Each expressions, for interesting results
+
+set letters to "A".."G"
+set numbers to 1..5
+
+put each item of letters & each item of numbers into combinedList
+
+put combinedList

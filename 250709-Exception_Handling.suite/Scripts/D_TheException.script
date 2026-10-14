@@ -1,0 +1,17 @@
+﻿// The Catch statement can provide a variable name to catch the exception
+
+try
+	set dataFilePath to "/path/to/nonexistentFile.txt"
+	delete file dataFilePath
+catch myFileError
+	put "The error is: " & myFileError
+end try
+
+
+// After a "try", the exception global property will contain the exception if there was one, or empty
+try to delete file "nobodyHome.txt"
+
+if the exception isn't empty then
+	put "There was an exception:"
+	put the exception
+end if

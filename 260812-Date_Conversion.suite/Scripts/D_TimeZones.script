@@ -1,0 +1,28 @@
+﻿(* 
+In addition to a value (its point on the time line), and its format, each date/time value also has an associated Time Zone. 
+*)
+put "Local offset: " & the timeZoneOffset // local offset from UTC, also called UTCOffset
+
+put the short local time into myTime
+put myTime
+put myTime's format
+put -
+
+put the timeZoneOffset of myTime
+put the timeZone of myTime
+put the timeZoneAbbreviation of myTime
+put -
+
+set the timeZone of myTime to "EDT"
+put the timeZoneOffset of myTime
+put the timeZone of myTime
+put the timeZoneAbbreviation of myTime
+put myTime
+put -
+
+set the timeZone of myTime to "Europe/Malta"
+put the [timeZoneOffset, timeZone, timeZoneAbbreviation] of myTime
+put myTime
+put -
+
+

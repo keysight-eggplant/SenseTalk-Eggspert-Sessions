@@ -1,0 +1,36 @@
+﻿
+// Treating a Property List as an Iterator
+
+set phrase to "the quick brown fox cleverly jumped over the very drowzy dog"
+
+set letterCounts to {:}
+repeat with each character of phrase
+	add 1 to letterCounts.(it)
+end repeat
+put letterCounts
+put -
+
+// use nextValue to access the next value in the property list
+put letterCounts.nextValue
+put letterCounts.nextValue
+put letterCounts.currentValue
+put letterCounts.currentKey
+put -
+
+// nextKey can also be used to advance to the next element
+put letterCounts.nextKey
+put letterCounts.currentValue
+put letterCounts.nextKey
+put letterCounts.currentValue
+put -
+
+// nextKeyValue and currentKeyValue will access the key and value together
+put letterCounts.nextKeyValue
+put letterCounts.currentKeyValue
+repeat
+	put letterCounts.nextKeyValue into keyVal
+	put keyVal
+	if keyVal is end then exit repeat
+end repeat
+
+

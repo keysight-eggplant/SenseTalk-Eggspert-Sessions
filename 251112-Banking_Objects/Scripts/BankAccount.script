@@ -1,0 +1,19 @@
+﻿properties
+	balance: 0,
+	type: "UNDEFINED",
+	asTextFormat: "[[my type]] Account: $[[my balance]]"
+end properties
+
+to deposit amount
+	add amount to my balance
+	insert "Deposit" && amount after my transactions
+end deposit
+
+to withdraw amount
+	subtract amount from my balance
+	insert "Withdraw" && amount after my transactions
+end withdraw
+
+to initialize
+	insert "StartingBalance" && my balance into my transactions
+end initialize
