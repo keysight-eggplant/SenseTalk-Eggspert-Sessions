@@ -1,6 +1,6 @@
 # Notes
 
-[![](https://img.shields.io/badge/YouTube-9m16s-FF0000?logo=youtube)](https://youtu.be/57R42y9Q)
+[![](https://img.shields.io/badge/YouTube-9m16s-FF0000?logo=youtube)](https://youtu.be/57R42y9Q--Y)
 
 Join Eggplant Research and Developer, Doug Simons, to learn more about Eggplant's English-like language **SenseTalk** and its capabilities.
 

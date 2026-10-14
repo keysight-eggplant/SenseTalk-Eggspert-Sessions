@@ -10,3 +10,7 @@
 **.vamignore
 .run/
 **/.vam/
+
+.mcp*
+.claude*
+claude.md
