@@ -11,6 +11,7 @@
 .run/
 **/.vam/
 
-.mcp*
-.claude*
+## AI/MCP config files
+.mcp.json
 claude.md
+.claude

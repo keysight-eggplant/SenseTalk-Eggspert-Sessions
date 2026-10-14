@@ -1,0 +1,19 @@
+﻿
+// An each expression can be used to generate a list of constructed values
+
+put random(100) for each item of 1..10
+put -
+
+set firstNames to "Angela Robert Wayne Penny Frank Cathy"
+set lastNames to "Roberts Marshall Williams O'Connor Finster"
+
+put any word of firstNames && any word of lastNames for each item of 1..5
+put -
+
+put any word of firstNames && each for each word of lastNames
+put -
+
+put "A" & each item of 20..30 & "-B" & random(100)
+
+put ("A" & each item of 20..30 & "-B" & random(100)) &&& "END"
+

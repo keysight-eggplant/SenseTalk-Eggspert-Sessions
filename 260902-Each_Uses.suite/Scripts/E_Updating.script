@@ -1,0 +1,27 @@
+﻿
+// An Each expression can also be used as a Container, letting you selectively modify values
+put [1,2,3,4,5,6,7] into myList
+add 10 to each item of myList which is an odd number
+put myList
+put -
+
+put 100*each into each item of myList which is an even number
+put myList
+put -
+
+set text to "dizzy dogs dance during daylight"
+put capitalized of each into each word of text which contains "g"
+put text
+put +
+
+set totals to [46,19,88,132,74,103,98]
+set each item of totals which is greater than 100 to 100
+put totals
+set each item of totals which is less than 50 to 50
+put totals
+put -
+
+set totals to [46,19,88,132,74,103,98]
+set each item of totals to each but never less than 50 but no more than 100
+put totals
+put -

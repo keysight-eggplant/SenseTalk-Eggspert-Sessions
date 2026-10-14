@@ -1,0 +1,21 @@
+﻿
+put the international time
+put the abbreviated international time
+put -
+
+put the UTC time // special format that also sets the time zone
+
+put the Zulu time // synonym for UTC - Zulu is the letter "Z" for Zero time zone
+
+put the zulu time of "6/12/73"
+
+put -
+
+set myDate to "April 3"
+convert myDate to long date and long time
+put myDate
+
+convert myDate to zulu time
+put myDate
+
+put =

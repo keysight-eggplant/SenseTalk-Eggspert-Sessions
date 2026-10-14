@@ -1,0 +1,19 @@
+﻿
+to handle asText
+	return "Customer id " & my id & ": " & my name & ", Assets: $" & my wealth
+end asText
+
+to handle wealth -- calculate my total assets
+	set total to zero
+	repeat with each account in values of my accounts
+		add account's balance to total
+	end repeat
+	return total
+end wealth
+
+to displayReport
+	put me
+	repeat with each account in values of my accounts
+		put "   " & account
+	end repeat
+end displayReport

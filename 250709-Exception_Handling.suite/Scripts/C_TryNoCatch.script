@@ -1,0 +1,14 @@
+﻿put "Simple try without a catch"
+
+try
+	set dataFilePath to "/path/to/nonexistentFile.txt"
+	delete file dataFilePath
+	put "File was deleted"
+end try
+
+put -
+put "Even simpler try"
+
+try to delete file dataFilePath
+
+put "Done!"

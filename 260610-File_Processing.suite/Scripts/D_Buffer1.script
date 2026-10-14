@@ -1,0 +1,28 @@
+﻿
+set searchMe to "/tmp/findMe.txt"
+
+put "<-> @ " repeated 100 times into file searchMe
+put "Waldo" into character 298 of file searchMe
+
+put file searchMe
+
+put -
+
+open file searchMe
+
+set previousCount to 0
+repeat
+	read 100 characters from file searchMe into text
+	get the offset of "Waldo" in text
+	if it isn't zero then
+		put "Found Waldo at character " & previousCount + it
+		exit repeat
+	end if
+	if text is empty then
+		put "Waldo can't be found!"
+		exit repeat
+	end if
+	add 100 to previousCount
+end repeat
+
+put -

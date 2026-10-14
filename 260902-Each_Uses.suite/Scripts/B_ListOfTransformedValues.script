@@ -1,0 +1,23 @@
+﻿
+// Transform values to create a new list
+
+put each item of 1..10 squared into squares
+put squares
+put -
+
+set colors to ["red", "green", "blue"]
+put each item of colors & "s" into pluralColors
+put pluralColors
+put -
+
+put pluralize(each) for each item of ["piano", "candy", "joy", "day", "bunny"]
+put -
+
+to pluralize aWord
+	if aWord ends with "y" and the second-to-last char of aWord isn't in "aeiou"
+		put "ies" into the last char of aWord
+	else
+		put "s" after aWord
+	end if
+	return aWord
+end pluralize

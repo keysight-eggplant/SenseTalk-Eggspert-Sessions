@@ -1,0 +1,24 @@
+﻿
+// Using a Custom Iterator, or Generator
+
+put a new NameGenerator into nameGen
+put nameGen.nextValue
+put nameGen.nextValue
+put nameGen.nextValue
+put nameGen.nextValue
+put nameGen.nextValue
+put nameGen.nextValue
+put -
+
+// with a Properly Constructed custom iterator you can use a repeat loop
+
+put a new NameGenerator into nameGen2
+
+repeat with each item of nameGen2
+	put it	
+end repeat
+put -
+
+// you can also use an each expression
+put a new NameGenerator into nameGen3
+put each item of nameGen3 which begins with "H"

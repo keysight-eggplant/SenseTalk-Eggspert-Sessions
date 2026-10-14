@@ -1,0 +1,39 @@
+﻿(* SenseTalk's date "varieties" let you choose which interpretation of the ambiguous xx/xx format to use: mm/dd or dd/mm *)
+
+put the dateFormatVariety // the default variety is "A", the US standard
+put the date
+put -
+
+set the dateFormatVariety to "B"
+put the dateFormatVariety
+put the date
+put -
+
+set the dateFormatVariety to "C"
+put the dateFormatVariety
+put the date
+put -
+
+set the dateFormatVariety to "D"
+put the dateFormatVariety
+put the date
+put =
+
+put "Date Input Varieties"
+put the dateInputVariety
+put "8/10/26 =" && the long date of "8/10/26"
+put -
+
+set the dateInputVariety to "B"
+put the dateInputVariety
+put "8/10/26 =" && the long date of "8/10/26"
+put -
+
+set the dateInputVariety to "None"
+put the dateInputVariety
+try
+	put "8/10/26 =" && the long date of "8/10/26"
+catch
+	put "Caught Exception: " & the exception
+end try
+put -

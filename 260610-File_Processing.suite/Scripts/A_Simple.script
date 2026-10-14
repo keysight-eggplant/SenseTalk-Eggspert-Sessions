@@ -1,0 +1,17 @@
+﻿
+// add a log entry by reading, updating, and writing the file
+
+put file "/tmp/log1234.txt" into myLog // read the file
+
+put the internet date && "Log message 1" & return after myLog
+
+put myLog into file "/tmp/log1234.txt" // re-write the file
+
+
+// add a log entry by treating the file as a container, just like a variable
+
+put the internet date && "Log message 2" & return after file "/tmp/log1234.txt"
+
+
+// display the file contents
+put file "/tmp/log1234.txt"
