@@ -1,0 +1,12 @@
+﻿// Use a "try/catch" block to catch an exception
+
+try
+	set dataFilePath to "/path/to/nonexistentFile.txt"
+	delete file dataFilePath
+	put "File was deleted"
+catch myFileError
+	put "The error is: " & myFileError
+	put -
+end try
+
+put "And the script goes on"

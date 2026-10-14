@@ -1,0 +1,24 @@
+﻿
+// Treating a List as an Iterator
+set animals to ["cat", "rabbit", "zebra", "dog", "mouse"]
+
+// iterating a list with a repeat loop
+repeat with each item in animals
+	put it
+end repeat
+put -
+
+// iterating one item at a time by using the list as an iterator, with NextValue
+put animals.nextValue
+put animals.nextValue
+put animals.nextValue
+put -
+
+// use CurrentValue to get the current item in the list without advancing
+put animals.currentValue
+put animals.currentValue
+put -
+
+put animals.nextValue
+put animals.nextValue
+put animals.nextValue

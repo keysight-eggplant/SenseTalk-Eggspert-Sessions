@@ -1,0 +1,23 @@
+﻿// Some operations set the result to an exception.
+// Normally, the exception will be thrown, but this can be controlled by the ThrowExceptionResults global property.
+
+put the throwExceptionResults
+turn off the throwExceptionResults
+
+move file "haleakala" into folder "mountainVistas"
+put the result
+put -
+
+delete file "geranium"
+put the result into myResult
+if myResult is an exception then
+	put myResult's name
+	put myResult's reason
+	if myResult.name isn't "STFileSystemException" then throw myResult
+end if
+put -
+
+turn on the throwExceptionResults
+
+delete file "snowfall"
+put "File deleted"

@@ -1,0 +1,19 @@
+﻿// The exception global property can also be used to identify the exception within a catch block
+
+try
+	set dataFilePath to "/path/to/nonexistentFile.txt"
+	delete file dataFilePath
+catch
+	put "The error is: " & the exception
+end try
+
+// in every case, an exception is an object (property list) with multiple properties
+put =
+put "Exception: " & the exception
+put -
+put "Name: " & the exception.name
+put "Reason: " & the exception.reason
+put "Location: " & the exception.location
+put "Line: " & the exception.scriptError.line
+put -
+put archive of the exception

@@ -1,0 +1,29 @@
+﻿(* People have devised many clever ways to represent dates and times. *)
+
+// date "input" -- what can SenseTalk recognize as a date?
+
+put "April 1, 1926" is a date
+put "4/1/26" is a date
+put "4 APR 1926" is a date
+put "1926-04-01" is a date
+put -
+
+// date "output" -- what date formats can SenseTalk produce?
+
+put today
+
+put the date
+put short date
+put the abbreviated date
+put the long date
+put -
+put the common date
+put the international date
+put the internet date
+put the simple date
+put -
+put the long common date
+put the long international date
+put the long internet date
+put the long simple date
+put -

@@ -1,0 +1,14 @@
+﻿// A Custom Iterator that Generates Random Names
+
+properties
+	objectType:"iterator", // identify this object as an iterator
+	first:["Harry","Ron", "Hermione", "George", "Harriet"],
+	last:["Potter", "Weasley", "Grainger", "Jetson", "Tubman"],
+end properties
+
+to handle nextValue
+	pop any item of my first into firstName
+	pop any item of my last into lastName
+	if firstName is empty then return end
+	else return firstName && lastName
+end nextValue

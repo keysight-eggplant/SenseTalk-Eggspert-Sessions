@@ -1,0 +1,10 @@
+﻿// construct a huge file with an X in every 1000th character
+put "X" into character 1000 of hugeText
+
+// keep doubling the text until it reaches a huge size
+repeat while length of hugeText < 3 billion
+	put hugeText after hugeText
+end repeat
+
+put the length of hugeText
+put hugeText into file "/tmp/hugeText.txt"

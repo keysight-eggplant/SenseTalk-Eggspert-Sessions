@@ -1,0 +1,10 @@
+﻿(* The TimeInputFormat global property controls SenseTalk's "input" date and time formats. *)
+
+put the timeInputFormat joined by return
+put -
+
+put "June 1, 2025" as date into myDate
+put myDate
+put myDate's format
+
+put myDate - 12 days

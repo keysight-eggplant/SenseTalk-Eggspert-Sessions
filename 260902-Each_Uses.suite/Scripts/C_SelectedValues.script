@@ -1,0 +1,28 @@
+﻿
+// Select values using a Where clause
+
+set quote to "Genius is eternal patience - Michelangelo"
+put each word of quote where the second character of each is in "aeiou"
+put -
+
+put each item of [33,58,60,43,44,12,67,84,66,43] which is a multiple of 3
+put -
+
+set firstLine to "Mary had a little lamb whose fleece was white as snow"
+put each word of firstLine whose length is greater than 3
+put =
+
+set clients to [
+	{name:"Jack", id:1324, balance:300},
+	{name:"Ruby", id:1425, balance:850},
+	{name:"Cyndi", id:3274, balance:1080},
+	{name:"Delia", id:1399, balance:2300},
+]
+
+put clients
+put -
+put each item of clients where each's balance is between 500 and 1500
+put -
+put each item of clients whose id is 1399
+put -
+

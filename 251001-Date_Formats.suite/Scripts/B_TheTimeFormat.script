@@ -1,0 +1,35 @@
+﻿(* The TimeFormat global property controls SenseTalk's "output" date and time formats. *)
+
+put the basic date
+put the timeFormat's basicDate
+put -
+
+put the dateItems
+put the timeFormat.dateItems
+put -
+
+put the clockFormat // global property that controls 12 or 24 hour time display
+put the long time
+put the timeFormat.longTime12
+put -
+set the clockFormat to 24 hr
+put the clockFormat
+put the long time
+put the timeFormat.longTime24
+
+put -
+
+put archive of the timeFormat
+put -
+
+// the timeFormat global property can be changed
+put the date
+set the timeFormat.date to "[year].[m].[d]"
+put the date
+put the date plus 2 days
+put the short date
+
+
+
+
+

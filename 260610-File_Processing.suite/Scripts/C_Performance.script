@@ -1,0 +1,35 @@
+﻿// access a huge text file and count the number of X's that it contains
+set hugeFile to "/tmp/hugeText.txt"
+
+put "The file size is: " & the size of file hugeFile as mb
+put -
+put "Simple file access"
+put the time into startTime
+
+put file hugeFile into hugeText
+put "Total number of X's is: " & the number of occurrences of "X" in hugeText
+put empty into hugeText -- free up memory
+
+put "Time: " & the time - startTime
+
+put -
+put "Streaming file access"
+put the time into startTime
+
+open file hugeFile
+
+set blockSize to one million
+set totalCount to 0 -- count the number of occurrences of "X"
+
+repeat
+	read blockSize chars from file hugeFile into incoming
+	if incoming is empty then exit repeat
+	
+	add the number of occurrences of "X" in incoming to totalCount
+end repeat
+
+close file hugeFile
+
+put "Total number of X's is: " & totalCount
+put "Time: " & the time - startTime
+put -

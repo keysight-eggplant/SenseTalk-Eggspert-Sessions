@@ -1,0 +1,14 @@
+﻿
+// add a log entry by using file streaming operations
+
+open file "/tmp/log1234.txt"
+
+seek in file "/tmp/log1234.txt" to the end // move our pointer to the end of the file
+
+write the internet date && "Log message 3" & return to file "/tmp/log1234.txt"
+
+close file "/tmp/log1234.txt"
+
+// see the final result of our logging
+put file "/tmp/log1234.txt"
+

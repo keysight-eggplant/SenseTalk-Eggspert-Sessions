@@ -1,0 +1,27 @@
+﻿
+put a new BankCustomer with {name:"John Doe", id:1234} into customer
+put customer
+
+set checking to new BankAccount with {type:"Checking"}
+put checking
+
+put checking into customer.accounts.Checking
+
+put new BankAccount with {type:"Savings", balance:"100"} \
+		into customer.accounts.Savings
+
+put customer
+
+put -
+
+send deposit 500 to customer.accounts.Checking
+send withdraw 20 to customer.accounts.Savings
+
+(customer.accounts.Checking).withdraw 150
+tell (customer.accounts.Savings) to deposit 150
+
+put customer
+
+send displayReport to customer
+
+

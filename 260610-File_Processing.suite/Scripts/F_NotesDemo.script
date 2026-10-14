@@ -1,0 +1,124 @@
+﻿-- File I/O Demo: Personal Notes Log
+-- Demonstrates: open file, write to file, seek in file, read from file, close file
+
+set notesFile to the temporary folder & "notes_demo.txt"
+if there is a file notesFile then delete file notesFile
+
+
+-- ===================================================
+-- Part 1: Create the notes file
+-- ===================================================
+put =
+put "--- Part 1: Writing notes to file ---"
+
+open file notesFile for writing // "for writing" will replace the entire file
+
+write "Monday: Planning" & return to file notesFile
+write "  - Automate the weekly report" & return to file notesFile
+write "  - Set up build failure notifications" & return to file notesFile
+write return to file notesFile
+
+put the position in file notesFile into tuesdayOffset  -- save a bookmark for later
+
+write "Tuesday: Progress" & return to file notesFile
+write "  - Report automation is working" & return to file notesFile
+write "  - Build notifications need more work" & return to file notesFile
+write return to file notesFile
+
+write "Wednesday: Wrap-up" & return to file notesFile
+write "  - Build notifications: done!" & return to file notesFile
+write "  - Starting SenseTalk file I/O demo" & return to file notesFile
+write return to file notesFile
+
+close file notesFile
+
+put "Created: " & notesFile
+put "File size: " & the size of file notesFile
+
+
+-- ===================================================
+-- Part 2: Selective reading and rewinding with seek
+-- ===================================================
+put =
+put ""
+put "--- Part 2: Reading selectively, then rewinding ---"
+
+open file notesFile for reading // "for reading" will prevent making any changes
+
+read a line from file notesFile  -- reads one line
+put "First line: [" & it & "]"
+put "File position after reading first line: byte " & the position in file notesFile
+
+seek in file notesFile to beginning  -- rewind to the start
+put "File position after seek to beginning: byte " & the position in file notesFile
+
+read from file notesFile until end  -- read the entire file at once
+put ""
+put "Full notes file:" & return & it
+
+close file notesFile
+
+
+-- ===================================================
+-- Part 3: Seeking to a saved bookmark position
+-- ===================================================
+put =
+put ""
+put "--- Part 3: Jumping to Tuesday (saved bookmark at byte " & tuesdayOffset & ") ---"
+
+open file notesFile for reading
+seek in file notesFile to tuesdayOffset
+read from file notesFile until "Wednesday"
+put it
+close file notesFile
+
+
+-- ===================================================
+-- Part 4: Appending a new entry
+-- ===================================================
+put =
+put ""
+put "--- Part 4: Appending Thursday's notes ---"
+
+open file notesFile for appending // "for appending" begins writing after end of file
+write "Thursday: Demo complete" & return to file notesFile
+write "  - All five file commands successfully demonstrated!" & return to file notesFile
+close file notesFile
+
+put "File is now " & the size of file notesFile
+put -
+put file notesFile
+
+-- ===================================================
+-- Part 5: Mixed operations and flexible syntax
+-- ===================================================
+put =
+put ""
+put "--- Part 5: Various operations with precise file positioning ---"
+
+open file notesFile for updating // "for updating" allows reading and writing
+
+read 1 line into firstLine from file notesFile
+put "First line: [" & firstLine & "]"
+
+read from file notesFile for 2 lines
+put "Next 2 lines:" & return & it
+
+seek in file notesFile to 4 // seek to an absolute position
+put "File position after direct seek: byte " & the position in file notesFile
+write "XXX" to file notesFile
+put "File position after writing XXX: byte " & the position in file notesFile
+seek in file notesFile to 6 before the current position // seek to relative position
+put "File position after relative seek: byte " & the position in file notesFile
+
+read 12 characters from file notesFile  -- read exactly 12 characters
+put "First 12 characters: [" & it & "]"
+put "File position after reading 12 characters: byte " & the position in file notesFile
+
+close file notesFile
+
+
+-- Clean up
+delete file notesFile
+put ""
+put "--- Demo complete. Temp file deleted. ---"

@@ -1,0 +1,19 @@
+﻿
+// Use an Each expression to extract a list of sub-parts
+
+put each character of "Vision"
+
+put each word of "may you be well"
+put -
+
+put each line of {{
+one
+two
+three
+}}
+
+put each item delimited by ";" of "green;yellow;orange;red" into colorList
+put colorList
+put -
+
+

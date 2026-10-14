@@ -33,4 +33,13 @@ Session Focus | Date | Host | Length
 [Pattern Eggspert](/250305-Patterns_Eggspert/)| March 05, 2025 | Doug Simons | 13:05
 [Sensetalk Formats](/250322-Formats/)| March 22, 2025 | Doug Simons | 11:20
 [Pattern Replace](/250402-Pattern_Replace/)| April 05, 2025 | Doug Simons | 9:58
-[Excel Worksheet](/250430-ExcelWorksheet/)| April 30, 2025 | Doug Simons | TBU
+[Excel Worksheet](/250430-ExcelWorksheet/)| April 30, 2025 | Doug Simons | 15:22
+[User Interaction](/250528-User_Interaction.suite/)| May 28, 2025 | Doug Simons | 13:29
+[Exception Handling](/250709-Exception_Handling.suite/)| July 09, 2025 | Doug Simons | 13:24
+[Assertions](/250820-Assertions.suite/)| August 20, 2025 | Doug Simons | 14:26
+[Date Formats](/251001-Date_Formats.suite/)| October 01, 2025 | Doug Simons | TBU
+[Banking Objects](/251112-Banking_Objects/)| November 12, 2025 | Doug Simons | 17:44
+[File Processing](/260610-File_Processing.suite/)| June 10, 2026 | Doug Simons | 15:30
+[Iterators](/260708-Iterators.suite/)| July 08, 2026 | Doug Simons | 11:14
+[Advanced International Date & Time Formats](/260812-Date_Conversion.suite/)| August 12, 2026 | Doug Simons | 18:18
+[Each Expressions Part 2](/260902-Each_Uses.suite/)| September 02, 2026 | Doug Simons | 13:51
