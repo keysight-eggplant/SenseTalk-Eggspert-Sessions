@@ -71,7 +71,7 @@ No. | Session Focus | Date | Video | Length
 35 | [User Interaction](/250528-User_Interaction.suite/) | May 28, 2025 | [▶ Watch](https://youtu.be/C9eusVfThTU) | 13:29
 36 | [Exception Handling](/250709-Exception_Handling.suite/) | July 09, 2025 | [▶ Watch](https://youtu.be/KhznJRITALg) | 13:24
 37 | [Assertions](/250820-Assertions.suite/) | August 20, 2025 | [▶ Watch](https://youtu.be/yQikfuc-mjA) | 14:26
-38 | [Date Formats](/251001-Date_Formats.suite/) | October 01, 2025 | TBU | TBU
+38 | [Date Formats](/251001-Date_Formats.suite/) | October 01, 2025 | [▶ Watch](https://youtu.be/08fWOkYw8wk) | 18:18
 39 | [Banking Objects](/251112-Banking_Objects/) | November 12, 2025 | [▶ Watch](https://youtu.be/3pZLOCGqiEQ) | 17:44
 40 | [File Processing](/260610-File_Processing.suite/) | June 10, 2026 | [▶ Watch](https://youtu.be/1sldlkGNjPo) | 15:30
 41 | [Iterators](/260708-Iterators.suite/) | July 08, 2026 | [▶ Watch](https://youtu.be/IXZZtro7qrs) | 11:14
