@@ -1,0 +1,23 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+put the files in surveyFolder into scoreFiles
+
+repeat with each petScoreFile in scoreFiles
+	if petScoreFile doesn't end with ".txt" then next repeat
+	put file petScoreFile into numberOfVotes
+	put the short name of file petScoreFile into animalName
+	put !"[[animalName]] scored [[numberOfVotes]] votes[[return]]" after allResults
+end repeat
+
+answer allResults title "Final Scores"
+
+ask file "Where Do You Want to Store the Final Results?"
+if the result is "Cancel" then
+	beep
+	exit all
+end if
+put it into FinalResultsFile
+
+put "Final Results File is " & FinalResultsFile
+put allResults into file FinalResultsFile

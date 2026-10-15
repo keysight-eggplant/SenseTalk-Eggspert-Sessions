@@ -1,0 +1,11 @@
+﻿
+ask "What is your name?"
+put it into userName
+
+put "Welcome, " & userName
+
+ask "Please enter your birthday as indicated." title "Enter Birthday" placeholder "Month:Day"
+put it split by ":" into [birthMonth, birthDay]
+
+put !"It's wonderful that you have a [[birthMonth]] birthday [[userName]]!"
+put !"Being born on the [[birthDay.ordinalWords]] of the month is very lucky."

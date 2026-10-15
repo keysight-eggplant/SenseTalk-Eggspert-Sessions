@@ -1,0 +1,8 @@
+﻿
+repeat with countdown as 5 down to 1
+	beep the counter
+	put "Countdown is now: " & countdown
+	wait a second
+end repeat
+
+beep 7

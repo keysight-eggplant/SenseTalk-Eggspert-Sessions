@@ -1,0 +1,11 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+ask "What type of animal is your favorite pet?" title "Pet Survey"
+if the result is "cancel" then exit all
+put it into chosenAnimal
+
+set animalScoreFile to surveyFolder & chosenAnimal & ".txt"
+
+add 1 to file animalScoreFile
+

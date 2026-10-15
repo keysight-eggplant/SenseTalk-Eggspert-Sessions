@@ -1,0 +1,20 @@
+﻿
+
+if there is no file "myDataFile.txt" then
+	beep 3
+	answer error "Please advise" with "Continue" or "Stop" title "Something Bad Happened"
+	if it is "Stop" then exit all
+end if
+
+
+answer title "Two Roads Diverged in a Wood" \
+		prompt "Which will you choose?" \
+		with "More Traveled", "Less Traveled", "Go Home", or "Cancel" \
+		time out after 15 seconds icon resourcePath("challenge.png")
+put the result into answerResult
+put it into choice
+
+put "Your choice was: " & choice
+put "the result was: " & answerResult
+
+

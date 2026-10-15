@@ -1,0 +1,10 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+answer "Which is your favorite?" title "Pet Survey" with "Dog" or "Cat"
+put it into chosenAnimal
+
+set animalScoreFile to surveyFolder & chosenAnimal & ".txt"
+
+add 1 to file animalScoreFile
+

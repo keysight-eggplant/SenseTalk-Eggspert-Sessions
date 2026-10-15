@@ -1,0 +1,12 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+set pets to ["Cat", "Dog", "Rabbit", "Gerbil", "Parakeet", "Goldfish", "Gecko", "Horse", "Ferret", "Hamster", "Budgie", "Rat"]
+
+answer "Which is your favorite?" title "Pet Survey" from list pets
+put it into chosenAnimal
+
+set animalScoreFile to surveyFolder & chosenAnimal & ".txt"
+
+add 1 to file animalScoreFile
+

@@ -1,0 +1,10 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+answer file in folder surveyFolder
+put it into petScoreFile
+
+put file petScoreFile into numberOfVotes
+put the short name of file petScoreFile into animalName
+
+answer !"Total votes: [[numberOfVotes]]" title !"Final Score for [[animalName]]"

@@ -1,0 +1,9 @@
+﻿
+repeat with countdown as 5 down to 1
+	play "Glass"
+	put "Countdown is now: " & countdown
+	wait a second
+end repeat
+
+put resourcePath("landed.mp3") into finalSoundFile
+play finalSoundFile

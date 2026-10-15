@@ -1,0 +1,20 @@
+﻿
+set clientList to ["Jackson", "Smith", "Jones", "Bradley", "Franklin", "Baker", "Kowalski"]
+
+set numberProcessed to 0
+repeat with each client in clientList
+	
+	answer !"Do you want to process client [[client]]?" with "Yes" or "No" title "Select Client"
+	if it is "No" then next repeat
+	
+	put "Now Processing Client: " & client
+	put -
+	wait 30 ticks
+	add 1 to numberProcessed
+end repeat
+
+answer "Continue processing?" titled "Initial Processing Complete" with "Continue" or "Cancel"
+
+put "More processing"
+wait 3
+answer "Number Processed: " & numberProcessed title "All Done!"

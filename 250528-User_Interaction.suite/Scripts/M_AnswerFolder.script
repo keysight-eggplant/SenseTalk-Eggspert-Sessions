@@ -1,0 +1,16 @@
+﻿
+--set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+answer folder "Select the Folder containing Pet Scores"
+put it into petScoreFolder
+
+put the files in petScoreFolder into scoreFiles
+
+repeat with each petScoreFile in scoreFiles
+	if petScoreFile doesn't end with ".txt" then next repeat
+	put file petScoreFile into numberOfVotes
+	put the short name of file petScoreFile into animalName
+	put !"[[animalName]] scored [[numberOfVotes]] votes[[return]]" after allResults
+end repeat
+
+answer allResults title "Final Scores"

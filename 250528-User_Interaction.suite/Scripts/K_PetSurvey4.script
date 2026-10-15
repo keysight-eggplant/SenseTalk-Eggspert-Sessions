@@ -1,0 +1,12 @@
+﻿
+set surveyFolder to the desktop folder & "demo/AnimalScores/"
+
+set pets to ["Cat", "Dog", "Rabbit", "Gerbil", "Parakeet", "Goldfish", "Gecko", "Horse", "Ferret", "Hamster", "Budgie", "Rat"]
+
+answer "Select ALL of your Favorites" title "Pet Survey" from list pets allow multiple
+put it into chosenAnimals
+
+repeat with each animal in chosenAnimals
+	set animalScoreFile to surveyFolder & animal & ".txt"
+	add 1 to file animalScoreFile	
+end repeat

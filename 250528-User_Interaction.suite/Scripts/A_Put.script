@@ -1,0 +1,12 @@
+﻿
+set clientList to ["Jackson", "Smith", "Jones", "Bradley", "Franklin", "Baker", "Kowalski"]
+
+put =
+repeat with each client in clientList
+	put "Now Processing Client: " & client
+	put -
+	wait 30 ticks
+end repeat
+
+put "Done!"
+put =
